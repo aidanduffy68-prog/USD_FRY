@@ -1,0 +1,191 @@
+{
+  "timestamp": "2025-10-01T03:23:06.671213Z",
+  "summary": {
+    "total_events": 95,
+    "matched_pairs": 12,
+    "total_fry_minted": 229025.40225933708,
+    "total_wreckage": 277486.74611470103
+  },
+  "matched_pairs": [
+    {
+      "pair_id": 0,
+      "event1": {
+        "dex": "dYdX",
+        "type": "adverse_fill",
+        "asset": "BTC",
+        "amount_usd": 2302.681100559294
+      },
+      "event2": {
+        "dex": "GMX",
+        "type": "slippage",
+        "asset": "BTC",
+        "amount_usd": 4892.097089486751
+      }
+    },
+    {
+      "pair_id": 1,
+      "event1": {
+        "dex": "Aster",
+        "type": "slippage",
+        "asset": "AVAX",
+        "amount_usd": 1437.4073846909675
+      },
+      "event2": {
+        "dex": "dYdX",
+        "type": "short_liq",
+        "asset": "AVAX",
+        "amount_usd": 3350.331907764133
+      }
+    },
+    {
+      "pair_id": 2,
+      "event1": {
+        "dex": "GMX",
+        "type": "adverse_fill",
+        "asset": "SOL",
+        "amount_usd": 870.9600312934755
+      },
+      "event2": {
+        "dex": "Aster",
+        "type": "short_liq",
+        "asset": "SOL",
+        "amount_usd": 2888.644055424997
+      }
+    },
+    {
+      "pair_id": 3,
+      "event1": {
+        "dex": "Hyperliquid",
+        "type": "short_liq",
+        "asset": "SOL",
+        "amount_usd": 741.185594523942
+      },
+      "event2": {
+        "dex": "GMX",
+        "type": "long_liq",
+        "asset": "SOL",
+        "amount_usd": 2385.8100536243574
+      }
+    },
+    {
+      "pair_id": 4,
+      "event1": {
+        "dex": "GMX",
+        "type": "adverse_fill",
+        "asset": "SOL",
+        "amount_usd": 2942.5369721141005
+      },
+      "event2": {
+        "dex": "Aster",
+        "type": "long_liq",
+        "asset": "SOL",
+        "amount_usd": 754.6470203957575
+      }
+    },
+    {
+      "pair_id": 5,
+      "event1": {
+        "dex": "dYdX",
+        "type": "long_liq",
+        "asset": "BNB",
+        "amount_usd": 833.3272458603693
+      },
+      "event2": {
+        "dex": "Aster",
+        "type": "slippage",
+        "asset": "BNB",
+        "amount_usd": 898.2560703946954
+      }
+    },
+    {
+      "pair_id": 6,
+      "event1": {
+        "dex": "Vertex",
+        "type": "short_liq",
+        "asset": "BTC",
+        "amount_usd": 2574.281800190839
+      },
+      "event2": {
+        "dex": "dYdX",
+        "type": "long_liq",
+        "asset": "BTC",
+        "amount_usd": 3254.7406813492953
+      }
+    },
+    {
+      "pair_id": 7,
+      "event1": {
+        "dex": "Vertex",
+        "type": "adverse_fill",
+        "asset": "AVAX",
+        "amount_usd": 3845.2561933024067
+      },
+      "event2": {
+        "dex": "Aster",
+        "type": "adverse_fill",
+        "asset": "AVAX",
+        "amount_usd": 3905.1629572096313
+      }
+    },
+    {
+      "pair_id": 8,
+      "event1": {
+        "dex": "GMX",
+        "type": "adverse_fill",
+        "asset": "SOL",
+        "amount_usd": 2630.696084604441
+      },
+      "event2": {
+        "dex": "dYdX",
+        "type": "long_liq",
+        "asset": "SOL",
+        "amount_usd": 2078.45685005876
+      }
+    },
+    {
+      "pair_id": 9,
+      "event1": {
+        "dex": "Hyperliquid",
+        "type": "funding_loss",
+        "asset": "BTC",
+        "amount_usd": 4927.619826656236
+      },
+      "event2": {
+        "dex": "dYdX",
+        "type": "adverse_fill",
+        "asset": "BTC",
+        "amount_usd": 4170.691920164745
+      }
+    },
+    {
+      "pair_id": 10,
+      "event1": {
+        "dex": "Hyperliquid",
+        "type": "short_liq",
+        "asset": "SOL",
+        "amount_usd": 4278.688989422937
+      },
+      "event2": {
+        "dex": "dYdX",
+        "type": "slippage",
+        "asset": "SOL",
+        "amount_usd": 155.75089117340934
+      }
+    },
+    {
+      "pair_id": 11,
+      "event1": {
+        "dex": "Vertex",
+        "type": "slippage",
+        "asset": "ETH",
+        "amount_usd": 4692.797010777717
+      },
+      "event2": {
+        "dex": "GMX",
+        "type": "funding_loss",
+        "asset": "ETH",
+        "amount_usd": 2962.8022740350657
+      }
+    }
+  ]
+}

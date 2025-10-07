@@ -1,0 +1,179 @@
+{
+  "agent_b_final": {
+    "total_churn": 877639.9865037815, 
+    "win_rate": 0.6343241179255095, 
+    "slippage_captured": 8.789327995682642, 
+    "inventory_value": 23962.246244620444, 
+    "fry_balance": 7.595748193088087, 
+    "total_return": -0.03559523660520511, 
+    "total_capital": 482202.38169739745, 
+    "asset_breakdown": {
+      "ATOM": {
+        "avg_cost": 39.61955245824337, 
+        "trades": 61, 
+        "inventory": 713.7180041974261, 
+        "profits": 7662.793712483235
+      }, 
+      "SOL": {
+        "avg_cost": 85.88887311119636, 
+        "trades": 57, 
+        "inventory": 73.8621512607271, 
+        "profits": 1698.3377627776554
+      }, 
+      "AVAX": {
+        "avg_cost": 69.44590025299853, 
+        "trades": 64, 
+        "inventory": 228.78784279996938, 
+        "profits": 2251.7305714589947
+      }, 
+      "MATIC": {
+        "avg_cost": 0.4041628130089249, 
+        "trades": 67, 
+        "inventory": 2864.648747724233, 
+        "profits": -1705.4395425493547
+      }
+    }, 
+    "total_trades": 249, 
+    "inventory_values": {
+      "ATOM": 8564.616050369114, 
+      "SOL": 7386.2151260727105, 
+      "AVAX": 5719.696069999234, 
+      "MATIC": 2291.7189981793867
+    }, 
+    "total_profits": 9907.42250417053, 
+    "agent_type": "MidCap_Agent_B_FRY", 
+    "recycled_value": 7.595748193088087
+  }, 
+  "comparison": {
+    "hybrid_vs_agent_b_pct": 4.143399411587802, 
+    "hybrid_vs_traditional_pct": -3.0082640838104995, 
+    "best_performer": "Other"
+  }, 
+  "traditional_final": {
+    "total_return": 0.0359213983487779, 
+    "agent_type": "Traditional_MidCap_MM", 
+    "inventory_value": 11193.164568239483, 
+    "total_churn": 199525.83008506865, 
+    "total_profits": 20708.919329186236, 
+    "asset_breakdown": {
+      "ATOM": {
+        "avg_cost": 45.67001792850362, 
+        "trades": 21, 
+        "inventory": 0.0, 
+        "profits": 6932.566207965365
+      }, 
+      "SOL": {
+        "avg_cost": 81.83306370858112, 
+        "trades": 27, 
+        "inventory": 34.75223559914748, 
+        "profits": 3752.452747768823
+      }, 
+      "AVAX": {
+        "avg_cost": 53.324926516304295, 
+        "trades": 33, 
+        "inventory": 170.24050031269502, 
+        "profits": 8297.920907449583
+      }, 
+      "MATIC": {
+        "avg_cost": 0.4666625884773499, 
+        "trades": 24, 
+        "inventory": 4327.4106256342, 
+        "profits": 1725.9794660024659
+      }
+    }, 
+    "total_capital": 517960.69917438895, 
+    "win_rate": 0.8499999999999992, 
+    "total_trades": 105, 
+    "inventory_values": {
+      "ATOM": 0.0, 
+      "SOL": 3475.2235599147484, 
+      "AVAX": 4256.012507817375, 
+      "MATIC": 3461.9285005073602
+    }
+  }, 
+  "hybrid_final": {
+    "fry_trades": 72, 
+    "total_return": 0.005838757510672906, 
+    "total_churn": 99994.5120445789, 
+    "fry_profits": 623.7307473203085, 
+    "capital_allocation": {
+      "fry_percentage": 43.33657011829415, 
+      "traditional_capital": 277828.1053338038, 
+      "fry_capital": 212484.79297435595
+    }, 
+    "total_capital": 502919.37875533645, 
+    "asset_breakdown": {
+      "ATOM": {
+        "trad_trades": 8, 
+        "trad_inventory": 0.0, 
+        "fry_trades": 13, 
+        "fry_inventory": 23.516712331888854, 
+        "fry_profits": 1360.340454756862, 
+        "fry_avg_cost": 41.29806730115851, 
+        "trad_profits": 777.0553238635915, 
+        "trad_avg_cost": 31.076742926244048
+      }, 
+      "SOL": {
+        "trad_trades": 12, 
+        "trad_inventory": 18.23250281699435, 
+        "fry_trades": 25, 
+        "fry_inventory": 73.45069780447885, 
+        "fry_profits": -443.84205041295536, 
+        "fry_avg_cost": 85.75067434184312, 
+        "trad_profits": 351.2351386767842, 
+        "trad_avg_cost": 84.87031619447009
+      }, 
+      "AVAX": {
+        "trad_trades": 13, 
+        "trad_inventory": 16.449861509435806, 
+        "fry_trades": 16, 
+        "fry_inventory": 9.733970316626372, 
+        "fry_profits": 212.80398396477742, 
+        "fry_avg_cost": 67.55146522311293, 
+        "trad_profits": 573.1075271527608, 
+        "trad_avg_cost": 66.76234261524294
+      }, 
+      "MATIC": {
+        "trad_trades": 13, 
+        "trad_inventory": 2436.6022363659877, 
+        "fry_trades": 18, 
+        "fry_inventory": 690.1028153778909, 
+        "fry_profits": -505.57164098837563, 
+        "fry_avg_cost": 0.5117954085199776, 
+        "trad_profits": 126.44835766010739, 
+        "trad_avg_cost": 0.49768983768156544
+      }
+    }, 
+    "total_trades": 118, 
+    "traditional_profits": 1827.8463473532438, 
+    "slippage_captured": 3.4562414552648333, 
+    "total_profits": 2451.577094673553, 
+    "agent_type": "Hybrid_MidCap_Agent", 
+    "inventory_value": 12606.480447176644, 
+    "traditional_trades": 46, 
+    "recycled_value": 2.7908603121498006, 
+    "fry_balance": 2.7908603121498006, 
+    "inventory_breakdown": {
+      "MATIC": {
+        "trad_value": 1949.2817890927902, 
+        "fry_value": 552.0822523023128, 
+        "total_value": 2501.364041395103
+      }, 
+      "SOL": {
+        "trad_value": 1823.2502816994352, 
+        "fry_value": 7345.069780447885, 
+        "total_value": 9168.32006214732
+      }, 
+      "AVAX": {
+        "trad_value": 411.2465377358951, 
+        "fry_value": 243.3492579156593, 
+        "total_value": 654.5957956515545
+      }, 
+      "ATOM": {
+        "trad_value": 0.0, 
+        "fry_value": 282.20054798266625, 
+        "total_value": 282.20054798266625
+      }
+    }
+  }
+}

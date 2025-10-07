@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-10-01T17:44:37.895564Z",
+  "algorithm": "Number Theory Optimized Routing (FRY AMM Proprietary)",
+  "total_fry_minted": 15025.78,
+  "routes": [
+    [
+      {
+        "dex": "dYdX",
+        "size": 5000,
+        "efficiency": 0.85,
+        "nt_bonus": 1.88,
+        "fry": 13160.0
+      },
+      {
+        "dex": "Aster",
+        "size": 500,
+        "efficiency": 0.82,
+        "nt_bonus": 1.946,
+        "fry": 1362.2
+      },
+      {
+        "dex": "Hyperliquid",
+        "size": 100,
+        "efficiency": 0.78,
+        "nt_bonus": 1.784,
+        "fry": 249.76
+      },
+      {
+        "dex": "GMX",
+        "size": 100,
+        "efficiency": 0.71,
+        "nt_bonus": 1.8130000000000002,
+        "fry": 253.82000000000002
+      }
+    ]
+  ],
+  "optimization_methods": [
+    "Prime factorization for trade decomposition",
+    "Euclidean GCD for optimal sizing",
+    "Modular arithmetic for funding sync",
+    "Composite number theory bonus calculation"
+  ],
+  "amm_requirement": "FRY AMM access required for full optimization"
+}

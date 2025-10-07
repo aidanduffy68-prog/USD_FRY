@@ -1,0 +1,1199 @@
+{
+  "simulation_timestamp": "2025-09-14T15:01:07.971557",
+  "manipulator_capital": 500000000,
+  "strategies_tested": 4,
+  "results": [
+    {
+      "strategy": "directional_squeeze",
+      "initial_price": 45000.0,
+      "target_price": 35000,
+      "liquidations": [
+        {
+          "trader_id": "trader_0001",
+          "loss_usd": 753.2784463418423,
+          "fry_minted": 2125.63464560848,
+          "collateral_absorbed": 188.1154044000017,
+          "leverage": 93.6521056760622,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0007",
+          "loss_usd": 2133.959944032097,
+          "fry_minted": 12884.309778410196,
+          "collateral_absorbed": 706.872951838537,
+          "leverage": 89.25582495739924,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0026",
+          "loss_usd": 90.50082229812352,
+          "fry_minted": 90.50082229812352,
+          "collateral_absorbed": 76.39386654318126,
+          "leverage": 86.00022462800204,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0043",
+          "loss_usd": 2252.4711782642444,
+          "fry_minted": 7726.23699433179,
+          "collateral_absorbed": 1313.3499302786815,
+          "leverage": 67.13779864528883,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0087",
+          "loss_usd": 1115.4185498357317,
+          "fry_minted": 3705.705681064517,
+          "collateral_absorbed": 286.726044122798,
+          "leverage": 74.4620873867877,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0088",
+          "loss_usd": 3727.810679661712,
+          "fry_minted": 12775.711997567661,
+          "collateral_absorbed": 2175.4673972058313,
+          "leverage": 25.30864505144766,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0095",
+          "loss_usd": 2638.6819261044193,
+          "fry_minted": 22366.265335287102,
+          "collateral_absorbed": 622.6021378871164,
+          "leverage": 88.94867604521782,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0107",
+          "loss_usd": 881.5767894348049,
+          "fry_minted": 2196.9969141208194,
+          "collateral_absorbed": 707.4908759998733,
+          "leverage": 93.50586692357575,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0161",
+          "loss_usd": 1706.9071149111437,
+          "fry_minted": 6393.791219071893,
+          "collateral_absorbed": 911.3628515875145,
+          "leverage": 80.73861045340219,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0008",
+          "loss_usd": 2765.551603879984,
+          "fry_minted": 17324.84442398109,
+          "collateral_absorbed": 882.925755239267,
+          "leverage": 86.71997793539538,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0028",
+          "loss_usd": 823.8139399244938,
+          "fry_minted": 2571.3774387646968,
+          "collateral_absorbed": 337.9322363539167,
+          "leverage": 94.7212814485483,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0037",
+          "loss_usd": 814.4560467954054,
+          "fry_minted": 1416.3836243832595,
+          "collateral_absorbed": 605.4776546867353,
+          "leverage": 53.38086435065021,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0044",
+          "loss_usd": 2077.8329647761466,
+          "fry_minted": 4006.475434809499,
+          "collateral_absorbed": 2155.205940862441,
+          "leverage": 38.395957497136685,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0049",
+          "loss_usd": 990.0925436103506,
+          "fry_minted": 2374.843239216114,
+          "collateral_absorbed": 825.5561703823322,
+          "leverage": 64.61528033519843,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0057",
+          "loss_usd": 965.844305765873,
+          "fry_minted": 2382.6023284542766,
+          "collateral_absorbed": 783.055746936632,
+          "leverage": 71.79592704718839,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0062",
+          "loss_usd": 788.7425911611608,
+          "fry_minted": 1974.5639679909812,
+          "collateral_absorbed": 451.11252468196165,
+          "leverage": 79.34884886158275,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0067",
+          "loss_usd": 1618.762105625211,
+          "fry_minted": 8527.839379310779,
+          "collateral_absorbed": 411.4355350164984,
+          "leverage": 81.36037883199185,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0071",
+          "loss_usd": 100.55630949578727,
+          "fry_minted": 100.55630949578727,
+          "collateral_absorbed": 38.180801538823644,
+          "leverage": 70.20506214504222,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0074",
+          "loss_usd": 878.0422414830988,
+          "fry_minted": 2706.493939970567,
+          "collateral_absorbed": 541.1067419136465,
+          "leverage": 87.76396754727891,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0078",
+          "loss_usd": 4540.233878789354,
+          "fry_minted": 12398.845639365672,
+          "collateral_absorbed": 3325.103686856001,
+          "leverage": 26.81439186143977,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0084",
+          "loss_usd": 1006.2531086673011,
+          "fry_minted": 3003.302762863722,
+          "collateral_absorbed": 674.2878748176031,
+          "leverage": 79.76999035773929,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0085",
+          "loss_usd": 834.9501991333883,
+          "fry_minted": 1132.661446809418,
+          "collateral_absorbed": 425.22165637780967,
+          "leverage": 40.61804176319405,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0096",
+          "loss_usd": 903.1947916494174,
+          "fry_minted": 1124.8040719494386,
+          "collateral_absorbed": 1007.5819993949192,
+          "leverage": 34.47101246749401,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0098",
+          "loss_usd": 2245.649937169138,
+          "fry_minted": 3884.855534742751,
+          "collateral_absorbed": 1933.5511276508812,
+          "leverage": 19.258868489484406,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0111",
+          "loss_usd": 1720.637818629105,
+          "fry_minted": 5158.310976785748,
+          "collateral_absorbed": 1147.89298908905,
+          "leverage": 61.35423806220711,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0113",
+          "loss_usd": 746.6544178952716,
+          "fry_minted": 746.6544178952716,
+          "collateral_absorbed": 623.3006714622297,
+          "leverage": 24.919616052695563,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0139",
+          "loss_usd": 268.6948563141851,
+          "fry_minted": 268.6948563141851,
+          "collateral_absorbed": 272.0893121766002,
+          "leverage": 51.310089773922066,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0145",
+          "loss_usd": 3075.9889959406587,
+          "fry_minted": 25238.690373641788,
+          "collateral_absorbed": 749.7780719263807,
+          "leverage": 88.48464986896245,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0147",
+          "loss_usd": 425.78493096298706,
+          "fry_minted": 661.791087810311,
+          "collateral_absorbed": 172.3671259382629,
+          "leverage": 91.25997566768041,
+          "price_at_liquidation": 44000.0
+        },
+        {
+          "trader_id": "trader_0053",
+          "loss_usd": 1982.1011401564383,
+          "fry_minted": 9256.290926151438,
+          "collateral_absorbed": 848.8767177163327,
+          "leverage": 80.43679547353948,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0083",
+          "loss_usd": 1208.975347998102,
+          "fry_minted": 1208.975347998102,
+          "collateral_absorbed": 1140.2290873518969,
+          "leverage": 14.030265402218902,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0020",
+          "loss_usd": 557.1716384391153,
+          "fry_minted": 557.1716384391153,
+          "collateral_absorbed": 690.3449096313298,
+          "leverage": 23.386879350403404,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0038",
+          "loss_usd": 607.1268010728346,
+          "fry_minted": 1451.3517414221171,
+          "collateral_absorbed": 206.6779347987035,
+          "leverage": 98.43598181049887,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0061",
+          "loss_usd": 635.4934509977027,
+          "fry_minted": 635.4934509977027,
+          "collateral_absorbed": 653.9779847432585,
+          "leverage": 28.66423116942482,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0082",
+          "loss_usd": 1149.2878513034548,
+          "fry_minted": 3987.049978146294,
+          "collateral_absorbed": 504.0251178837514,
+          "leverage": 75.4629982583069,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0088",
+          "loss_usd": 44.478612911275974,
+          "fry_minted": 44.478612911275974,
+          "collateral_absorbed": 53.99233245314482,
+          "leverage": 56.7849232271985,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0106",
+          "loss_usd": 834.262993115725,
+          "fry_minted": 834.262993115725,
+          "collateral_absorbed": 955.1507714321309,
+          "leverage": 11.350721939720339,
+          "price_at_liquidation": 43000.0
+        },
+        {
+          "trader_id": "trader_0119",
+          "loss_usd": 1643.4854935506073,
+          "fry_minted": 8332.809827898636,
+          "collateral_absorbed": 648.2914222926485,
+          "leverage": 87.11942467363502,
+          "price_at_liquidation": 42000.0
+        },
+        {
+          "trader_id": "trader_0146",
+          "loss_usd": 1157.1549609998124,
+          "fry_minted": 3990.2201132335035,
+          "collateral_absorbed": 671.1447317533582,
+          "leverage": 82.19224993135548,
+          "price_at_liquidation": 42000.0
+        },
+        {
+          "trader_id": "trader_0073",
+          "loss_usd": 404.81417370642976,
+          "fry_minted": 404.81417370642976,
+          "collateral_absorbed": 500.1431575922252,
+          "leverage": 7.805265869927629,
+          "price_at_liquidation": 41000.0
+        }
+      ],
+      "fry_minted": 197972.66344633632,
+      "collateral_absorbed": 31224.399250814302,
+      "manipulation_cost": 236467202.42617837,
+      "final_price": 35000.0,
+      "price_impact": -0.2222222222222222,
+      "strategy_name": "Directional Squeeze"
+    },
+    {
+      "strategy": "volatility_pump",
+      "initial_price": 45000.0,
+      "cycles": 3,
+      "amplitude": 0.12,
+      "liquidations": [
+        {
+          "trader_id": "trader_0020",
+          "loss_usd": 3127.0732085131267,
+          "fry_minted": 10327.106931164046,
+          "collateral_absorbed": 1893.7708143394545,
+          "leverage": 48.100586548397104,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0021",
+          "loss_usd": 719.2695729444071,
+          "fry_minted": 1481.461327678729,
+          "collateral_absorbed": 270.59614618981925,
+          "leverage": 71.58910781647762,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0040",
+          "loss_usd": 1030.4888318534515,
+          "fry_minted": 2613.466405094461,
+          "collateral_absorbed": 436.90471991691874,
+          "leverage": 61.52765337980309,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0062",
+          "loss_usd": 2970.168714441143,
+          "fry_minted": 11151.706299495207,
+          "collateral_absorbed": 1582.1618603144675,
+          "leverage": 33.88972841150751,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0081",
+          "loss_usd": 1788.9425233782263,
+          "fry_minted": 4414.5344329007,
+          "collateral_absorbed": 749.26319814326,
+          "leverage": 34.48515183206616,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0127",
+          "loss_usd": 2995.4473173520837,
+          "fry_minted": 15379.68954414631,
+          "collateral_absorbed": 932.3364345768263,
+          "leverage": 42.85132013305156,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0146",
+          "loss_usd": 1211.2921687647474,
+          "fry_minted": 2769.314269969272,
+          "collateral_absorbed": 410.8083387607845,
+          "leverage": 47.186137985613854,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0168",
+          "loss_usd": 4323.0481796311415,
+          "fry_minted": 46295.83177168158,
+          "collateral_absorbed": 807.3619091921677,
+          "leverage": 89.15608804590283,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0182",
+          "loss_usd": 138.45959967537325,
+          "fry_minted": 138.45959967537325,
+          "collateral_absorbed": 115.50490511775456,
+          "leverage": 67.64753703700713,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0195",
+          "loss_usd": 3328.217444350685,
+          "fry_minted": 28763.288155627288,
+          "collateral_absorbed": 770.2201011891668,
+          "leverage": 88.30179419740689,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0000",
+          "loss_usd": 3691.7053767155135,
+          "fry_minted": 19225.4286912067,
+          "collateral_absorbed": 1417.7773413919974,
+          "leverage": 64.85169801671411,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0004",
+          "loss_usd": 3631.269101361973,
+          "fry_minted": 5752.51497130913,
+          "collateral_absorbed": 3790.8324919065567,
+          "leverage": 10.90638684388699,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0010",
+          "loss_usd": 2575.7863339735277,
+          "fry_minted": 6418.535536001443,
+          "collateral_absorbed": 2067.348603453551,
+          "leverage": 42.463372823806324,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0030",
+          "loss_usd": 4170.802072735435,
+          "fry_minted": 12674.412574180284,
+          "collateral_absorbed": 2744.9934784940924,
+          "leverage": 19.229838988325955,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0033",
+          "loss_usd": 657.4505885817173,
+          "fry_minted": 657.4505885817173,
+          "collateral_absorbed": 653.9075534035265,
+          "leverage": 26.851844804218434,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0051",
+          "loss_usd": 1593.685190481652,
+          "fry_minted": 1733.2108337804393,
+          "collateral_absorbed": 1887.3092707996416,
+          "leverage": 17.060286880022243,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0063",
+          "loss_usd": 78.55924023242423,
+          "fry_minted": 78.55924023242423,
+          "collateral_absorbed": 18.289805040943374,
+          "leverage": 76.01137164971374,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0068",
+          "loss_usd": 5716.338519423622,
+          "fry_minted": 9235.774151300082,
+          "collateral_absorbed": 7076.077334361084,
+          "leverage": 12.849976311523575,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0115",
+          "loss_usd": 4170.736177959015,
+          "fry_minted": 26808.268215786367,
+          "collateral_absorbed": 1297.7369613075487,
+          "leverage": 61.30846785235197,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0124",
+          "loss_usd": 1229.0764529932592,
+          "fry_minted": 1229.0764529932592,
+          "collateral_absorbed": 732.6915069495815,
+          "leverage": 18.3642750015764,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0004",
+          "loss_usd": 4649.101913879812,
+          "fry_minted": 33913.94052811385,
+          "collateral_absorbed": 1274.6468425114629,
+          "leverage": 66.4250595900565,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0018",
+          "loss_usd": 2160.9817221692483,
+          "fry_minted": 7670.844853344178,
+          "collateral_absorbed": 1217.5561083115135,
+          "leverage": 47.067230085239196,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0019",
+          "loss_usd": 863.8178880836603,
+          "fry_minted": 1968.9327190268584,
+          "collateral_absorbed": 445.1251381342086,
+          "leverage": 65.9669641789184,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0029",
+          "loss_usd": 5335.13573096395,
+          "fry_minted": 31249.093204734298,
+          "collateral_absorbed": 1821.7279510367318,
+          "leverage": 54.736568178012,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0033",
+          "loss_usd": 6607.179424847391,
+          "fry_minted": 87981.83898802174,
+          "collateral_absorbed": 992.3597973002148,
+          "leverage": 95.61716526360875,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0036",
+          "loss_usd": 3670.408235413947,
+          "fry_minted": 26502.621988496663,
+          "collateral_absorbed": 1016.6463243102465,
+          "leverage": 54.11735357450215,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0052",
+          "loss_usd": 2494.839651385385,
+          "fry_minted": 8177.1397689589785,
+          "collateral_absorbed": 1522.3476819492219,
+          "leverage": 44.21570612053957,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0054",
+          "loss_usd": 1020.2163598717565,
+          "fry_minted": 1020.2163598717565,
+          "collateral_absorbed": 760.1262988896129,
+          "leverage": 18.907618112671635,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0057",
+          "loss_usd": 2389.0041447639987,
+          "fry_minted": 4252.766843078301,
+          "collateral_absorbed": 2579.152058687104,
+          "leverage": 18.628495254399418,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0058",
+          "loss_usd": 5838.753772706419,
+          "fry_minted": 44992.19919965983,
+          "collateral_absorbed": 1515.4202828365496,
+          "leverage": 64.90746075126339,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0073",
+          "loss_usd": 3191.4388209664667,
+          "fry_minted": 11911.088188769863,
+          "collateral_absorbed": 1193.7399487497335,
+          "leverage": 29.23603019411242,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0087",
+          "loss_usd": 1164.5795904697443,
+          "fry_minted": 5129.4252479984625,
+          "collateral_absorbed": 528.8099765438219,
+          "leverage": 96.73211151733233,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0101",
+          "loss_usd": 99.23727895726113,
+          "fry_minted": 99.23727895726113,
+          "collateral_absorbed": 16.913415126847745,
+          "leverage": 77.84217922978509,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0105",
+          "loss_usd": 1811.4101417800819,
+          "fry_minted": 13070.05983452319,
+          "collateral_absorbed": 429.73787802740287,
+          "leverage": 99.58272232268506,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0106",
+          "loss_usd": 325.91217322040626,
+          "fry_minted": 338.8714434339132,
+          "collateral_absorbed": 256.84522995928353,
+          "leverage": 79.7579195037942,
+          "price_at_liquidation": 46800.0
+        },
+        {
+          "trader_id": "trader_0009",
+          "loss_usd": 6555.819442102831,
+          "fry_minted": 20020.73049663384,
+          "collateral_absorbed": 4293.426612448497,
+          "leverage": 20.175609413037407,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0086",
+          "loss_usd": 2007.6321284788075,
+          "fry_minted": 5570.14435489418,
+          "collateral_absorbed": 1447.2108823387646,
+          "leverage": 37.42222877327228,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0169",
+          "loss_usd": 1126.3425484523348,
+          "fry_minted": 2857.786665766675,
+          "collateral_absorbed": 663.1048564615331,
+          "leverage": 56.31561532358815,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0174",
+          "loss_usd": 220.2181940880854,
+          "fry_minted": 220.2181940880854,
+          "collateral_absorbed": 86.63710389446162,
+          "leverage": 52.18264474971158,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0108",
+          "loss_usd": 4290.61891656682,
+          "fry_minted": 13757.292284823152,
+          "collateral_absorbed": 2676.313086334588,
+          "leverage": 35.03862361741577,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0141",
+          "loss_usd": 5280.264385934043,
+          "fry_minted": 11987.06366228796,
+          "collateral_absorbed": 4651.880188653601,
+          "leverage": 15.06418241602484,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0014",
+          "loss_usd": 3194.391052744946,
+          "fry_minted": 7361.426078011124,
+          "collateral_absorbed": 2772.3253863370637,
+          "leverage": 27.84869402302457,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0049",
+          "loss_usd": 1223.2281583110864,
+          "fry_minted": 5864.561378245567,
+          "collateral_absorbed": 337.24657231889745,
+          "leverage": 97.98522742233042,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0091",
+          "loss_usd": 182.05400870550264,
+          "fry_minted": 182.05400870550264,
+          "collateral_absorbed": 133.21039766836722,
+          "leverage": 23.46751945971556,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0096",
+          "loss_usd": 3966.5779248994268,
+          "fry_minted": 11498.745658558957,
+          "collateral_absorbed": 2736.6011739877413,
+          "leverage": 34.864168201584604,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0137",
+          "loss_usd": 2399.809432467722,
+          "fry_minted": 13977.291329551983,
+          "collateral_absorbed": 824.0631430475662,
+          "leverage": 86.69157656395804,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0139",
+          "loss_usd": 3084.874758488022,
+          "fry_minted": 14153.305885380443,
+          "collateral_absorbed": 1344.7674137229642,
+          "leverage": 47.236129409621135,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0140",
+          "loss_usd": 2274.121384241824,
+          "fry_minted": 3882.342458331523,
+          "collateral_absorbed": 1687.5320148932958,
+          "leverage": 18.76750611984687,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0148",
+          "loss_usd": 1084.1772375876938,
+          "fry_minted": 2285.3206256993053,
+          "collateral_absorbed": 643.4628365904799,
+          "leverage": 48.60563015656483,
+          "price_at_liquidation": 48600.0
+        },
+        {
+          "trader_id": "trader_0033",
+          "loss_usd": 6783.183816389282,
+          "fry_minted": 12491.851872742442,
+          "collateral_absorbed": 7366.655185421143,
+          "leverage": 10.894174611108895,
+          "price_at_liquidation": 50400.0
+        },
+        {
+          "trader_id": "trader_0108",
+          "loss_usd": 4509.686986484163,
+          "fry_minted": 9817.656836548023,
+          "collateral_absorbed": 4143.000117982405,
+          "leverage": 14.228305659477758,
+          "price_at_liquidation": 50400.0
+        },
+        {
+          "trader_id": "trader_0137",
+          "loss_usd": 681.7218067115438,
+          "fry_minted": 681.7218067115438,
+          "collateral_absorbed": 591.1442433622282,
+          "leverage": 16.7711801592318,
+          "price_at_liquidation": 50400.0
+        },
+        {
+          "trader_id": "trader_0010",
+          "loss_usd": 1850.169088604907,
+          "fry_minted": 8667.787071606475,
+          "collateral_absorbed": 618.2750826249272,
+          "leverage": 63.30316165378818,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0016",
+          "loss_usd": 1920.7415630357075,
+          "fry_minted": 8730.038975557109,
+          "collateral_absorbed": 490.3942255129575,
+          "leverage": 59.15865927105402,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0020",
+          "loss_usd": 1553.3168473366247,
+          "fry_minted": 7192.056273759895,
+          "collateral_absorbed": 670.960608865876,
+          "leverage": 76.8342193445167,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0039",
+          "loss_usd": 2103.759506837642,
+          "fry_minted": 5333.487304532396,
+          "collateral_absorbed": 1358.501721328598,
+          "leverage": 30.127222246410316,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0044",
+          "loss_usd": 3893.5934073506905,
+          "fry_minted": 15519.455772643772,
+          "collateral_absorbed": 1953.6857276255132,
+          "leverage": 39.31552233165815,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0062",
+          "loss_usd": 5709.441692163274,
+          "fry_minted": 43477.35333713244,
+          "collateral_absorbed": 1499.526624053801,
+          "leverage": 46.37126444943731,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0088",
+          "loss_usd": 1524.2944346856161,
+          "fry_minted": 6299.654254538644,
+          "collateral_absorbed": 737.6511248818375,
+          "leverage": 79.88263596131246,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0090",
+          "loss_usd": 5038.443161619686,
+          "fry_minted": 46353.39946680077,
+          "collateral_absorbed": 1095.3202908474523,
+          "leverage": 67.59997197980725,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0126",
+          "loss_usd": 1536.4008665669392,
+          "fry_minted": 5059.110875395993,
+          "collateral_absorbed": 590.1108817724606,
+          "leverage": 53.58029733011011,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0133",
+          "loss_usd": 3481.6359745256996,
+          "fry_minted": 22944.513893981464,
+          "collateral_absorbed": 1056.6176398525631,
+          "leverage": 82.9730433177043,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0136",
+          "loss_usd": 1479.344027479082,
+          "fry_minted": 4480.508541081161,
+          "collateral_absorbed": 976.879624967727,
+          "leverage": 93.37885198227795,
+          "price_at_liquidation": 43200.0
+        },
+        {
+          "trader_id": "trader_0001",
+          "loss_usd": 3157.023454463404,
+          "fry_minted": 22392.047715857458,
+          "collateral_absorbed": 618.2060790572237,
+          "leverage": 56.166608763809336,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0006",
+          "loss_usd": 7080.272740231815,
+          "fry_minted": 41360.04886110796,
+          "collateral_absorbed": 2424.0910471074735,
+          "leverage": 34.84966659315127,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0027",
+          "loss_usd": 10037.704611469082,
+          "fry_minted": 28472.89461322639,
+          "collateral_absorbed": 7077.293351151178,
+          "leverage": 12.766493247122124,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0035",
+          "loss_usd": 5346.947347844825,
+          "fry_minted": 23263.803383007493,
+          "collateral_absorbed": 2316.8826932897377,
+          "leverage": 20.342714884964398,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0070",
+          "loss_usd": 7185.0144148325535,
+          "fry_minted": 32870.25828064968,
+          "collateral_absorbed": 3141.102920492855,
+          "leverage": 26.821979247293875,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0104",
+          "loss_usd": 2854.8490679324987,
+          "fry_minted": 11538.653293741028,
+          "collateral_absorbed": 911.1731527361615,
+          "leverage": 35.393933255181054,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0112",
+          "loss_usd": 11032.99506242391,
+          "fry_minted": 19462.48660772591,
+          "collateral_absorbed": 12508.882600761724,
+          "leverage": 7.797600286712422,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0125",
+          "loss_usd": 2874.933777526841,
+          "fry_minted": 15866.64819498727,
+          "collateral_absorbed": 751.3019182518495,
+          "leverage": 47.99207307957982,
+          "price_at_liquidation": 39600.0
+        },
+        {
+          "trader_id": "trader_0135",
+          "loss_usd": 746.9752337415223,
+          "fry_minted": 746.9752337415223,
+          "collateral_absorbed": 688.8020523536981,
+          "leverage": 10.6374794990591,
+          "price_at_liquidation": 39600.0
+        }
+      ],
+      "fry_minted": 992067.0619878492,
+      "collateral_absorbed": 123111.28829022229,
+      "manipulation_cost": 637921267.9382873,
+      "final_price": 45000.0,
+      "strategy_name": "Volatility Pump"
+    },
+    {
+      "strategy": "liquidation_cascade",
+      "initial_price": 45000.0,
+      "initial_push": 0.25,
+      "cascade_waves": [
+        {
+          "strategy": "directional_squeeze",
+          "initial_price": 45000.0,
+          "target_price": 56250.0,
+          "liquidations": [
+            {
+              "trader_id": "trader_0003",
+              "loss_usd": 2039.1003076100978,
+              "fry_minted": 14685.652048850421,
+              "collateral_absorbed": 524.6559879676583,
+              "leverage": 88.29905638776033,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0004",
+              "loss_usd": 2527.401555850469,
+              "fry_minted": 4179.434924851968,
+              "collateral_absorbed": 1653.984420347523,
+              "leverage": 16.35720434399263,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0018",
+              "loss_usd": 4441.640664857161,
+              "fry_minted": 72921.67452714576,
+              "collateral_absorbed": 522.1218840244426,
+              "leverage": 92.40804885807103,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0039",
+              "loss_usd": 3756.92986092244,
+              "fry_minted": 24090.6923074492,
+              "collateral_absorbed": 1171.782180417147,
+              "leverage": 80.27703465960563,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0053",
+              "loss_usd": 5476.608004043241,
+              "fry_minted": 63930.48110120545,
+              "collateral_absorbed": 938.3078216623948,
+              "leverage": 98.36623685837614,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0062",
+              "loss_usd": 1160.41783288044,
+              "fry_minted": 1827.1418608165866,
+              "collateral_absorbed": 340.23063371018765,
+              "leverage": 33.922159183456166,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0064",
+              "loss_usd": 8864.98917392755,
+              "fry_minted": 99547.15628070135,
+              "collateral_absorbed": 1578.910658828897,
+              "leverage": 61.19944645688819,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0073",
+              "loss_usd": 221.0791442081546,
+              "fry_minted": 221.0791442081546,
+              "collateral_absorbed": 24.176363107118732,
+              "leverage": 87.39901563190902,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0077",
+              "loss_usd": 31.351365289575178,
+              "fry_minted": 31.351365289575178,
+              "collateral_absorbed": 23.573893877052317,
+              "leverage": 55.88526800975774,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0091",
+              "loss_usd": 1466.765813485111,
+              "fry_minted": 1541.6776003314344,
+              "collateral_absorbed": 1124.166380984462,
+              "leverage": 17.914802010599367,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0099",
+              "loss_usd": 867.666375166351,
+              "fry_minted": 2436.1737367393625,
+              "collateral_absorbed": 355.2194759822442,
+              "leverage": 80.89892127348622,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0101",
+              "loss_usd": 1512.772187057693,
+              "fry_minted": 3425.241344004995,
+              "collateral_absorbed": 1336.244346075474,
+              "leverage": 57.7999117308301,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0109",
+              "loss_usd": 1196.1096211360987,
+              "fry_minted": 5025.325992404109,
+              "collateral_absorbed": 203.58290881627042,
+              "leverage": 87.81370090546035,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0115",
+              "loss_usd": 971.4575803619801,
+              "fry_minted": 2761.353179108715,
+              "collateral_absorbed": 324.24909488323556,
+              "leverage": 73.14999192653525,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0134",
+              "loss_usd": 1016.8148717322252,
+              "fry_minted": 4134.095384727529,
+              "collateral_absorbed": 128.02620439228716,
+              "leverage": 99.96241101638792,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0138",
+              "loss_usd": 5552.2365166555655,
+              "fry_minted": 12760.252559766166,
+              "collateral_absorbed": 4831.774323038703,
+              "leverage": 19.445027867362803,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0139",
+              "loss_usd": 6652.950086649749,
+              "fry_minted": 49905.32155919197,
+              "collateral_absorbed": 1773.828660855524,
+              "leverage": 39.65293419478601,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0143",
+              "loss_usd": 509.953813851406,
+              "fry_minted": 852.2022955049022,
+              "collateral_absorbed": 76.11258255795042,
+              "leverage": 81.92586209035969,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0145",
+              "loss_usd": 794.4408079356601,
+              "fry_minted": 794.4408079356601,
+              "collateral_absorbed": 722.5525713315508,
+              "leverage": 17.107867360152493,
+              "price_at_liquidation": 47250.0
+            },
+            {
+              "trader_id": "trader_0181",
+              "loss_usd": 6689.909822419099,
+              "fry_minted": 14100.741635716015,
+              "collateral_absorbed": 6347.877946893104,
+              "leverage": 9.37803516694703,
+              "price_at_liquidation": 51750.0
+            },
+            {
+              "trader_id": "trader_0021",
+              "loss_usd": 12663.17446718213,
+              "fry_minted": 20481.95423158365,
+              "collateral_absorbed": 15658.270277649655,
+              "leverage": 4.260760094230992,
+              "price_at_liquidation": 51750.0
+            },
+            {
+              "trader_id": "trader_0031",
+              "loss_usd": 5177.071845844407,
+              "fry_minted": 6494.640091697808,
+              "collateral_absorbed": 5352.899603631204,
+              "leverage": 6.0579643565706505,
+              "price_at_liquidation": 51750.0
+            },
+            {
+              "trader_id": "trader_0110",
+              "loss_usd": 20748.315093902485,
+              "fry_minted": 35359.531007099715,
+              "collateral_absorbed": 24349.45074070268,
+              "leverage": 3.798788616003819,
+              "price_at_liquidation": 56250.0
+            }
+          ],
+          "fry_minted": 441507.61498633056,
+          "collateral_absorbed": 69361.99896173677,
+          "manipulation_cost": 132570605.65799119,
+          "final_price": 56250.0,
+          "price_impact": 0.25
+        },
+        {
+          "strategy": "directional_squeeze",
+          "initial_price": 56250.0,
+          "target_price": 63281.25,
+          "liquidations": [
+            {
+              "trader_id": "trader_0124",
+              "loss_usd": 27604.47422109226,
+              "fry_minted": 52126.23524620789,
+              "collateral_absorbed": 29236.985691514412,
+              "leverage": 3.3909746624015487,
+              "price_at_liquidation": 58593.75
+            },
+            {
+              "trader_id": "trader_0078",
+              "loss_usd": 31769.11607907719,
+              "fry_minted": 54957.09322944945,
+              "collateral_absorbed": 36729.62586402031,
+              "leverage": 2.002219394284215,
+              "price_at_liquidation": 63281.25
+            }
+          ],
+          "fry_minted": 107083.32847565734,
+          "collateral_absorbed": 65966.61155553472,
+          "manipulation_cost": 79292883.31582922,
+          "final_price": 63281.25,
+          "price_impact": 0.125
+        }
+      ],
+      "total_liquidations": 25,
+      "fry_minted": 548590.9434619879,
+      "collateral_absorbed": 135328.6105172715,
+      "manipulation_cost": 211863488.9738204,
+      "final_price": 63281.25,
+      "total_waves": 2,
+      "strategy_name": "Liquidation Cascade"
+    },
+    {
+      "strategy": "collateral_drain",
+      "target_drain_percentage": 0.75,
+      "phases": [
+        {
+          "phase": 1,
+          "target_price": 30570.383576445394,
+          "liquidations": 34,
+          "collateral_drained": 104218.62925928697,
+          "fry_minted": 676699.1743315213
+        },
+        {
+          "phase": 2,
+          "target_price": 52352.202236188336,
+          "liquidations": 22,
+          "collateral_drained": 50838.21037074791,
+          "fry_minted": 704416.3201188572
+        }
+      ],
+      "total_drained": 155056.83963003487,
+      "fry_minted": 1381115.4944503785,
+      "manipulation_cost": 218955349.04213643,
+      "drain_efficiency": 1.1986504544752372,
+      "final_price": 52352.20223618833,
+      "strategy_name": "Collateral Drain"
+    }
+  ],
+  "cdo_final_state": {
+    "total_fry_minted": 3119746.163346552,
+    "total_collateral_swept_usd": 676783.7500823595,
+    "active_tranches": 0,
+    "losses_in_pool": 193
+  }
+}

@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# OS
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+
+# CSV data files
+*.csv

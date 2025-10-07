@@ -1,0 +1,248 @@
+{
+  "duration_minutes": 30, 
+  "session_results": [
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.2904352400474117
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": true, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.080779, 
+      "price": 44660.21983086418, 
+      "fry_opportunity": {
+        "recycled_value": 0.0013330466803318823, 
+        "confidence": 0.3808704800948235, 
+        "estimated_profit": 0.0010664373442655058, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.0038087048009482352, 
+      "market_confidence": 0.9658930462989344
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.19991511460358577
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.092427, 
+      "price": 45676.8518513346, 
+      "fry_opportunity": {
+        "recycled_value": 0.0013994058022251002, 
+        "confidence": 0.39983022920717154, 
+        "estimated_profit": 0.0011195246417800802, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.003998302292071715, 
+      "market_confidence": 0.9779548097718014
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.16801854549957007
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": true, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.105098, 
+      "price": 43966.50567146615, 
+      "fry_opportunity": {
+        "recycled_value": 0.00047612981849699045, 
+        "confidence": 0.13603709099914013, 
+        "estimated_profit": 0.0003809038547975924, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.0013603709099914013, 
+      "market_confidence": 0.8213156163700224
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.2205063009444316
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.116642, 
+      "price": 44227.548352916325, 
+      "fry_opportunity": {
+        "recycled_value": 0.0015435441066110212, 
+        "confidence": 0.4410126018888632, 
+        "estimated_profit": 0.001234835285288817, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.004410126018888632, 
+      "market_confidence": 0.9461951849271566
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.17991507432768755
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.129608, 
+      "price": 44702.47312321806, 
+      "fry_opportunity": {
+        "recycled_value": 0.001259405520293813, 
+        "confidence": 0.3598301486553751, 
+        "estimated_profit": 0.0010075244162350504, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.003598301486553751, 
+      "market_confidence": 0.937548928360679
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.06442047885191492
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.142353, 
+      "price": 42704.06995933583, 
+      "fry_opportunity": {
+        "recycled_value": 0.00045094335196340437, 
+        "confidence": 0.12884095770382983, 
+        "estimated_profit": 0.0003607546815707235, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.0012884095770382983, 
+      "market_confidence": 0.8208859472840018
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.1765585570722273
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.155008, 
+      "price": 42426.91650758586, 
+      "fry_opportunity": {
+        "recycled_value": 0.0012359098995055912, 
+        "confidence": 0.3531171141444546, 
+        "estimated_profit": 0.000988727919604473, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.0035311711414445462, 
+      "market_confidence": 0.9552432481204038
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.1417226283830863
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.16519, 
+      "price": 42860.58045819603, 
+      "fry_opportunity": {
+        "recycled_value": 0.000992058398681604, 
+        "confidence": 0.2834452567661726, 
+        "estimated_profit": 0.0007936467189452834, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.002834452567661726, 
+      "market_confidence": 0.958064578874757
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.24868078460472925
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": true, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.175866, 
+      "price": 43238.43705153556, 
+      "fry_opportunity": {
+        "recycled_value": 0.0010407654922331047, 
+        "confidence": 0.2973615692094585, 
+        "estimated_profit": 0.0008326123937864838, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.002973615692094585, 
+      "market_confidence": 0.9797876019351655
+    }, 
+    {
+      "entry_signal": {
+        "action": "HOLD", 
+        "confidence": 0.1484236298678052
+      }, 
+      "player_a_activity": {
+        "late_entry_pattern": false, 
+        "high_slippage_tolerance": false, 
+        "momentum_chasing": false, 
+        "social_media_correlation": false, 
+        "large_market_orders": false
+      }, 
+      "timestamp": 1758305378.188811, 
+      "price": 43795.41762311408, 
+      "fry_opportunity": {
+        "recycled_value": 0.0010389654090746361, 
+        "confidence": 0.2968472597356104, 
+        "estimated_profit": 0.000831172327259709, 
+        "viable": true
+      }, 
+      "slippage_detected": 0.0029684725973561036, 
+      "market_confidence": 0.965621006119616
+    }
+  ], 
+  "final_metrics": {
+    "max_drawdown": 0.0, 
+    "win_rate": 0.0, 
+    "agent_id": "fry_agent_1758305377", 
+    "sharpe_ratio": 0.0, 
+    "fry_balance": 0.032605862611922345, 
+    "total_return": 0, 
+    "total_capital": 100000, 
+    "total_profits": 0.0, 
+    "recycled_value": 0.032605862611922345, 
+    "trades_executed": 0, 
+    "active_positions": 0
+  }
+}

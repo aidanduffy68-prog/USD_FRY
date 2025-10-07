@@ -1,0 +1,4015 @@
+{
+  "comparison_data": [
+    {
+      "annualized_advantage": 1.9714706778801252, 
+      "fry_funding": 0.002914362660855279, 
+      "asset": "BTC", 
+      "hour": 20, 
+      "fry_pool_size": 9.993881574178312, 
+      "interval": 62, 
+      "market_data": {
+        "premium": 0.0013751757054575112, 
+        "timestamp": 1758483033.877663, 
+        "volume": 4480887.141829532, 
+        "small_orders_ratio": 0.45380098960389725, 
+        "open_interest": 73361110.22768764, 
+        "volatility": 0.035, 
+        "spot_price": 27735.12170753214, 
+        "social_sentiment": 0.5875462894747583, 
+        "large_orders_ratio": 0.04498089006231866, 
+        "spread": 0.0007588567869439814, 
+        "asset": "BTC", 
+        "perp_price": 27773.262373092242, 
+        "long_short_ratio": 0.5855163737036719
+      }, 
+      "traditional_funding": 0.0011139328180423793, 
+      "spread_advantage": 0.0018004298428128999
+    }, 
+    {
+      "annualized_advantage": 1.3566301981728157, 
+      "fry_funding": 0.0015446075436484923, 
+      "asset": "ETH", 
+      "hour": 20, 
+      "fry_pool_size": 12.527225461075377, 
+      "interval": 62, 
+      "market_data": {
+        "premium": 0.00020558968549553235, 
+        "timestamp": 1758483033.87767, 
+        "volume": 2984041.312243027, 
+        "small_orders_ratio": 0.5342260151022586, 
+        "open_interest": 37463687.67548043, 
+        "volatility": 0.042, 
+        "spot_price": 1712.9900332581287, 
+        "social_sentiment": 0.4418572616895946, 
+        "large_orders_ratio": 0.11854729549964439, 
+        "spread": 0.0010235048685834688, 
+        "asset": "ETH", 
+        "perp_price": 1713.3422063403234, 
+        "long_short_ratio": 0.6029384599541734
+      }, 
+      "traditional_funding": 0.00030567585581943685, 
+      "spread_advantage": 0.0012389316878290554
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00192942935222381, 
+      "asset": "SOL", 
+      "hour": 20, 
+      "fry_pool_size": 13.567772835516687, 
+      "interval": 62, 
+      "market_data": {
+        "premium": -0.00030249026866602767, 
+        "timestamp": 1758483033.877676, 
+        "volume": 1232806.5573097859, 
+        "small_orders_ratio": 0.3765389961269021, 
+        "open_interest": 25758191.756403983, 
+        "volatility": 0.065, 
+        "spot_price": 139.98870986606173, 
+        "social_sentiment": 0.5594909818706897, 
+        "large_orders_ratio": 0.028677990522268996, 
+        "spread": 0.0021558138375638264, 
+        "asset": "SOL", 
+        "perp_price": 139.94636464360414, 
+        "long_short_ratio": 0.5686209004832853
+      }, 
+      "traditional_funding": -7.057064777619004e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0017816356947491809, 
+      "asset": "AVAX", 
+      "hour": 20, 
+      "fry_pool_size": 9.236563596936627, 
+      "interval": 62, 
+      "market_data": {
+        "premium": -0.00032716870973735257, 
+        "timestamp": 1758483033.877683, 
+        "volume": 974848.4020195929, 
+        "small_orders_ratio": 0.5824983140336961, 
+        "open_interest": 11895961.202812904, 
+        "volatility": 0.058, 
+        "spot_price": 18.7603493428722, 
+        "social_sentiment": 0.6512658635629757, 
+        "large_orders_ratio": 0.023903125993767607, 
+        "spread": 0.001124302288312806, 
+        "asset": "AVAX", 
+        "perp_price": 18.75421154358347, 
+        "long_short_ratio": 0.3510896526089206
+      }, 
+      "traditional_funding": -0.0002183643052508191, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.1900000000000004, 
+      "fry_funding": 0.00491527282918933, 
+      "asset": "MATIC", 
+      "hour": 20, 
+      "fry_pool_size": 9.64189920829416, 
+      "interval": 62, 
+      "market_data": {
+        "premium": 0.0040543194882176154, 
+        "timestamp": 1758483033.877689, 
+        "volume": 225907.7504093643, 
+        "small_orders_ratio": 0.5770494415369846, 
+        "open_interest": 4024832.4103104784, 
+        "volatility": 0.072, 
+        "spot_price": 0.8191432748910462, 
+        "social_sentiment": 0.7734779421969764, 
+        "large_orders_ratio": 0.05944956248458717, 
+        "spread": 0.002052118171444482, 
+        "asset": "MATIC", 
+        "perp_price": 0.8224643434340794, 
+        "long_short_ratio": 0.4620819790616813
+      }, 
+      "traditional_funding": 0.0029152728291893296, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "annualized_advantage": 1.1152429683583915, 
+      "fry_funding": 0.0015504528025110883, 
+      "asset": "BTC", 
+      "hour": 21, 
+      "fry_pool_size": 9.983696706887368, 
+      "interval": 63, 
+      "market_data": {
+        "premium": 0.0005585518868836654, 
+        "timestamp": 1758483033.877698, 
+        "volume": 4115180.201677803, 
+        "small_orders_ratio": 0.6018959756666844, 
+        "open_interest": 71061577.22068518, 
+        "volatility": 0.035, 
+        "spot_price": 27206.691398634313, 
+        "social_sentiment": 0.45799377901772886, 
+        "large_orders_ratio": 0.041928527237785146, 
+        "spread": 0.001089401604065951, 
+        "asset": "BTC", 
+        "perp_price": 27221.88774745088, 
+        "long_short_ratio": 0.5682995876635578
+      }, 
+      "traditional_funding": 0.0005319660734166668, 
+      "spread_advantage": 0.0010184867290944214
+    }, 
+    {
+      "annualized_advantage": 1.8955612998695868, 
+      "fry_funding": 0.002431188147820723, 
+      "asset": "ETH", 
+      "hour": 21, 
+      "fry_pool_size": 12.509914398976111, 
+      "interval": 63, 
+      "market_data": {
+        "premium": 0.0007095133581013356, 
+        "timestamp": 1758483033.877705, 
+        "volume": 3305179.794788426, 
+        "small_orders_ratio": 0.5329641879098385, 
+        "open_interest": 55123267.0176598, 
+        "volatility": 0.042, 
+        "spot_price": 1651.7333178845909, 
+        "social_sentiment": 0.5795249713928254, 
+        "large_orders_ratio": 0.0700503109595711, 
+        "spread": 0.0007165868999827998, 
+        "asset": "ETH", 
+        "perp_price": 1652.9052447376512, 
+        "long_short_ratio": 0.6723709787052646
+      }, 
+      "traditional_funding": 0.00070008193789416, 
+      "spread_advantage": 0.0017311062099265632
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0017495837639440208, 
+      "asset": "SOL", 
+      "hour": 21, 
+      "fry_pool_size": 13.547772835516687, 
+      "interval": 63, 
+      "market_data": {
+        "premium": -0.0004988187660492563, 
+        "timestamp": 1758483033.877712, 
+        "volume": 645081.5816321882, 
+        "small_orders_ratio": 0.52005775358378, 
+        "open_interest": 9283593.867389187, 
+        "volatility": 0.065, 
+        "spot_price": 150.92041356444534, 
+        "social_sentiment": 0.8241646019370548, 
+        "large_orders_ratio": 0.09585694191066858, 
+        "spread": 0.002193201552129775, 
+        "asset": "SOL", 
+        "perp_price": 150.84513162997948, 
+        "long_short_ratio": 0.49792816696419173
+      }, 
+      "traditional_funding": -0.0002504162360559793, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0011579807537814898, 
+      "asset": "AVAX", 
+      "hour": 21, 
+      "fry_pool_size": 9.216563596936627, 
+      "interval": 63, 
+      "market_data": {
+        "premium": -0.0015529182837906725, 
+        "timestamp": 1758483033.877718, 
+        "volume": 720037.829090721, 
+        "small_orders_ratio": 0.5763314569225171, 
+        "open_interest": 11413206.794323025, 
+        "volatility": 0.058, 
+        "spot_price": 17.93814903102171, 
+        "social_sentiment": 0.528412528521716, 
+        "large_orders_ratio": 0.054940117551471615, 
+        "spread": 0.00200579949926578, 
+        "asset": "AVAX", 
+        "perp_price": 17.910292551414074, 
+        "long_short_ratio": 0.7417059207249154
+      }, 
+      "traditional_funding": -0.0008420192462185104, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0016545811345525956, 
+      "asset": "MATIC", 
+      "hour": 21, 
+      "fry_pool_size": 9.62189920829416, 
+      "interval": 63, 
+      "market_data": {
+        "premium": -0.0005329528563840157, 
+        "timestamp": 1758483033.877725, 
+        "volume": 666626.9237141416, 
+        "small_orders_ratio": 0.3699885340583794, 
+        "open_interest": 13113767.488380179, 
+        "volatility": 0.072, 
+        "spot_price": 0.6690772336057553, 
+        "social_sentiment": 0.7060449612521779, 
+        "large_orders_ratio": 0.09592957483850352, 
+        "spread": 0.002547737518724871, 
+        "asset": "MATIC", 
+        "perp_price": 0.6687206469829636, 
+        "long_short_ratio": 0.3794135567023382
+      }, 
+      "traditional_funding": -0.00034541886544740445, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00357230850661669, 
+      "asset": "BTC", 
+      "hour": 21, 
+      "fry_pool_size": 9.963696706887369, 
+      "interval": 64, 
+      "market_data": {
+        "premium": 0.0022202215171179445, 
+        "timestamp": 1758483033.877731, 
+        "volume": 3961172.078808749, 
+        "small_orders_ratio": 0.3890290364287904, 
+        "open_interest": 85042623.45293365, 
+        "volatility": 0.035, 
+        "spot_price": 27057.245226390583, 
+        "social_sentiment": 0.4326370229525551, 
+        "large_orders_ratio": 0.0807549462565097, 
+        "spread": 0.0014291925736751305, 
+        "asset": "BTC", 
+        "perp_price": 27117.31830443615, 
+        "long_short_ratio": 0.3635890743903109
+      }, 
+      "traditional_funding": 0.0015723085066166903, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 1.3368079876282961, 
+      "fry_funding": 0.001588310766038747, 
+      "asset": "ETH", 
+      "hour": 21, 
+      "fry_pool_size": 12.497706106851652, 
+      "interval": 64, 
+      "market_data": {
+        "premium": 0.0003898411945514654, 
+        "timestamp": 1758483033.877739, 
+        "volume": 3163859.4479412967, 
+        "small_orders_ratio": 0.31427253565410784, 
+        "open_interest": 68023057.63157582, 
+        "volatility": 0.042, 
+        "spot_price": 1645.5057079324088, 
+        "social_sentiment": 0.3484486116824693, 
+        "large_orders_ratio": 0.11259125324549757, 
+        "spread": 0.000562982700681724, 
+        "asset": "ETH", 
+        "perp_price": 1646.1471938432305, 
+        "long_short_ratio": 0.49098786234455427
+      }, 
+      "traditional_funding": 0.0003674815535928145, 
+      "spread_advantage": 0.0012208292124459325
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": -0.0002598868267801361, 
+      "asset": "SOL", 
+      "hour": 21, 
+      "fry_pool_size": 13.527772835516688, 
+      "interval": 64, 
+      "market_data": {
+        "premium": -0.0035663443617815, 
+        "timestamp": 1758483033.877745, 
+        "volume": 868841.6699414791, 
+        "small_orders_ratio": 0.4435909455153253, 
+        "open_interest": 9709949.57140572, 
+        "volatility": 0.065, 
+        "spot_price": 149.04908807241057, 
+        "social_sentiment": 0.9186707263290734, 
+        "large_orders_ratio": 0.08982060433194354, 
+        "spread": 0.00202056557112553, 
+        "asset": "SOL", 
+        "perp_price": 148.51752769753486, 
+        "long_short_ratio": 0.727590377444811
+      }, 
+      "traditional_funding": -0.002259886826780136, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0019319760561431253, 
+      "asset": "AVAX", 
+      "hour": 21, 
+      "fry_pool_size": 9.196563596936628, 
+      "interval": 64, 
+      "market_data": {
+        "premium": -0.0004453632024809794, 
+        "timestamp": 1758483033.877767, 
+        "volume": 941177.7975471225, 
+        "small_orders_ratio": 0.45733235143117257, 
+        "open_interest": 18107012.508268017, 
+        "volatility": 0.058, 
+        "spot_price": 19.243505539752647, 
+        "social_sentiment": 0.6782314853310734, 
+        "large_orders_ratio": 0.11967467471970662, 
+        "spread": 0.0012948877646956495, 
+        "asset": "AVAX", 
+        "perp_price": 19.2349351904985, 
+        "long_short_ratio": 0.7395504964664441
+      }, 
+      "traditional_funding": -6.802394385687475e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.003484545771685867, 
+      "asset": "MATIC", 
+      "hour": 21, 
+      "fry_pool_size": 9.60189920829416, 
+      "interval": 64, 
+      "market_data": {
+        "premium": 0.001879025231049152, 
+        "timestamp": 1758483033.877773, 
+        "volume": 389291.56672427, 
+        "small_orders_ratio": 0.5284389308003428, 
+        "open_interest": 4047992.0535580576, 
+        "volatility": 0.072, 
+        "spot_price": 0.673882884480995, 
+        "social_sentiment": 0.3726704847217589, 
+        "large_orders_ratio": 0.07668402761609423, 
+        "spread": 0.001836987511844248, 
+        "asset": "MATIC", 
+        "perp_price": 0.675149127423707, 
+        "long_short_ratio": 0.6153801832522998
+      }, 
+      "traditional_funding": 0.001484545771685867, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.1900000000000004, 
+      "fry_funding": 0.004624800029969036, 
+      "asset": "BTC", 
+      "hour": 21, 
+      "fry_pool_size": 9.94369670688737, 
+      "interval": 65, 
+      "market_data": {
+        "premium": 0.0037210263973770437, 
+        "timestamp": 1758483033.877786, 
+        "volume": 1267499.4960501953, 
+        "small_orders_ratio": 0.5565976768657055, 
+        "open_interest": 27934032.920485877, 
+        "volatility": 0.035, 
+        "spot_price": 26639.831479276098, 
+        "social_sentiment": 0.522912078813018, 
+        "large_orders_ratio": 0.09265515302668226, 
+        "spread": 0.0008650540801960482, 
+        "asset": "BTC", 
+        "perp_price": 26738.95899543216, 
+        "long_short_ratio": 0.3668025863418343
+      }, 
+      "traditional_funding": 0.0026248000299690355, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.005041384265528338, 
+      "asset": "ETH", 
+      "hour": 21, 
+      "fry_pool_size": 12.477706106851652, 
+      "interval": 65, 
+      "market_data": {
+        "premium": 0.004067321304718729, 
+        "timestamp": 1758483033.877794, 
+        "volume": 2208173.3775042593, 
+        "small_orders_ratio": 0.3545769740901523, 
+        "open_interest": 36934156.1157541, 
+        "volatility": 0.042, 
+        "spot_price": 1595.577242915682, 
+        "social_sentiment": 0.5326189016378378, 
+        "large_orders_ratio": 0.05619536394255606, 
+        "spread": 0.0008362084230374389, 
+        "asset": "ETH", 
+        "perp_price": 1602.0669682291173, 
+        "long_short_ratio": 0.6570989203754711
+      }, 
+      "traditional_funding": 0.0030413842655283383, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0035655739372095797, 
+      "asset": "SOL", 
+      "hour": 21, 
+      "fry_pool_size": 13.507772835516688, 
+      "interval": 65, 
+      "market_data": {
+        "premium": 0.0022132407191486755, 
+        "timestamp": 1758483033.877802, 
+        "volume": 1908024.988919857, 
+        "small_orders_ratio": 0.4231198119339653, 
+        "open_interest": 46938582.218869686, 
+        "volatility": 0.065, 
+        "spot_price": 155.27261166065227, 
+        "social_sentiment": 0.934021599772731, 
+        "large_orders_ratio": 0.09541563195621715, 
+        "spread": 0.002351065363214531, 
+        "asset": "SOL", 
+        "perp_price": 155.61626732734817, 
+        "long_short_ratio": 0.3605090563426623
+      }, 
+      "traditional_funding": 0.0015655739372095797, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0015328593407020414, 
+      "asset": "AVAX", 
+      "hour": 21, 
+      "fry_pool_size": 9.176563596936628, 
+      "interval": 65, 
+      "market_data": {
+        "premium": -0.0008921144644815509, 
+        "timestamp": 1758483033.877809, 
+        "volume": 875130.935402946, 
+        "small_orders_ratio": 0.4357159414145686, 
+        "open_interest": 12906612.506536273, 
+        "volatility": 0.058, 
+        "spot_price": 20.2622050988653, 
+        "social_sentiment": 0.45652688402400105, 
+        "large_orders_ratio": 0.08135614628090979, 
+        "spread": 0.002095853634077224, 
+        "asset": "AVAX", 
+        "perp_price": 20.244128892614313, 
+        "long_short_ratio": 0.5955657763984827
+      }, 
+      "traditional_funding": -0.0004671406592979587, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00014476880069507056, 
+      "asset": "MATIC", 
+      "hour": 21, 
+      "fry_pool_size": 9.58189920829416, 
+      "interval": 65, 
+      "market_data": {
+        "premium": -0.0029678373613755194, 
+        "timestamp": 1758483033.877815, 
+        "volume": 190468.74158750084, 
+        "small_orders_ratio": 0.5684713888434153, 
+        "open_interest": 4300649.323305598, 
+        "volatility": 0.072, 
+        "spot_price": 0.7618716874834047, 
+        "social_sentiment": 0.833538989670012, 
+        "large_orders_ratio": 0.10073637952907098, 
+        "spread": 0.001648722447026639, 
+        "asset": "MATIC", 
+        "perp_price": 0.7596105762247173, 
+        "long_short_ratio": 0.7037582560965268
+      }, 
+      "traditional_funding": -0.0018552311993049295, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0063156551987665595, 
+      "asset": "BTC", 
+      "hour": 22, 
+      "fry_pool_size": 9.92369670688737, 
+      "interval": 66, 
+      "market_data": {
+        "premium": 0.005832187104634046, 
+        "timestamp": 1758483033.877822, 
+        "volume": 1726007.9167370389, 
+        "small_orders_ratio": 0.4948013571889562, 
+        "open_interest": 41144678.24508045, 
+        "volatility": 0.035, 
+        "spot_price": 28709.294973916563, 
+        "social_sentiment": 0.7557909517761425, 
+        "large_orders_ratio": 0.05490316326393589, 
+        "spread": 0.0006725295757385085, 
+        "asset": "BTC", 
+        "perp_price": 28876.732953846575, 
+        "long_short_ratio": 0.72187370920454
+      }, 
+      "traditional_funding": 0.0043156551987665595, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 0.44663799764738243, 
+      "fry_funding": 0.00020301468817206114, 
+      "asset": "ETH", 
+      "hour": 22, 
+      "fry_pool_size": 12.473627221028389, 
+      "interval": 66, 
+      "market_data": {
+        "premium": -0.0005098809978615471, 
+        "timestamp": 1758483033.877828, 
+        "volume": 1490236.3199653027, 
+        "small_orders_ratio": 0.3572240624669648, 
+        "open_interest": 25381195.063969478, 
+        "volatility": 0.042, 
+        "spot_price": 1646.550136339527, 
+        "social_sentiment": 0.5913582139235798, 
+        "large_orders_ratio": 0.06933298165922006, 
+        "spread": 0.001033834667339306, 
+        "asset": "ETH", 
+        "perp_price": 1645.710591712981, 
+        "long_short_ratio": 0.5867380072479218
+      }, 
+      "traditional_funding": -0.00020487389415431545, 
+      "spread_advantage": 0.0004078885823263766
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0013303491433097059, 
+      "asset": "SOL", 
+      "hour": 22, 
+      "fry_pool_size": 13.487772835516688, 
+      "interval": 66, 
+      "market_data": {
+        "premium": -0.00097768555066978, 
+        "timestamp": 1758483033.877834, 
+        "volume": 1049078.8581191662, 
+        "small_orders_ratio": 0.4089685651323809, 
+        "open_interest": 25144755.935029685, 
+        "volatility": 0.065, 
+        "spot_price": 153.33351200450846, 
+        "social_sentiment": 0.637513801736207, 
+        "large_orders_ratio": 0.11821160851615246, 
+        "spread": 0.0011404782659662001, 
+        "asset": "SOL", 
+        "perp_price": 153.1836000453882, 
+        "long_short_ratio": 0.35788171463092583
+      }, 
+      "traditional_funding": -0.0006696508566902943, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0007128376595174901, 
+      "asset": "AVAX", 
+      "hour": 22, 
+      "fry_pool_size": 9.156563596936628, 
+      "interval": 66, 
+      "market_data": {
+        "premium": -0.0021508409185575224, 
+        "timestamp": 1758483033.877842, 
+        "volume": 431990.4681675107, 
+        "small_orders_ratio": 0.4573535611463029, 
+        "open_interest": 8691833.429176807, 
+        "volatility": 0.058, 
+        "spot_price": 19.498741986594208, 
+        "social_sentiment": 0.4371248175336835, 
+        "large_orders_ratio": 0.02989592222608855, 
+        "spread": 0.0016063752740780297, 
+        "asset": "AVAX", 
+        "perp_price": 19.456803294469044, 
+        "long_short_ratio": 0.6973771708463735
+      }, 
+      "traditional_funding": -0.00128716234048251, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00046841849859144, 
+      "asset": "MATIC", 
+      "hour": 22, 
+      "fry_pool_size": 9.561899208294161, 
+      "interval": 66, 
+      "market_data": {
+        "premium": -0.0022520170849062012, 
+        "timestamp": 1758483033.877848, 
+        "volume": 544119.2099053693, 
+        "small_orders_ratio": 0.4086456097015465, 
+        "open_interest": 11824280.838388113, 
+        "volatility": 0.072, 
+        "spot_price": 0.6598396318202296, 
+        "social_sentiment": 0.6295683630387772, 
+        "large_orders_ratio": 0.11670017320547806, 
+        "spread": 0.0012667001875965984, 
+        "asset": "MATIC", 
+        "perp_price": 0.6583536616960722, 
+        "long_short_ratio": 0.40805076337636315
+      }, 
+      "traditional_funding": -0.00153158150140856, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.005293199477694104, 
+      "asset": "BTC", 
+      "hour": 22, 
+      "fry_pool_size": 9.90369670688737, 
+      "interval": 67, 
+      "market_data": {
+        "premium": 0.004577164024078055, 
+        "timestamp": 1758483033.877854, 
+        "volume": 2699719.704783888, 
+        "small_orders_ratio": 0.6037912836754127, 
+        "open_interest": 26268702.178841174, 
+        "volatility": 0.035, 
+        "spot_price": 29426.00520497776, 
+        "social_sentiment": 0.8280270712312627, 
+        "large_orders_ratio": 0.08983542526779369, 
+        "spread": 0.0009270515899493429, 
+        "asset": "BTC", 
+        "perp_price": 29560.69285737432, 
+        "long_short_ratio": 0.4819744347322742
+      }, 
+      "traditional_funding": 0.003293199477694104, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": -2.6417210129491635, 
+      "fry_funding": -0.004637174710517887, 
+      "asset": "ETH", 
+      "hour": 22, 
+      "fry_pool_size": 12.478725778112677, 
+      "interval": 67, 
+      "market_data": {
+        "premium": -0.003429624127895896, 
+        "timestamp": 1758483033.877861, 
+        "volume": 1793852.9254429778, 
+        "small_orders_ratio": 0.41987373627826546, 
+        "open_interest": 38266296.83610763, 
+        "volatility": 0.042, 
+        "spot_price": 1594.68110354248, 
+        "social_sentiment": 0.3688035048856466, 
+        "large_orders_ratio": 0.08722254049615695, 
+        "spread": 0.0008181206998436677, 
+        "asset": "ETH", 
+        "perp_price": 1589.211946753471, 
+        "long_short_ratio": 0.6268213074038544
+      }, 
+      "traditional_funding": -0.0022246441050848605, 
+      "spread_advantage": -0.002412530605433026
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.002875502570676079, 
+      "asset": "SOL", 
+      "hour": 22, 
+      "fry_pool_size": 13.467772835516689, 
+      "interval": 67, 
+      "market_data": {
+        "premium": 0.0012016319637906938, 
+        "timestamp": 1758483033.877867, 
+        "volume": 792925.3755983234, 
+        "small_orders_ratio": 0.3798916273533798, 
+        "open_interest": 10784757.613693392, 
+        "volatility": 0.065, 
+        "spot_price": 153.2517889090573, 
+        "social_sentiment": 0.7083202113773801, 
+        "large_orders_ratio": 0.023575722555128548, 
+        "spread": 0.0014467568094876397, 
+        "asset": "SOL", 
+        "perp_price": 153.43594115711852, 
+        "long_short_ratio": 0.3906003267043474
+      }, 
+      "traditional_funding": 0.0008755025706760791, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0036165123713180793, 
+      "asset": "AVAX", 
+      "hour": 22, 
+      "fry_pool_size": 9.136563596936629, 
+      "interval": 67, 
+      "market_data": {
+        "premium": 0.0022876073386307256, 
+        "timestamp": 1758483033.877881, 
+        "volume": 918664.3489186533, 
+        "small_orders_ratio": 0.4384762368487921, 
+        "open_interest": 19255994.84374435, 
+        "volatility": 0.058, 
+        "spot_price": 20.290115298530043, 
+        "social_sentiment": 0.7127549362689138, 
+        "large_orders_ratio": 0.07843452373723933, 
+        "spread": 0.0014151282359183262, 
+        "asset": "AVAX", 
+        "perp_price": 20.336531115188624, 
+        "long_short_ratio": 0.35864539046098004
+      }, 
+      "traditional_funding": 0.0016165123713180794, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0025408399474860614, 
+      "asset": "MATIC", 
+      "hour": 22, 
+      "fry_pool_size": 9.541899208294161, 
+      "interval": 67, 
+      "market_data": {
+        "premium": 0.0007482488496402636, 
+        "timestamp": 1758483033.877888, 
+        "volume": 354843.5332527697, 
+        "small_orders_ratio": 0.4097976862322604, 
+        "open_interest": 3189134.4186758436, 
+        "volatility": 0.072, 
+        "spot_price": 0.6235309413796521, 
+        "social_sentiment": 0.5740838313533004, 
+        "large_orders_ratio": 0.09257582073099402, 
+        "spread": 0.0014210704061241165, 
+        "asset": "MATIC", 
+        "perp_price": 0.6239974976892545, 
+        "long_short_ratio": 0.36177625456328666
+      }, 
+      "traditional_funding": 0.0005408399474860614, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.1899999999999995, 
+      "fry_funding": 0.0040093293165011056, 
+      "asset": "BTC", 
+      "hour": 22, 
+      "fry_pool_size": 9.88369670688737, 
+      "interval": 68, 
+      "market_data": {
+        "premium": 0.0026397994149124663, 
+        "timestamp": 1758483033.877894, 
+        "volume": 3244358.562648644, 
+        "small_orders_ratio": 0.612277853515692, 
+        "open_interest": 72829549.07005394, 
+        "volatility": 0.035, 
+        "spot_price": 29502.475057496926, 
+        "social_sentiment": 0.5612204753175731, 
+        "large_orders_ratio": 0.06585571143089664, 
+        "spread": 0.0012083588450237227, 
+        "asset": "BTC", 
+        "perp_price": 29580.35567389218, 
+        "long_short_ratio": 0.6024495434371402
+      }, 
+      "traditional_funding": 0.002009329316501106, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.003714701606652407, 
+      "asset": "ETH", 
+      "hour": 22, 
+      "fry_pool_size": 12.458725778112678, 
+      "interval": 68, 
+      "market_data": {
+        "premium": 0.0023892965234422704, 
+        "timestamp": 1758483033.8779, 
+        "volume": 3610556.3705732734, 
+        "small_orders_ratio": 0.5062702692231944, 
+        "open_interest": 35781816.292129785, 
+        "volatility": 0.042, 
+        "spot_price": 1595.3361349730021, 
+        "social_sentiment": 0.3074887416287344, 
+        "large_orders_ratio": 0.0878918719797425, 
+        "spread": 0.000676993028755348, 
+        "asset": "ETH", 
+        "perp_price": 1599.147866054015, 
+        "long_short_ratio": 0.4036567337380498
+      }, 
+      "traditional_funding": 0.0017147016066524068, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0013480364809386014, 
+      "asset": "SOL", 
+      "hour": 22, 
+      "fry_pool_size": 13.44777283551669, 
+      "interval": 68, 
+      "market_data": {
+        "premium": -0.0011959136788200107, 
+        "timestamp": 1758483033.877906, 
+        "volume": 1722446.5769545524, 
+        "small_orders_ratio": 0.5287043572598074, 
+        "open_interest": 37895559.85704074, 
+        "volatility": 0.065, 
+        "spot_price": 153.54500192931323, 
+        "social_sentiment": 0.9238214385990906, 
+        "large_orders_ratio": 0.03618325203511148, 
+        "spread": 0.0025850729337959493, 
+        "asset": "SOL", 
+        "perp_price": 153.36137536119153, 
+        "long_short_ratio": 0.6419600935209016
+      }, 
+      "traditional_funding": -0.0006519635190613987, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0017619632331591355, 
+      "asset": "AVAX", 
+      "hour": 22, 
+      "fry_pool_size": 9.11656359693663, 
+      "interval": 68, 
+      "market_data": {
+        "premium": -0.0005836437274048037, 
+        "timestamp": 1758483033.877913, 
+        "volume": 972344.6849310294, 
+        "small_orders_ratio": 0.5406986562549293, 
+        "open_interest": 15190138.485515421, 
+        "volatility": 0.058, 
+        "spot_price": 20.48354449284536, 
+        "social_sentiment": 0.4733735426500315, 
+        "large_orders_ratio": 0.032922699141544165, 
+        "spread": 0.0017275635719191619, 
+        "asset": "AVAX", 
+        "perp_price": 20.471589400587096, 
+        "long_short_ratio": 0.6175230705707733
+      }, 
+      "traditional_funding": -0.00023803676684086455, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0005679862810955645, 
+      "asset": "MATIC", 
+      "hour": 22, 
+      "fry_pool_size": 9.521899208294162, 
+      "interval": 68, 
+      "market_data": {
+        "premium": -0.002074517262687246, 
+        "timestamp": 1758483033.87792, 
+        "volume": 743588.5862031002, 
+        "small_orders_ratio": 0.6302500441437389, 
+        "open_interest": 9537140.77751692, 
+        "volatility": 0.072, 
+        "spot_price": 0.6174221284854934, 
+        "social_sentiment": 0.7874867821831619, 
+        "large_orders_ratio": 0.055250822651790696, 
+        "spread": 0.0023417956699672443, 
+        "asset": "MATIC", 
+        "perp_price": 0.6161412756215852, 
+        "long_short_ratio": 0.36691394162765734
+      }, 
+      "traditional_funding": -0.0014320137189044355, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": -0.9128306232541823, 
+      "fry_funding": -0.0015392414452456036, 
+      "asset": "BTC", 
+      "hour": 23, 
+      "fry_pool_size": 9.890832925118357, 
+      "interval": 69, 
+      "market_data": {
+        "premium": -0.0013414368323331465, 
+        "timestamp": 1758483033.877927, 
+        "volume": 3114200.3807367594, 
+        "small_orders_ratio": 0.4260730591404347, 
+        "open_interest": 28880611.595507313, 
+        "volatility": 0.035, 
+        "spot_price": 28503.35428470229, 
+        "social_sentiment": 0.3368218355180784, 
+        "large_orders_ratio": 0.041467521622012664, 
+        "spread": 0.0006476782313160419, 
+        "asset": "BTC", 
+        "perp_price": 28465.11883541975, 
+        "long_short_ratio": 0.7223326829430511
+      }, 
+      "traditional_funding": -0.0007056061728673549, 
+      "spread_advantage": -0.0008336352723782488
+    }, 
+    {
+      "annualized_advantage": -2.7971105240760235, 
+      "fry_funding": -0.00495623545026966, 
+      "asset": "ETH", 
+      "hour": 23, 
+      "fry_pool_size": 12.469129599458839, 
+      "interval": 69, 
+      "market_data": {
+        "premium": -0.0036283771883319303, 
+        "timestamp": 1758483033.877933, 
+        "volume": 2454177.482015194, 
+        "small_orders_ratio": 0.3167850856138372, 
+        "open_interest": 49624279.73908612, 
+        "volatility": 0.042, 
+        "spot_price": 1639.7746760552702, 
+        "social_sentiment": 0.7680568857974083, 
+        "large_orders_ratio": 0.10657650791851928, 
+        "spread": 0.0010097856607060578, 
+        "asset": "ETH", 
+        "perp_price": 1633.8249550266669, 
+        "long_short_ratio": 0.5634456938922013
+      }, 
+      "traditional_funding": -0.0024017966154970356, 
+      "spread_advantage": -0.0025544388347726243
+    }, 
+    {
+      "annualized_advantage": 2.1899999999999995, 
+      "fry_funding": 0.004527184290496275, 
+      "asset": "SOL", 
+      "hour": 23, 
+      "fry_pool_size": 13.42777283551669, 
+      "interval": 69, 
+      "market_data": {
+        "premium": 0.003516454929928898, 
+        "timestamp": 1758483033.877939, 
+        "volume": 1781372.5396302817, 
+        "small_orders_ratio": 0.4989841652807714, 
+        "open_interest": 26232554.736032993, 
+        "volatility": 0.065, 
+        "spot_price": 158.12637740081655, 
+        "social_sentiment": 0.9159750840947272, 
+        "large_orders_ratio": 0.08273989122650237, 
+        "spread": 0.0012740387019297228, 
+        "asset": "SOL", 
+        "perp_price": 158.68242168017946, 
+        "long_short_ratio": 0.4427763992433442
+      }, 
+      "traditional_funding": 0.002527184290496275, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00197940212403802, 
+      "asset": "AVAX", 
+      "hour": 23, 
+      "fry_pool_size": 9.09656359693663, 
+      "interval": 69, 
+      "market_data": {
+        "premium": -0.00028697125637886097, 
+        "timestamp": 1758483033.877946, 
+        "volume": 483516.62031879637, 
+        "small_orders_ratio": 0.53352146812156, 
+        "open_interest": 4660625.316721631, 
+        "volatility": 0.058, 
+        "spot_price": 20.76578200869015, 
+        "social_sentiment": 0.33934496802325753, 
+        "large_orders_ratio": 0.11710083662476403, 
+        "spread": 0.0018662121160439762, 
+        "asset": "AVAX", 
+        "perp_price": 20.759822826137423, 
+        "long_short_ratio": 0.6338033391721669
+      }, 
+      "traditional_funding": -2.0597875961979743e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.001368682556057966, 
+      "asset": "MATIC", 
+      "hour": 23, 
+      "fry_pool_size": 9.501899208294162, 
+      "interval": 69, 
+      "market_data": {
+        "premium": -0.0011823375359213252, 
+        "timestamp": 1758483033.877954, 
+        "volume": 739545.8009710581, 
+        "small_orders_ratio": 0.34702638818315645, 
+        "open_interest": 6337645.963009619, 
+        "volatility": 0.072, 
+        "spot_price": 0.6344770095930421, 
+        "social_sentiment": 0.6258281946521657, 
+        "large_orders_ratio": 0.09995899142785183, 
+        "spread": 0.0010936351865806224, 
+        "asset": "MATIC", 
+        "perp_price": 0.6337268436089211, 
+        "long_short_ratio": 0.6605313853382722
+      }, 
+      "traditional_funding": -0.0006313174439420341, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 1.4825230043900306, 
+      "fry_funding": 0.002220317309014304, 
+      "asset": "BTC", 
+      "hour": 23, 
+      "fry_pool_size": 9.877293902247215, 
+      "interval": 70, 
+      "market_data": {
+        "premium": 0.0011657300077494203, 
+        "timestamp": 1758483033.877962, 
+        "volume": 3740601.3585377824, 
+        "small_orders_ratio": 0.53682278971567, 
+        "open_interest": 64303569.61354779, 
+        "volatility": 0.035, 
+        "spot_price": 28216.50841563247, 
+        "social_sentiment": 0.7064623396182081, 
+        "large_orders_ratio": 0.07336769008744651, 
+        "spread": 0.0007094460110125081, 
+        "asset": "BTC", 
+        "perp_price": 28249.40124620649, 
+        "long_short_ratio": 0.41734002745911414
+      }, 
+      "traditional_funding": 0.000866415021900121, 
+      "spread_advantage": 0.001353902287114183
+    }, 
+    {
+      "annualized_advantage": 0.0013328122033145502, 
+      "fry_funding": -0.000492857509321413, 
+      "asset": "ETH", 
+      "hour": 23, 
+      "fry_pool_size": 12.469117427657896, 
+      "interval": 70, 
+      "market_data": {
+        "premium": -0.0007461094268959527, 
+        "timestamp": 1758483033.877968, 
+        "volume": 1420432.2312146458, 
+        "small_orders_ratio": 0.608837043865581, 
+        "open_interest": 32422122.25903545, 
+        "volatility": 0.042, 
+        "spot_price": 1552.5540214367652, 
+        "social_sentiment": 0.5415486048318481, 
+        "large_orders_ratio": 0.05585954829309078, 
+        "spread": 0.0011376146812712709, 
+        "asset": "ETH", 
+        "perp_price": 1551.395646245606, 
+        "long_short_ratio": 0.38033651568565197
+      }, 
+      "traditional_funding": -0.0004940746894157642, 
+      "spread_advantage": 1.2171800943511875e-06
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0020794552277552314, 
+      "asset": "SOL", 
+      "hour": 23, 
+      "fry_pool_size": 13.40777283551669, 
+      "interval": 70, 
+      "market_data": {
+        "premium": -0.0002043410862483005, 
+        "timestamp": 1758483033.877974, 
+        "volume": 1346787.1992204732, 
+        "small_orders_ratio": 0.5251267328394846, 
+        "open_interest": 18785860.088329803, 
+        "volatility": 0.065, 
+        "spot_price": 155.18781159955572, 
+        "social_sentiment": 0.7595156835721231, 
+        "large_orders_ratio": 0.06923908472947532, 
+        "spread": 0.0012427644011424246, 
+        "asset": "SOL", 
+        "perp_price": 155.15610035356096, 
+        "long_short_ratio": 0.7041566468817873
+      }, 
+      "traditional_funding": 7.945522775523139e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0011707388401718654, 
+      "asset": "AVAX", 
+      "hour": 23, 
+      "fry_pool_size": 9.07656359693663, 
+      "interval": 70, 
+      "market_data": {
+        "premium": -0.001509695193008377, 
+        "timestamp": 1758483033.877981, 
+        "volume": 974505.8055149453, 
+        "small_orders_ratio": 0.49242684401993264, 
+        "open_interest": 8190813.646592192, 
+        "volatility": 0.058, 
+        "spot_price": 19.895429708002794, 
+        "social_sentiment": 0.8486956874852407, 
+        "large_orders_ratio": 0.04056655042739045, 
+        "spread": 0.0025784885622674777, 
+        "asset": "AVAX", 
+        "perp_price": 19.865393673409788, 
+        "long_short_ratio": 0.7125424587961423
+      }, 
+      "traditional_funding": -0.0008292611598281346, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0009752835133585572, 
+      "asset": "MATIC", 
+      "hour": 23, 
+      "fry_pool_size": 9.481899208294163, 
+      "interval": 70, 
+      "market_data": {
+        "premium": -0.0017169994644808757, 
+        "timestamp": 1758483033.877987, 
+        "volume": 308483.1273680552, 
+        "small_orders_ratio": 0.43416565400825236, 
+        "open_interest": 6870367.963300804, 
+        "volatility": 0.072, 
+        "spot_price": 0.662120853630579, 
+        "social_sentiment": 0.9303912801827448, 
+        "large_orders_ratio": 0.05381627723930982, 
+        "spread": 0.002050707079083411, 
+        "asset": "MATIC", 
+        "perp_price": 0.6609839924794737, 
+        "long_short_ratio": 0.628638564158643
+      }, 
+      "traditional_funding": -0.0010247164866414428, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": -2.3473468017240884, 
+      "fry_funding": -0.0038366155631445044, 
+      "asset": "BTC", 
+      "hour": 23, 
+      "fry_pool_size": 9.8871593854234, 
+      "interval": 71, 
+      "market_data": {
+        "premium": -0.002458601676391426, 
+        "timestamp": 1758483033.877994, 
+        "volume": 3224271.451868476, 
+        "small_orders_ratio": 0.394056132340069, 
+        "open_interest": 48660797.82155074, 
+        "volatility": 0.035, 
+        "spot_price": 28401.206624967374, 
+        "social_sentiment": 0.3417195424471813, 
+        "large_orders_ratio": 0.04422454165987954, 
+        "spread": 0.0009784080743278167, 
+        "asset": "BTC", 
+        "perp_price": 28331.379370747687, 
+        "long_short_ratio": 0.38016886611103223
+      }, 
+      "traditional_funding": -0.0016929198538074373, 
+      "spread_advantage": -0.002143695709337067
+    }, 
+    {
+      "annualized_advantage": -3.35695397500326, 
+      "fry_funding": -0.005771270665631922, 
+      "asset": "ETH", 
+      "hour": 23, 
+      "fry_pool_size": 12.475221007128486, 
+      "interval": 71, 
+      "market_data": {
+        "premium": -0.004004314217762948, 
+        "timestamp": 1758483033.878001, 
+        "volume": 2934209.5559808174, 
+        "small_orders_ratio": 0.47122865467809494, 
+        "open_interest": 29118630.020525448, 
+        "volatility": 0.042, 
+        "spot_price": 1565.8786869510652, 
+        "social_sentiment": 0.39204940486114576, 
+        "large_orders_ratio": 0.06339592148074652, 
+        "spread": 0.0005728266476909961, 
+        "asset": "ETH", 
+        "perp_price": 1559.6084166616151, 
+        "long_short_ratio": 0.49576779916527014
+      }, 
+      "traditional_funding": -0.002705559272934881, 
+      "spread_advantage": -0.003065711392697041
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.002421350537442162, 
+      "asset": "SOL", 
+      "hour": 23, 
+      "fry_pool_size": 13.38777283551669, 
+      "interval": 71, 
+      "market_data": {
+        "premium": 0.0003944141500681559, 
+        "timestamp": 1758483033.878007, 
+        "volume": 1345521.6179222255, 
+        "small_orders_ratio": 0.36940385719300195, 
+        "open_interest": 12445670.145848412, 
+        "volatility": 0.065, 
+        "spot_price": 146.2938557058113, 
+        "social_sentiment": 0.6476961522577946, 
+        "large_orders_ratio": 0.07576994175843468, 
+        "spread": 0.0025671704746183213, 
+        "asset": "SOL", 
+        "perp_price": 146.3515560725697, 
+        "long_short_ratio": 0.5754343873240096
+      }, 
+      "traditional_funding": 0.000421350537442162, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.00101703524124331, 
+      "asset": "AVAX", 
+      "hour": 23, 
+      "fry_pool_size": 9.05656359693663, 
+      "interval": 71, 
+      "market_data": {
+        "premium": -0.001567338129384331, 
+        "timestamp": 1758483033.878015, 
+        "volume": 505101.65961663064, 
+        "small_orders_ratio": 0.44312581784120275, 
+        "open_interest": 9950690.941086335, 
+        "volatility": 0.058, 
+        "spot_price": 19.049218760238023, 
+        "social_sentiment": 0.6862245506811057, 
+        "large_orders_ratio": 0.03604076008676886, 
+        "spread": 0.0013060165167492655, 
+        "asset": "AVAX", 
+        "perp_price": 19.01936219334012, 
+        "long_short_ratio": 0.5236198863539513
+      }, 
+      "traditional_funding": -0.00098296475875669, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "annualized_advantage": 2.19, 
+      "fry_funding": 0.0021076845434766034, 
+      "asset": "MATIC", 
+      "hour": 23, 
+      "fry_pool_size": 9.461899208294163, 
+      "interval": 71, 
+      "market_data": {
+        "premium": -0.00019325491028008136, 
+        "timestamp": 1758483033.878021, 
+        "volume": 567285.3200369037, 
+        "small_orders_ratio": 0.396796801738602, 
+        "open_interest": 8360715.427323161, 
+        "volatility": 0.072, 
+        "spot_price": 0.6529842329604587, 
+        "social_sentiment": 0.5015500396293149, 
+        "large_orders_ratio": 0.07983537661396553, 
+        "spread": 0.0020968452657639703, 
+        "asset": "MATIC", 
+        "perp_price": 0.6528580405511036, 
+        "long_short_ratio": 0.7382716344544223
+      }, 
+      "traditional_funding": 0.00010768454347660329, 
+      "spread_advantage": 0.002
+    }
+  ], 
+  "overall_metrics": {
+    "annualized_advantage": 1.5027370090211754, 
+    "fry_advantage_opportunities": 300, 
+    "avg_advantage": 0.0013723625653161418, 
+    "total_opportunities": 337
+  }, 
+  "arbitrage_opportunities": [
+    {
+      "timestamp": 1758483033.875442, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.006563057807968493, 
+      "asset": "BTC", 
+      "traditional_rate": -0.002892837508856034, 
+      "spread_advantage": -0.0036702202991124593
+    }, 
+    {
+      "timestamp": 1758483033.875455, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0035307777665147966, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0018226320157545433, 
+      "spread_advantage": -0.0017081457507602533
+    }, 
+    {
+      "timestamp": 1758483033.875463, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0026204930971020016, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0006204930971020015, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875471, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0034739080512748185, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0014739080512748185, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875479, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001327255476149272, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0006727445238507281, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875494, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003361325480185769, 
+      "asset": "BTC", 
+      "traditional_rate": 0.001361325480185769, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875508, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015716377697191173, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00042836223028088264, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875515, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0038897421242679456, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0018897421242679458, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875522, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00376384091334856, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0017638409133485602, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875529, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0019787193276686677, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0007894959264846655, 
+      "spread_advantage": 0.0011892234011840021
+    }, 
+    {
+      "timestamp": 1758483033.875537, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004245934686024478, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0022459346860244788, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.875543, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001616381774962658, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00038361822503734207, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87555, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0033932156922523663, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.001393215692252366, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875557, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002356381320262123, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.00035638132026212315, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875564, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.001283319709852071, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0007406546655798674, 
+      "spread_advantage": -0.0005426650442722036
+    }, 
+    {
+      "timestamp": 1758483033.87557, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002101706159865466, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0005574827492638839, 
+      "spread_advantage": 0.0015442234106015822
+    }, 
+    {
+      "timestamp": 1758483033.875578, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005629421446411904, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0014370578553588097, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875585, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015787419851760068, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00042125801482399325, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875591, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0014285471497893698, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0005714528502106303, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875598, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0018070286677970234, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0008232331239785546, 
+      "spread_advantage": -0.000983795543818469
+    }, 
+    {
+      "timestamp": 1758483033.875605, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002877128974033977, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0008863108353648754, 
+      "spread_advantage": 0.0019908181386691015
+    }, 
+    {
+      "timestamp": 1758483033.875613, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002381482717388499, 
+      "asset": "SOL", 
+      "traditional_rate": 0.00038148271738849934, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87562, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003579278081420526, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.001579278081420526, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875627, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0038229172301624467, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.001822917230162447, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875635, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0028958607181653094, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0012513713316986718, 
+      "spread_advantage": -0.0016444893864666376
+    }, 
+    {
+      "timestamp": 1758483033.875642, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0055851523061960975, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0027621867049172116, 
+      "spread_advantage": -0.002822965601278886
+    }, 
+    {
+      "timestamp": 1758483033.875648, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011036270444469746, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0008963729555530254, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875656, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001074104548709127, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.000925895451290873, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875663, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001422432176129896, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.000577567823870104, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875669, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0035490420407421437, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0015490420407421434, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875676, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003379319601722011, 
+      "asset": "ETH", 
+      "traditional_rate": 0.001379319601722011, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875682, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025654310633974864, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0005654310633974865, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875689, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0023523079555839953, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.00035230795558399534, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875696, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0010453729924396488, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.003045372992439649, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875704, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004375071647149165, 
+      "asset": "BTC", 
+      "traditional_rate": 0.002375071647149165, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.875711, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003882819609549797, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0018828196095497967, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875717, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003281456923463552, 
+      "asset": "SOL", 
+      "traditional_rate": 0.001281456923463552, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875763, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003086137130785492, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0010861371307854919, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875772, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005297753082611676, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0014702246917388325, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875779, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016223443448347323, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0006204684543433671, 
+      "spread_advantage": 0.0010018758904913653
+    }, 
+    {
+      "timestamp": 1758483033.875785, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001050244547512444, 
+      "asset": "ETH", 
+      "traditional_rate": 0.00012514800535277796, 
+      "spread_advantage": 0.0009250965421596659
+    }, 
+    {
+      "timestamp": 1758483033.875792, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001981553850539823, 
+      "asset": "SOL", 
+      "traditional_rate": -1.8446149460176778e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875799, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025753312637885857, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0005753312637885855, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875806, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00016639074782455986, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0018336092521754402, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87583, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0036990531061109316, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0016990531061109317, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875837, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003119796805824149, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0011197968058241489, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875844, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016213363682353707, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00037866363176462944, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875851, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016789553806199815, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00032104461938001867, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875857, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0023138607629276634, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0010475026799377327, 
+      "spread_advantage": -0.0012663580829899307
+    }, 
+    {
+      "timestamp": 1758483033.875865, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004208718793659251, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0022087187936592513, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875871, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0053832789190268095, 
+      "asset": "SOL", 
+      "traditional_rate": 0.003383278919026809, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.875878, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0005503761648849403, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.002497205665177835, 
+      "spread_advantage": 0.0019468295002928945
+    }, 
+    {
+      "timestamp": 1758483033.875884, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0009974280651327795, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0010025719348672206, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875891, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025142244336723686, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0009117705888454531, 
+      "spread_advantage": 0.0016024538448269157
+    }, 
+    {
+      "timestamp": 1758483033.875898, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0030673975089827842, 
+      "asset": "ETH", 
+      "traditional_rate": 0.001067397508982784, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875906, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002302336855823285, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0003023368558232849, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875912, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029426349509323923, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0009426349509323923, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875919, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0030465784023433265, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0010465784023433265, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875926, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0033919520376988546, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0013919520376988548, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875932, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0021661845259169327, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0006187544922227482, 
+      "spread_advantage": 0.0015474300336941844
+    }, 
+    {
+      "timestamp": 1758483033.87594, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025351648984121675, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0005351648984121674, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875946, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001588677047318343, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00041132295268165697, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875952, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0024711017297472677, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0004711017297472676, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875959, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0027554809372661313, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0010756271232826655, 
+      "spread_advantage": 0.0016798538139834657
+    }, 
+    {
+      "timestamp": 1758483033.875966, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004876339093583638, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0028763390935836377, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875974, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002800764463736985, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0008007644637369848, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875981, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003923166273253789, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0019231662732537888, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875987, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004043284351166244, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.002043284351166244, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.875994, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.004802991152883237, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0020904860829935325, 
+      "spread_advantage": -0.0027125050698897043
+    }, 
+    {
+      "timestamp": 1758483033.876, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0007005086256554414, 
+      "asset": "ETH", 
+      "traditional_rate": 1.725508958864325e-05, 
+      "spread_advantage": 0.0006832535360667981
+    }, 
+    {
+      "timestamp": 1758483033.876006, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0028215027117451125, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0008215027117451123, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876014, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004466588794732456, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0024665887947324552, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.87602, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0018835339745101125, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00011646602548988748, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876027, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.004828729699502082, 
+      "asset": "BTC", 
+      "traditional_rate": -0.002073195138350798, 
+      "spread_advantage": -0.0027555345611512834
+    }, 
+    {
+      "timestamp": 1758483033.876033, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0030497287611197447, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0010497287611197447, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87604, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00174633735962718, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00025366264037282013, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876056, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0030093192802042833, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0010093192802042832, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876063, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0042133211514175425, 
+      "asset": "BTC", 
+      "traditional_rate": -0.001795409599568581, 
+      "spread_advantage": -0.0024179115518489615
+    }, 
+    {
+      "timestamp": 1758483033.876069, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0004556808719902366, 
+      "asset": "ETH", 
+      "traditional_rate": -0.00011182190479958844, 
+      "spread_advantage": 0.0005675027767898251
+    }, 
+    {
+      "timestamp": 1758483033.876076, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003380144078299563, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0013801440782995626, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876083, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00046859009822375125, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0015314099017762488, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87609, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 7.131089905989835e-06, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00199286891009401, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876101, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0024642189340082204, 
+      "asset": "BTC", 
+      "traditional_rate": 0.000950647462325566, 
+      "spread_advantage": 0.0015135714716826543
+    }, 
+    {
+      "timestamp": 1758483033.876108, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.002178172964738468, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0012014431072966065, 
+      "spread_advantage": -0.0009767298574418614
+    }, 
+    {
+      "timestamp": 1758483033.876114, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029296164829174004, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0009296164829174005, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876121, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001762258133420022, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00023774186657997797, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876129, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0032824834994996705, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0012824834994996704, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876136, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0006459138476971341, 
+      "asset": "BTC", 
+      "traditional_rate": 0.00013417870160978686, 
+      "spread_advantage": 0.0005117351460873472
+    }, 
+    {
+      "timestamp": 1758483033.876143, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0013158912346957945, 
+      "asset": "ETH", 
+      "traditional_rate": 0.000202480920178892, 
+      "spread_advantage": 0.0011134103145169025
+    }, 
+    {
+      "timestamp": 1758483033.876149, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0014842990027504892, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0005157009972495107, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876155, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001960115263711212, 
+      "asset": "AVAX", 
+      "traditional_rate": -3.988473628878812e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876162, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004932623516548039, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0029326235165480397, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.876169, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0031787425320272417, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0013965169172342842, 
+      "spread_advantage": -0.0017822256147929576
+    }, 
+    {
+      "timestamp": 1758483033.876182, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002876301820301433, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0008763018203014329, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876188, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011910269489021504, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0008089730510978495, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876196, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00403510879860007, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0020351087986000696, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876202, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0014558377908511473, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0006646286031209834, 
+      "spread_advantage": -0.000791209187730164
+    }, 
+    {
+      "timestamp": 1758483033.876208, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0008321785722110031, 
+      "asset": "ETH", 
+      "traditional_rate": 1.1426898637968362e-05, 
+      "spread_advantage": 0.0008207516735730348
+    }, 
+    {
+      "timestamp": 1758483033.876216, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0009806143865280937, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0010193856134719063, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876222, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00022864379728073595, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.001771356202719264, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876229, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0023200672899608686, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.00032006728996086836, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876235, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004354518231212684, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0023545182312126847, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.876241, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004500281096088488, 
+      "asset": "ETH", 
+      "traditional_rate": 0.002500281096088488, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876249, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002612357020609914, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0006123570206099138, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876255, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -2.625134805153825e-05, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0020262513480515383, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876262, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0009293660268385191, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.001070633973161481, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876269, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017569205780666344, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0006582774490462334, 
+      "spread_advantage": 0.001098643129020401
+    }, 
+    {
+      "timestamp": 1758483033.876275, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.002427485057117584, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0014350244719625695, 
+      "spread_advantage": -0.0009924605851550146
+    }, 
+    {
+      "timestamp": 1758483033.876282, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025298857210091013, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0005298857210091014, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876289, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0014045213108962629, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0005954786891037373, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876296, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0043428353729338814, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.002342835372933882, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.876309, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.001638623123848295, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0010947472835184167, 
+      "spread_advantage": -0.0005438758403298783
+    }, 
+    {
+      "timestamp": 1758483033.876315, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003460401140442916, 
+      "asset": "SOL", 
+      "traditional_rate": 0.001460401140442916, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876321, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003380968062697525, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.001380968062697525, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876329, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029217564162752987, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0009217564162752988, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876335, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.006512174270521038, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0027974168944296047, 
+      "spread_advantage": -0.003714757376091433
+    }, 
+    {
+      "timestamp": 1758483033.876349, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016943014879042834, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0003056985120957166, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876355, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002300378607018629, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.00030037860701862885, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876361, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011501262535629137, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0008498737464370864, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876373, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0026228704281270583, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0009786820412443322, 
+      "spread_advantage": 0.0016441883868827261
+    }, 
+    {
+      "timestamp": 1758483033.87638, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00383803667202527, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0018380366720252702, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876386, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002693636264534881, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0006936362645348808, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876393, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004878803971190233, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.002878803971190233, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.876399, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0008463977659385973, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0011536022340614027, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876408, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0026183595544405033, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0011758994308132932, 
+      "spread_advantage": -0.00144246012362721
+    }, 
+    {
+      "timestamp": 1758483033.876414, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0003715119439740754, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0001629489254457027, 
+      "spread_advantage": 0.0005344608694197781
+    }, 
+    {
+      "timestamp": 1758483033.87642, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003281449018883549, 
+      "asset": "SOL", 
+      "traditional_rate": 0.001281449018883549, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876427, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001989257857419115, 
+      "asset": "AVAX", 
+      "traditional_rate": -1.074214258088546e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876433, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00035680060778930196, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.001643199392210698, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87644, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001020174290990304, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0003515982381311812, 
+      "spread_advantage": 0.0006685760528591227
+    }, 
+    {
+      "timestamp": 1758483033.876453, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0005936531017343856, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0025936531017343857, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876459, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004239189481634124, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0022391894816341236, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.876466, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003344768080732827, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0013447680807328268, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876473, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.004947914508683025, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0021584248969506487, 
+      "spread_advantage": -0.002789489611732376
+    }, 
+    {
+      "timestamp": 1758483033.87648, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004438089890111027, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0024380898901110266, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876486, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00352859223300877, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0015285922330087699, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876493, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003135017286499853, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0011350172864998526, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.8765, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002882496515430976, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0008824965154309761, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876506, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0014176418270767884, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0005493742317091207, 
+      "spread_advantage": 0.0008682675953676678
+    }, 
+    {
+      "timestamp": 1758483033.876513, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00042715124432447235, 
+      "asset": "ETH", 
+      "traditional_rate": -0.00014609445245691242, 
+      "spread_advantage": 0.0005732456967813848
+    }, 
+    {
+      "timestamp": 1758483033.876519, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0043648744404917485, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0023648744404917484, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876527, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017371723131223442, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0002628276868776558, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876533, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016510944918097172, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00034890550819028287, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876539, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0016444258228661343, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0007914909708465254, 
+      "spread_advantage": -0.0008529348520196089
+    }, 
+    {
+      "timestamp": 1758483033.876546, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005455953318934593, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0034559533189345926, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876553, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002737291930098937, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0007372919300989368, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876559, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0008197988395390174, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0011802011604609827, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876566, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0002378367754293704, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0022378367754293704, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876573, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002157778221705867, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0008399225795689979, 
+      "spread_advantage": 0.0013178556421368692
+    }, 
+    {
+      "timestamp": 1758483033.876583, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0036345694953738793, 
+      "asset": "ETH", 
+      "traditional_rate": -0.001831862760322494, 
+      "spread_advantage": -0.0018027067350513853
+    }, 
+    {
+      "timestamp": 1758483033.876589, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003707868528034857, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0017078685280348571, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876595, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005937730971007633, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.003937730971007633, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876602, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0041455104123670015, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0021455104123670014, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876609, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.005146835325171094, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0022713355030911657, 
+      "spread_advantage": -0.002875499822079928
+    }, 
+    {
+      "timestamp": 1758483033.876617, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.006213212372609152, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0028782601881582872, 
+      "spread_advantage": -0.0033349521844508647
+    }, 
+    {
+      "timestamp": 1758483033.876623, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0027441995569215233, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0007441995569215233, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87663, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0014898248278480382, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0005101751721519618, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876636, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029334615882775396, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0009334615882775393, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876657, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001694710615998418, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0004198025167008136, 
+      "spread_advantage": 0.0012749080992976044
+    }, 
+    {
+      "timestamp": 1758483033.876664, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003400423186122794, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0014004231861227936, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87667, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0034995416366885627, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0014995416366885626, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876677, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002051009136341741, 
+      "asset": "MATIC", 
+      "traditional_rate": 5.100913634174127e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876689, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004036532094714891, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0020365320947148915, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.876697, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0037649496735778056, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0017649496735778058, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876704, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0022238327671540844, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.00022383276715408457, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87671, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0008919337957722833, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0011080662042277168, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876717, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00336470680384751, 
+      "asset": "BTC", 
+      "traditional_rate": 0.00136470680384751, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876723, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017539542718678469, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0004161826710244673, 
+      "spread_advantage": 0.0013377716008433796
+    }, 
+    {
+      "timestamp": 1758483033.876731, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00013496063695048058, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0018650393630495195, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876739, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002354618161892857, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.00035461816189285677, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876745, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001599937393382067, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.000400062606617933, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876781, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003763954776294854, 
+      "asset": "SOL", 
+      "traditional_rate": 0.001763954776294854, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876788, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004229200675679607, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0022292006756796066, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876795, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029582681676339154, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0009582681676339155, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876802, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0025556692461620734, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0011635833134963328, 
+      "spread_advantage": -0.0013920859326657406
+    }, 
+    {
+      "timestamp": 1758483033.876808, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029141933460125184, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0009141933460125183, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876814, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003472772324134339, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0014727723241343392, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87682, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003316115051535091, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.001316115051535091, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876828, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002337824921747998, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0003378249217479978, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876835, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.004283643578801033, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0018200467341472643, 
+      "spread_advantage": -0.002463596844653769
+    }, 
+    {
+      "timestamp": 1758483033.876841, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0033464647977603764, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0013464647977603761, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876847, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0033711099808329467, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0013711099808329467, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876855, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002492304299914417, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0004923042999144168, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876863, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015829011093693372, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00041709889063066283, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876869, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003583894254865055, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0015838942548650552, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876875, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0032572051146714715, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0012572051146714715, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876881, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001296136429815071, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0007038635701849292, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876888, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002872732218488888, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0008727322184888878, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876894, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011817789824174773, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0008182210175825226, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876915, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003946828988822299, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0019468289888222984, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876922, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0023385704031285595, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0003385704031285595, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876929, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0005993558773401634, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0025993558773401634, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876945, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0028736419888172136, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0008736419888172134, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876952, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005030699425067125, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0014969300574932875, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876958, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025219354865204727, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0005219354865204725, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876964, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004441847675324162, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.002441847675324161, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.876971, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002398488560448333, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0009193282131852765, 
+      "spread_advantage": 0.0014791603472630566
+    }, 
+    {
+      "timestamp": 1758483033.876977, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003089855405830514, 
+      "asset": "ETH", 
+      "traditional_rate": 0.001089855405830514, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876984, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005402346810252491, 
+      "asset": "SOL", 
+      "traditional_rate": -0.001459765318974751, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.876992, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.00038058558696318955, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0023805855869631896, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0003309531960574302, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0016690468039425698, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877006, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.001273322979106682, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0006295914895916622, 
+      "spread_advantage": -0.0006437314895150197
+    }, 
+    {
+      "timestamp": 1758483033.877012, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0028738373278464993, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0008949444505915323, 
+      "spread_advantage": 0.001978892877254967
+    }, 
+    {
+      "timestamp": 1758483033.877019, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0053336087871750405, 
+      "asset": "SOL", 
+      "traditional_rate": 0.003333608787175041, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.877026, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004439450038758488, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.002439450038758488, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877033, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0033474484983262117, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0013474484983262117, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877039, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0021730118853447054, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0007850148043081924, 
+      "spread_advantage": 0.001387997081036513
+    }, 
+    {
+      "timestamp": 1758483033.877045, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0031263794570374997, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0011263794570374997, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877051, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00030932763623248366, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0016906723637675164, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877058, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029012464717826808, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0009012464717826806, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877067, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005268755428796675, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0032687554287966747, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.877074, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.000899355908034689, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0003119830627109352, 
+      "spread_advantage": 0.0005873728453237538
+    }, 
+    {
+      "timestamp": 1758483033.877086, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001713490028783202, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00028650997121679807, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877093, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002095453420419216, 
+      "asset": "AVAX", 
+      "traditional_rate": 9.545342041921596e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877099, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005171321413834197, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0014828678586165803, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877107, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004149450332726897, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0021494503327268975, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.87712, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0012468750993241623, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0007531249006758376, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877127, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0027040428944231096, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0007040428944231095, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877135, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0018181402904586387, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00018185970954136128, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877143, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015005999787910066, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0005125007726699223, 
+      "spread_advantage": 0.0009880992061210843
+    }, 
+    {
+      "timestamp": 1758483033.877151, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0006621708491242698, 
+      "asset": "ETH", 
+      "traditional_rate": -9.619445524891717e-05, 
+      "spread_advantage": 0.000758365304373187
+    }, 
+    {
+      "timestamp": 1758483033.877157, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016406110914159867, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00035938890858401335, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877163, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003140435071153087, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0011404350711530869, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87717, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002084078809334472, 
+      "asset": "MATIC", 
+      "traditional_rate": 8.407880933447198e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877183, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0024128191175925243, 
+      "asset": "ETH", 
+      "traditional_rate": -0.001293364077995882, 
+      "spread_advantage": -0.0011194550395966423
+    }, 
+    {
+      "timestamp": 1758483033.877189, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0019624459415478954, 
+      "asset": "SOL", 
+      "traditional_rate": -3.7554058452104485e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877195, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004244621277471674, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0022446212774716737, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877203, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0007015520761004055, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0012984479238995945, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877213, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0035014897007522834, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0016127142891416712, 
+      "spread_advantage": -0.0018887754116106122
+    }, 
+    {
+      "timestamp": 1758483033.87722, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002572385239094265, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0007650545580547867, 
+      "spread_advantage": 0.0018073306810394785
+    }, 
+    {
+      "timestamp": 1758483033.877227, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001523850865455852, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0004761491345441481, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877234, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003481964706109465, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0014819647061094648, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87724, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0006294645508167673, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0013705354491832327, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877246, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0019279378261539766, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0007226827187404195, 
+      "spread_advantage": 0.0012052551074135571
+    }, 
+    {
+      "timestamp": 1758483033.877253, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0037337604716652017, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0017337604716652017, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87726, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0027364155511301956, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0007364155511301955, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877266, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015104123840070688, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0004895876159929312, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877274, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0012517060895942333, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0007482939104057668, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87728, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003208713037170998, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0012833908938805422, 
+      "spread_advantage": 0.0019253221432904556
+    }, 
+    {
+      "timestamp": 1758483033.877287, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0031099904761302576, 
+      "asset": "ETH", 
+      "traditional_rate": -0.001630387508553381, 
+      "spread_advantage": -0.0014796029675768767
+    }, 
+    {
+      "timestamp": 1758483033.877293, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002662207937651478, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0006622079376514781, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877301, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0034351971688214786, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0014351971688214785, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877307, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00272304552183524, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0007230455218352398, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877321, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0026556749115589405, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0011621856081540272, 
+      "spread_advantage": -0.0014934893034049134
+    }, 
+    {
+      "timestamp": 1758483033.877327, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002574991962666529, 
+      "asset": "ETH", 
+      "traditional_rate": 0.000782207641130493, 
+      "spread_advantage": 0.001792784321536036
+    }, 
+    {
+      "timestamp": 1758483033.877333, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005349977698000026, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0033499776980000263, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877341, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015276854345972989, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00047231456540270116, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877347, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001945221705592332, 
+      "asset": "MATIC", 
+      "traditional_rate": -5.4778294407668054e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877355, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0012482538878305794, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0004659875385605165, 
+      "spread_advantage": 0.000782266349270063
+    }, 
+    {
+      "timestamp": 1758483033.877361, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.009703961392180903, 
+      "asset": "ETH", 
+      "traditional_rate": -0.00431839930780157, 
+      "spread_advantage": -0.0053855620843793325
+    }, 
+    {
+      "timestamp": 1758483033.877367, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0035039518427292587, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0015039518427292587, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877373, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029212754329301913, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0009212754329301913, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877381, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0021528289320793086, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0001528289320793084, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877388, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00412457125117551, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0021245712511755092, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.877394, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0029075108726370914, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0009075108726370915, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877401, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00321959116602738, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0012195911660273801, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877407, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00280006882484259, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0008000688248425898, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877414, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0030959517423972942, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0010959517423972944, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877429, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.000599474054893094, 
+      "asset": "ETH", 
+      "traditional_rate": -0.00010861965414334947, 
+      "spread_advantage": 0.0007080937090364434
+    }, 
+    {
+      "timestamp": 1758483033.877435, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001667576703655629, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00033242329634437096, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877441, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0009513489187665133, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0010486510812334868, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877447, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0024922539436586263, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0004922539436586264, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877462, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003054780759399194, 
+      "asset": "ETH", 
+      "traditional_rate": 0.001054780759399194, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877469, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0018192876534720201, 
+      "asset": "SOL", 
+      "traditional_rate": -0.00018071234652797987, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877475, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003122253730619503, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.001122253730619503, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877482, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002837791602624989, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0008377916026249892, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877499, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004146464125757463, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0021464641257574633, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877506, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011145116705839823, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0008854883294160178, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877513, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025850654611934832, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0005850654611934833, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877519, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.000778358548016105, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.002778358548016105, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877526, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0036186153251983005, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0016186153251983005, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877532, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003622271764772708, 
+      "asset": "ETH", 
+      "traditional_rate": 0.001622271764772708, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87754, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -2.6867424082027604e-05, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0020268674240820276, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877548, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0026385702865230542, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0006385702865230544, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877555, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0006924501228347747, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0013075498771652253, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877562, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.009873829663630405, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0041661270934489365, 
+      "spread_advantage": -0.005707702570181468
+    }, 
+    {
+      "timestamp": 1758483033.877568, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001027188013368237, 
+      "asset": "ETH", 
+      "traditional_rate": 8.922205586285494e-05, 
+      "spread_advantage": 0.000937965957505382
+    }, 
+    {
+      "timestamp": 1758483033.877575, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0047498468911873395, 
+      "asset": "SOL", 
+      "traditional_rate": 0.002749846891187339, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.877582, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001138037827112098, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0008619621728879021, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877589, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001872519485099792, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00012748051490020816, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877595, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0019406008056003755, 
+      "asset": "BTC", 
+      "traditional_rate": -0.001080883692383532, 
+      "spread_advantage": -0.0008597171132168435
+    }, 
+    {
+      "timestamp": 1758483033.877601, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0032565713593247676, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0012565713593247676, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877607, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002146423540373191, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0001464235403731907, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877614, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.000965756108959132, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.001034243891040868, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877623, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0021858643339847474, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.00018586433398474724, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877635, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00335913500725452, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0013591350072545201, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877642, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004737323953175399, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0027373239531753987, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877649, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0012886837636787861, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0007113162363212139, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877657, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0013786522506937457, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0006213477493062544, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877663, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002914362660855279, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0011139328180423793, 
+      "spread_advantage": 0.0018004298428128999
+    }, 
+    {
+      "timestamp": 1758483033.87767, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015446075436484923, 
+      "asset": "ETH", 
+      "traditional_rate": 0.00030567585581943685, 
+      "spread_advantage": 0.0012389316878290554
+    }, 
+    {
+      "timestamp": 1758483033.877676, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00192942935222381, 
+      "asset": "SOL", 
+      "traditional_rate": -7.057064777619004e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877683, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017816356947491809, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0002183643052508191, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877689, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00491527282918933, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0029152728291893296, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.877698, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015504528025110883, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0005319660734166668, 
+      "spread_advantage": 0.0010184867290944214
+    }, 
+    {
+      "timestamp": 1758483033.877705, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002431188147820723, 
+      "asset": "ETH", 
+      "traditional_rate": 0.00070008193789416, 
+      "spread_advantage": 0.0017311062099265632
+    }, 
+    {
+      "timestamp": 1758483033.877712, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017495837639440208, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0002504162360559793, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877718, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011579807537814898, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0008420192462185104, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877725, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0016545811345525956, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00034541886544740445, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877731, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00357230850661669, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0015723085066166903, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877739, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001588310766038747, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0003674815535928145, 
+      "spread_advantage": 0.0012208292124459325
+    }, 
+    {
+      "timestamp": 1758483033.877745, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": -0.0002598868267801361, 
+      "asset": "SOL", 
+      "traditional_rate": -0.002259886826780136, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877767, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0019319760561431253, 
+      "asset": "AVAX", 
+      "traditional_rate": -6.802394385687475e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877773, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003484545771685867, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.001484545771685867, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877786, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004624800029969036, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0026248000299690355, 
+      "spread_advantage": 0.0020000000000000005
+    }, 
+    {
+      "timestamp": 1758483033.877794, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005041384265528338, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0030413842655283383, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877802, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0035655739372095797, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0015655739372095797, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877809, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0015328593407020414, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0004671406592979587, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877815, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00014476880069507056, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0018552311993049295, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877822, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0063156551987665595, 
+      "asset": "BTC", 
+      "traditional_rate": 0.0043156551987665595, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877834, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0013303491433097059, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0006696508566902943, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877842, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0007128376595174901, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00128716234048251, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877848, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00046841849859144, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.00153158150140856, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877854, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.005293199477694104, 
+      "asset": "BTC", 
+      "traditional_rate": 0.003293199477694104, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877861, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.004637174710517887, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0022246441050848605, 
+      "spread_advantage": -0.002412530605433026
+    }, 
+    {
+      "timestamp": 1758483033.877867, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002875502570676079, 
+      "asset": "SOL", 
+      "traditional_rate": 0.0008755025706760791, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877881, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0036165123713180793, 
+      "asset": "AVAX", 
+      "traditional_rate": 0.0016165123713180794, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877888, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0025408399474860614, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.0005408399474860614, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877894, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0040093293165011056, 
+      "asset": "BTC", 
+      "traditional_rate": 0.002009329316501106, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.8779, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.003714701606652407, 
+      "asset": "ETH", 
+      "traditional_rate": 0.0017147016066524068, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877906, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0013480364809386014, 
+      "asset": "SOL", 
+      "traditional_rate": -0.0006519635190613987, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877913, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0017619632331591355, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00023803676684086455, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.87792, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0005679862810955645, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0014320137189044355, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877927, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0015392414452456036, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0007056061728673549, 
+      "spread_advantage": -0.0008336352723782488
+    }, 
+    {
+      "timestamp": 1758483033.877933, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.00495623545026966, 
+      "asset": "ETH", 
+      "traditional_rate": -0.0024017966154970356, 
+      "spread_advantage": -0.0025544388347726243
+    }, 
+    {
+      "timestamp": 1758483033.877939, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.004527184290496275, 
+      "asset": "SOL", 
+      "traditional_rate": 0.002527184290496275, 
+      "spread_advantage": 0.0019999999999999996
+    }, 
+    {
+      "timestamp": 1758483033.877946, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00197940212403802, 
+      "asset": "AVAX", 
+      "traditional_rate": -2.0597875961979743e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877954, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.001368682556057966, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0006313174439420341, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877962, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002220317309014304, 
+      "asset": "BTC", 
+      "traditional_rate": 0.000866415021900121, 
+      "spread_advantage": 0.001353902287114183
+    }, 
+    {
+      "timestamp": 1758483033.877974, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0020794552277552314, 
+      "asset": "SOL", 
+      "traditional_rate": 7.945522775523139e-05, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877981, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0011707388401718654, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.0008292611598281346, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877987, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0009752835133585572, 
+      "asset": "MATIC", 
+      "traditional_rate": -0.0010247164866414428, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.877994, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.0038366155631445044, 
+      "asset": "BTC", 
+      "traditional_rate": -0.0016929198538074373, 
+      "spread_advantage": -0.002143695709337067
+    }, 
+    {
+      "timestamp": 1758483033.878001, 
+      "opportunity_type": "traditional_advantage", 
+      "fry_rate": -0.005771270665631922, 
+      "asset": "ETH", 
+      "traditional_rate": -0.002705559272934881, 
+      "spread_advantage": -0.003065711392697041
+    }, 
+    {
+      "timestamp": 1758483033.878007, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.002421350537442162, 
+      "asset": "SOL", 
+      "traditional_rate": 0.000421350537442162, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.878015, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.00101703524124331, 
+      "asset": "AVAX", 
+      "traditional_rate": -0.00098296475875669, 
+      "spread_advantage": 0.002
+    }, 
+    {
+      "timestamp": 1758483033.878021, 
+      "opportunity_type": "fry_advantage", 
+      "fry_rate": 0.0021076845434766034, 
+      "asset": "MATIC", 
+      "traditional_rate": 0.00010768454347660329, 
+      "spread_advantage": 0.002
+    }
+  ], 
+  "asset_summaries": {
+    "ETH": {
+      "annualized_advantage": 0.8337510995998214, 
+      "advantage_volatility": 0.0016147791213090253, 
+      "max_advantage": 0.002, 
+      "final_fry_pool": 12.475221007128486, 
+      "avg_fry_funding": 0.001071932745013014, 
+      "min_advantage": -0.0053855620843793325, 
+      "avg_spread_advantage": 0.0007614165293149054, 
+      "positive_advantage_pct": 0, 
+      "avg_traditional_funding": 0.0003105162156981087
+    }, 
+    "AVAX": {
+      "annualized_advantage": 2.158947384755513, 
+      "advantage_volatility": 0.00023272642138377997, 
+      "max_advantage": 0.0020000000000000005, 
+      "final_fry_pool": 9.05656359693663, 
+      "avg_fry_funding": 0.00224805591629043, 
+      "min_advantage": 1.1354702809216084e-05, 
+      "avg_spread_advantage": 0.0019716414472653087, 
+      "positive_advantage_pct": 100, 
+      "avg_traditional_funding": 0.0002764144690251229
+    }, 
+    "SOL": {
+      "annualized_advantage": 2.1900000000000017, 
+      "advantage_volatility": 1.3050519927796247e-18, 
+      "max_advantage": 0.0020000000000000005, 
+      "final_fry_pool": 13.38777283551669, 
+      "avg_fry_funding": 0.002444136724194396, 
+      "min_advantage": 0.0019999999999999996, 
+      "avg_spread_advantage": 0.0020000000000000013, 
+      "positive_advantage_pct": 100, 
+      "avg_traditional_funding": 0.0004441367241943949
+    }, 
+    "BTC": {
+      "annualized_advantage": 0.14098656075053756, 
+      "advantage_volatility": 0.0017604792507726202, 
+      "max_advantage": 0.0020000000000000005, 
+      "final_fry_pool": 9.8871593854234, 
+      "avg_fry_funding": 0.00024463557072663624, 
+      "min_advantage": -0.005707702570181468, 
+      "avg_spread_advantage": 0.0001287548500004909, 
+      "positive_advantage_pct": 0, 
+      "avg_traditional_funding": 0.0001158807207261453
+    }, 
+    "MATIC": {
+      "annualized_advantage": 2.1900000000000017, 
+      "advantage_volatility": 1.3000383284794337e-18, 
+      "max_advantage": 0.0020000000000000005, 
+      "final_fry_pool": 9.461899208294163, 
+      "avg_fry_funding": 0.0019717808447047842, 
+      "min_advantage": 0.0019999999999999996, 
+      "avg_spread_advantage": 0.0020000000000000013, 
+      "positive_advantage_pct": 100, 
+      "avg_traditional_funding": -2.8219155295215945e-05
+    }
+  }
+}

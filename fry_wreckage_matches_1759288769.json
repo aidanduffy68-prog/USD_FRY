@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-10-01T03:19:29.595309Z",
+  "summary": {
+    "total_events": 83,
+    "matched_pairs": 4,
+    "total_fry_minted": 122176.1741995413,
+    "total_wreckage": 206023.7125006767
+  },
+  "matched_pairs": [
+    {
+      "pair_id": 0,
+      "event1": {
+        "dex": "Hyperliquid",
+        "type": "short_liq",
+        "asset": "BNB",
+        "amount_usd": 1028.4209162919783
+      },
+      "event2": {
+        "dex": "GMX",
+        "type": "long_liq",
+        "asset": "BNB",
+        "amount_usd": 3409.135151447146
+      }
+    },
+    {
+      "pair_id": 1,
+      "event1": {
+        "dex": "dYdX",
+        "type": "short_liq",
+        "asset": "BNB",
+        "amount_usd": 149.97282017907423
+      },
+      "event2": {
+        "dex": "Vertex",
+        "type": "long_liq",
+        "asset": "BNB",
+        "amount_usd": 469.17143620470347
+      }
+    },
+    {
+      "pair_id": 2,
+      "event1": {
+        "dex": "Vertex",
+        "type": "short_liq",
+        "asset": "BNB",
+        "amount_usd": 1665.0262384265811
+      },
+      "event2": {
+        "dex": "GMX",
+        "type": "long_liq",
+        "asset": "BNB",
+        "amount_usd": 2292.861340761144
+      }
+    },
+    {
+      "pair_id": 3,
+      "event1": {
+        "dex": "dYdX",
+        "type": "adverse_fill",
+        "asset": "SOL",
+        "amount_usd": 2700.5947088365597
+      },
+      "event2": {
+        "dex": "Aster",
+        "type": "adverse_fill",
+        "asset": "SOL",
+        "amount_usd": 3026.6004257012537
+      }
+    }
+  ]
+}

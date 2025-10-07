@@ -1,0 +1,129 @@
+{
+  "health_check": {
+    "status": "HEALTHY", 
+    "overall_health_score": 85.19, 
+    "components": {
+      "venue_health": {
+        "binance": 63.0, 
+        "okx": 58.0, 
+        "bybit": 54.0, 
+        "kucoin": 50.0, 
+        "gate": 42.8, 
+        "mexc": 36.0
+      }, 
+      "paradox_risk": {
+        "trend": "stable", 
+        "current_score": 0.0, 
+        "slope_per_hour": 0, 
+        "risk_level": "minimal", 
+        "recommendation": "Continue normal operations. Monitor for changes."
+      }, 
+      "circuit_breaker": {
+        "status": "HEALTHY", 
+        "health_score": 100, 
+        "last_trigger": null, 
+        "inflow_utilization_pct": 4.0, 
+        "monitors_active": 1
+      }
+    }, 
+    "recommendations": [
+      "System operating normally - continue monitoring"
+    ]
+  }, 
+  "report_timestamp": "2025-09-17T16:29:54.400256", 
+  "system_status": {
+    "liquidity_paradox": {
+      "arbitrage_intensity": 10000, 
+      "drain_factor": 0, 
+      "paradox_score": 0.0, 
+      "feedback_active": false, 
+      "liquidity_ratio": 1, 
+      "components": {
+        "drain_factor": 0, 
+        "spread_score": 0.5, 
+        "velocity_score": 0, 
+        "volatility_score": 0.0, 
+        "concentration_score": 1
+      }
+    }, 
+    "dark_cdo": {
+      "active_tranches": 0, 
+      "total_collateral_swept": 309.79783771528724, 
+      "total_collateral_pools": 1, 
+      "average_fry_per_loss": 1596.97653870297, 
+      "total_fry_minted": 1596.97653870297
+    }, 
+    "arbitrage_metrics": {
+      "current_liquidity_estimate": 1000000, 
+      "active_positions": 1, 
+      "unique_assets": 1, 
+      "total_volume": 100000
+    }, 
+    "circuit_breaker": {
+      "recent_trigger_events": [], 
+      "activation_datetime": null, 
+      "duration_active_minutes": 0, 
+      "configuration": {
+        "inflow_multiplier": 5.0, 
+        "inflow_window": 10, 
+        "inflow_baseline": 50000, 
+        "paradox_threshold": 85
+      }, 
+      "current_metrics": {
+        "inflow_rate_per_minute": 10000, 
+        "inflow_threshold": 250000.0, 
+        "inflow_utilization_pct": 4.0
+      }, 
+      "total_trigger_events": 0, 
+      "active": false, 
+      "activation_time": null
+    }, 
+    "slippage_engine": {
+      "venue_health_scores": {
+        "binance": 63.0, 
+        "okx": 58.0, 
+        "bybit": 54.0, 
+        "kucoin": 50.0, 
+        "gate": 42.8, 
+        "mexc": 36.0
+      }, 
+      "average_fee_rate": 0.0012166666666666667, 
+      "active_venues": 6, 
+      "total_venues": 6, 
+      "average_liquidity_depth": 0.20333333333333337
+    }, 
+    "uptime_minutes": 1.7102559407552084e-05, 
+    "system_version": "v2"
+  }, 
+  "configuration": {
+    "arbitrage": {
+      "slippage_tolerance": 0.05, 
+      "min_spread_threshold": 0.002, 
+      "max_position_size": 100000
+    }, 
+    "paradox": {
+      "feedback_multiplier": 2.5, 
+      "paradox_threshold": 0.75, 
+      "baseline_liquidity": 1000000
+    }, 
+    "circuit_breaker": {
+      "inflow_multiplier": 5.0, 
+      "inflow_window": 10, 
+      "inflow_baseline": 50000, 
+      "paradox_threshold": 85
+    }
+  }, 
+  "system_version": "v2", 
+  "active_positions": [
+    {
+      "slippage_cost": 309.79783771528724, 
+      "status": "active", 
+      "position_size_usd": 100000, 
+      "timestamp": 1758140994400, 
+      "expected_profit": 1126.9036970570162, 
+      "coin": "HODL", 
+      "id": "7ce64648d223f266", 
+      "funding_spread": 0.014367015347723035
+    }
+  ]
+}

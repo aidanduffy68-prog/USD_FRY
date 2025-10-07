@@ -1,0 +1,71 @@
+{
+  "execution_timestamp": "2025-09-17T16:09:08.164757", 
+  "opportunities_found": 5, 
+  "executed_positions": [
+    {
+      "collateral_id": "69639e46-0a45-43c3-bf86-62b4aeafee20", 
+      "position": {
+        "slippage_cost": 180.3099269443574, 
+        "status": "active", 
+        "position_size_usd": 100000, 
+        "trader_hash": "f22782a6472d4e54", 
+        "timestamp": 1758139748164, 
+        "expected_profit": 1180.8866911681077, 
+        "coin": "HODL", 
+        "id": "f22782a6472d4e54", 
+        "funding_spread": 0.013611966181124651
+      }, 
+      "fry_minted": 183.56109391982534, 
+      "execution_timestamp": 1758139748164
+    }, 
+    {
+      "collateral_id": "4d1b6db6-45d9-4729-84f2-8cb5be4c80da", 
+      "position": {
+        "slippage_cost": 630.6914106629525, 
+        "status": "active", 
+        "position_size_usd": 15000.0, 
+        "trader_hash": "f22782a6472d4e54", 
+        "timestamp": 1758139748164, 
+        "expected_profit": -515.5692275670021, 
+        "coin": "FOMO", 
+        "id": "f22782a6472d4e54", 
+        "funding_spread": 0.0076748122063966945
+      }, 
+      "fry_minted": 909.3106020337538, 
+      "execution_timestamp": 1758139748164
+    }, 
+    {
+      "collateral_id": "ffae53a4-2c31-48fd-96ea-7d8803c920ca", 
+      "position": {
+        "slippage_cost": 873.2332498813145, 
+        "status": "active", 
+        "position_size_usd": 20000.0, 
+        "trader_hash": "f22782a6472d4e54", 
+        "timestamp": 1758139748164, 
+        "expected_profit": -644.6539401967334, 
+        "coin": "COPE", 
+        "id": "f22782a6472d4e54", 
+        "funding_spread": 0.011428965484229054
+      }, 
+      "fry_minted": 1279.5914323150648, 
+      "execution_timestamp": 1758139748164
+    }
+  ], 
+  "positions_executed": 3, 
+  "system_status": {
+    "total_positions": 3, 
+    "current_liquidity_estimate": 865000.0, 
+    "liquidity_paradox": {
+      "arbitrage_intensity": 13500.0, 
+      "feedback_active": false, 
+      "drain_factor": 0.135, 
+      "paradox_score": 18.225, 
+      "liquidity_ratio": 0.865
+    }, 
+    "inflow_threshold": 250000.0, 
+    "circuit_breaker_active": false, 
+    "recent_inflow_rate_per_minute": 13500.0, 
+    "total_arbitrage_volume": 135000.0, 
+    "active_positions": 3
+  }
+}

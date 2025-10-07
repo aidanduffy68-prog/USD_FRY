@@ -1,0 +1,81 @@
+{
+  "comparative_analysis": {
+    "profit_difference_usd": 49.70421748320837, 
+    "return_difference_pct": -8.224707669778057, 
+    "winner": "Traditional_MM", 
+    "fry_recycling_advantage": 0.08563016890683227, 
+    "fry_sharpe_ratio": -Infinity, 
+    "mm_sharpe_ratio": Infinity
+  }, 
+  "simulation_config": {
+    "duration_minutes": 45, 
+    "initial_capital": 100000, 
+    "market_volatility": 0.03
+  }, 
+  "performance_history": [
+    {
+      "mm_capital": 100000.0, 
+      "mm_return": 0.0, 
+      "market_price": 48976.174305823966, 
+      "fry_capital": 100000, 
+      "fry_return": 0, 
+      "minute": 0
+    }, 
+    {
+      "mm_capital": 100359.66211326474, 
+      "mm_return": 0.003596621132647415, 
+      "market_price": 50054.3800463381, 
+      "fry_capital": 89724.91894636152, 
+      "fry_return": -0.10275081053638481, 
+      "minute": 10
+    }, 
+    {
+      "mm_capital": 100907.12973658666, 
+      "mm_return": 0.009071297365866631, 
+      "market_price": 56754.55672880502, 
+      "fry_capital": 96729.78615667725, 
+      "fry_return": -0.03270213843322752, 
+      "minute": 20
+    }, 
+    {
+      "mm_capital": 101821.4605895221, 
+      "mm_return": 0.01821460589522103, 
+      "market_price": 52051.039612891436, 
+      "fry_capital": 100703.70597872206, 
+      "fry_return": 0.007037059787220642, 
+      "minute": 30
+    }, 
+    {
+      "mm_capital": 102287.88511712919, 
+      "mm_return": 0.0228788511712919, 
+      "market_price": 52329.45710967886, 
+      "fry_capital": 101076.20212765157, 
+      "fry_return": 0.010762021276515734, 
+      "minute": 40
+    }
+  ], 
+  "final_metrics": {
+    "traditional_mm": {
+      "cash_capital": 80065.942213253, 
+      "total_return": 0.023044175022318085, 
+      "agent_type": "Traditional_MM", 
+      "inventory": 0.4447695057795761, 
+      "total_profits": 1077.2338642060906, 
+      "total_capital": 102304.41750223181, 
+      "win_rate": 0.7472, 
+      "trades_executed": 14, 
+      "inventory_value": 22238.475288978803
+    }, 
+    "fry_agent": {
+      "total_return": -0.05920290167546249, 
+      "agent_type": "FRY_Agent_B", 
+      "total_profits": 1126.938081689299, 
+      "win_rate": 0.581074015508096, 
+      "recycled_value": 0.08563016890683227, 
+      "total_capital": 94079.70983245375, 
+      "fry_balance": 0.08563016890683227, 
+      "trades_executed": 31, 
+      "active_positions": 1
+    }
+  }
+}

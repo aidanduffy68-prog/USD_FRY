@@ -1,0 +1,133 @@
+{
+  "liquidity_events": [
+    {
+      "timestamp": 1758478925.936319, 
+      "price": 53941.21467879165, 
+      "volume_multiplier": 1.726032514147858
+    }, 
+    {
+      "timestamp": 1758478925.997053, 
+      "price": 48796.54306901514, 
+      "volume_multiplier": 1.9471287133563557
+    }, 
+    {
+      "timestamp": 1758478926.034762, 
+      "price": 49710.92147581229, 
+      "volume_multiplier": 2.989269708502592
+    }, 
+    {
+      "timestamp": 1758478926.190097, 
+      "price": 40169.117566971574, 
+      "volume_multiplier": 4.520600251756864
+    }, 
+    {
+      "timestamp": 1758478926.201006, 
+      "price": 42684.93166012457, 
+      "volume_multiplier": 1.4761150050331293
+    }, 
+    {
+      "timestamp": 1758478926.274999, 
+      "price": 32399.242136763296, 
+      "volume_multiplier": 3.4977864356768413
+    }
+  ], 
+  "comparative_analysis": {
+    "profit_difference_usd": 3703.818400312737, 
+    "return_difference_pct": -1.3443356718812718, 
+    "fry_recycling_advantage": 0.34320839319069313, 
+    "churn_difference_usd": 1077023.999576352, 
+    "total_market_churn": 1355765.2415484684, 
+    "mm_x_profit_per_trade": 56.758705338034574, 
+    "winner": "MM_y_Traditional", 
+    "mm_y_profit_per_trade": 88.85571614739723, 
+    "mm_x_churn_share_pct": 89.72015089965886
+  }, 
+  "simulation_config": {
+    "duration_minutes": 75, 
+    "initial_capital": 500000, 
+    "market_volatility": 0.035
+  }, 
+  "performance_history": [
+    {
+      "mm_y_return": 0.0, 
+      "mm_x_capital": 494006.228148581, 
+      "mm_y_churn": 0.0, 
+      "mm_x_churn": 13969.729987295583, 
+      "mm_x_return": -0.011987543702838012, 
+      "mm_y_capital": 500000.0, 
+      "market_price": 48599.08558251803, 
+      "minute": 0
+    }, 
+    {
+      "mm_y_return": 0.0020364430484013864, 
+      "mm_x_capital": 500341.14490818727, 
+      "mm_y_churn": 21358.193783355247, 
+      "mm_x_churn": 317872.9539962738, 
+      "mm_x_return": 0.0006822898163745413, 
+      "mm_y_capital": 501018.2215242007, 
+      "market_price": 53941.21467879165, 
+      "minute": 15
+    }, 
+    {
+      "mm_y_return": 0.0015103490864863851, 
+      "mm_x_capital": 502591.77160685934, 
+      "mm_y_churn": 39462.67255524627, 
+      "mm_x_churn": 547111.7715706635, 
+      "mm_x_return": 0.005183543213718687, 
+      "mm_y_capital": 500755.1745432432, 
+      "market_price": 52004.49141554987, 
+      "minute": 30
+    }, 
+    {
+      "mm_y_return": 0.006791434332635021, 
+      "mm_x_capital": 509120.56050521036, 
+      "mm_y_churn": 89062.45706905244, 
+      "mm_x_churn": 794898.9436323863, 
+      "mm_x_return": 0.018241121010420726, 
+      "mm_y_capital": 503395.7171663175, 
+      "market_price": 44011.55264077939, 
+      "minute": 45
+    }, 
+    {
+      "mm_y_return": 0.014204908115673693, 
+      "mm_x_capital": 499986.66266376653, 
+      "mm_y_churn": 120637.58258003391, 
+      "mm_x_churn": 1021594.7895538801, 
+      "mm_x_return": -2.667467246693559e-05, 
+      "mm_y_capital": 507102.45405783685, 
+      "market_price": 41678.749681271875, 
+      "minute": 60
+    }
+  ], 
+  "final_metrics": {
+    "mm_y_traditional": {
+      "market_churn_contributed": 139370.62098605803, 
+      "total_return": 0.020153888488200957, 
+      "agent_type": "Traditional_MM_y", 
+      "inventory": 0.9172038842268676, 
+      "total_profits": 1688.2586068005473, 
+      "total_capital": 510076.9442441005, 
+      "win_rate": 0.85, 
+      "trades_executed": 19, 
+      "inventory_value": 45860.19421134338
+    }, 
+    "mm_x_hybrid": {
+      "mm_profits": 7288.9373295102605, 
+      "total_return": 0.0067105317693882385, 
+      "total_capital": 503355.2658846941, 
+      "win_rate": 0.39778623423203663, 
+      "total_trades": 95, 
+      "mm_trades": 34, 
+      "arbitrage_trades": 61, 
+      "arbitrage_profits": -1896.8603223969794, 
+      "market_churn_contributed": 1216394.6205624102, 
+      "total_profits": 5392.077007113285, 
+      "agent_type": "Hybrid_MM_x", 
+      "inventory": 0.1862195034059429, 
+      "recycled_value": 0.34320839319069313, 
+      "fry_balance": 0.34320839319069313, 
+      "active_arbitrage_positions": 0, 
+      "inventory_value": 9310.975170297144
+    }
+  }
+}
