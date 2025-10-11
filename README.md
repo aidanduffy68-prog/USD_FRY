@@ -1,228 +1,142 @@
-# 🍟 FRY Degen Subnet - Bittensor Integration
+# 🍟 USD_FRY Protocol
 
-> **Decentralized network for predicting and validating degenerate trading outcomes**
+> **Decentralized liquidity rails for processing trading wreckage**
 
-A real Bittensor subnet that combines AI-powered prediction markets with proof-of-loss tokenomics. Miners compete to identify the most degenerate trades, validators verify outcomes, and FRY tokens are minted from confirmed losses.
+Live on Arbitrum Mainnet. Process trading losses into FRY tokens with Chainlink-verified prices. Launched October 11, 2025 - one day after the $19B liquidation event.
 
-## 🎯 What Is This?
+## 🚀 Live on Arbitrum Mainnet
 
-The **FRY Degen Subnet** is a Bittensor subnet where:
+**Deployed October 11, 2025**
 
-- 🔍 **Miners** scan Hyperliquid for high-risk positions and predict liquidations
-- ✅ **Validators** verify actual outcomes and score miner accuracy  
-- 🍟 **FRY tokens** are minted when losses are confirmed (10 FRY per $1 lost)
-- 💰 **TAO rewards** go to miners with accurate predictions
-- 📊 **Degen scores** quantify risk levels (0-100 scale)
+```
+USD_FRY Token:               0x492397d5912C016F49768fBc942d894687c5fe33
+WreckageProcessorWithOracle: 0xf97E890aDf8968256225060e8744a797954C33CF
+FRYPredictionMarket:         0xdF0B798E51d5149fE97D57fbBc8D6A8A0756204e
+```
+
+**Chainlink Oracles:**
+- BTC/USD: `0x6ce185860a4963106506C203335A2910413708e9`
+- ETH/USD: `0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612`
+
+[View on Arbiscan →](https://arbiscan.io/address/0x492397d5912C016F49768fBc942d894687c5fe33)
+
+## 🎯 What Happened
+
+### October 10, 2024
+- **$19B liquidations** (largest in crypto history)
+- **1.6M traders** affected
+- **87% long positions** liquidated
+- **BTC**: $122k → $102k
+- **Centralized systems failed** (Binance/Wintermute rumors)
+
+### FRY's Response
+- Launched **October 9, 2024** (one day before crash)
+- Thesis validated: need for decentralized liquidity alternatives
+- Now live on Arbitrum Mainnet with Chainlink oracles
 
 ## 🚀 Quick Start
 
-### 1. Install Bittensor
+### Use the Protocol
+1. Visit [Live Demo](https://aidanduffy68-prog.github.io/USD_FRY/)
+2. Connect wallet (Arbitrum mainnet)
+3. Process wreckage or bet on prediction markets
 
+### Deploy Contracts
 ```bash
-pip3 install bittensor
-```
-
-### 2. Create Wallets
-
-```bash
-# Miner wallet
-btcli wallet new_coldkey --wallet.name miner
-btcli wallet new_hotkey --wallet.name miner --wallet.hotkey default
-
-# Validator wallet  
-btcli wallet new_coldkey --wallet.name validator
-btcli wallet new_hotkey --wallet.name validator --wallet.hotkey default
-```
-
-### 3. Get Testnet TAO
-
-```bash
-btcli wallet faucet --wallet.name miner --subtensor.network test
-btcli wallet faucet --wallet.name validator --subtensor.network test
-```
-
-### 4. Register on Subnet
-
-```bash
-# Register miner
-btcli subnet register --netuid 1 --wallet.name miner --subtensor.network test
-
-# Register validator
-btcli subnet register --netuid 1 --wallet.name validator --subtensor.network test
-```
-
-### 5. Run the Subnet
-
-```bash
-# Terminal 1: Start miner
-cd fry-liquidity-rails-clean/liquidity-rails/core/subnet
-python3 bittensor_degen_miner.py --netuid 1 --subtensor.network test
-
-# Terminal 2: Start validator
-python3 bittensor_degen_validator.py --netuid 1 --subtensor.network test
-
-# Terminal 3: Start FRY Casino (for minting)
-cd /tmp/usd_fry_casino/core
-python3 fry_fastapi_backend.py
+cd fry-liquidity-rails-clean/liquidity-rails/core/contracts
+npm install
+npm run deploy:mainnet
 ```
 
 ## 📚 Documentation
 
-- **[Bittensor Integration Guide](fry-liquidity-rails-clean/liquidity-rails/docs/BITTENSOR_INTEGRATION_GUIDE.md)** - Complete setup and deployment
-- **[Degen Subnet Spec](fry-liquidity-rails-clean/liquidity-rails/docs/DEGEN_SUBNET_SPEC.md)** - Technical specification
-- **[Casino Integration](fry-liquidity-rails-clean/liquidity-rails/docs/DEGEN_SUBNET_CASINO_INTEGRATION.md)** - FRY minting integration
+**Main Project:**
+- **[FRY Liquidity Rails](fry-liquidity-rails-clean/)** - Active mainnet deployment
+- **[Interactive Demo](https://aidanduffy68-prog.github.io/USD_FRY/)** - Live demo
+- **[User Acquisition Strategy](fry-liquidity-rails-clean/docs/user-acquisition-strategy.md)** - Growth plan
+- **[zkLighter Integration Concept](fry-liquidity-rails-clean/docs/lighter-integration-concept.md)** - Future integration
+
+**Archive:**
+- **[Old Visualizations](archive/old_visualizations/)** - Historical charts and diagrams
+- **[Core System](core/)** - Legacy Python implementation
 
 ## 🏗️ Architecture
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                  Bittensor Network                       │
-│                                                           │
-│  ┌──────────┐      ┌──────────┐      ┌──────────┐      │
-│  │  Miners  │◀────▶│ Subtensor│◀────▶│Validators│      │
-│  │ (Axons)  │      │ (Chain)  │      │(Dendrites)│      │
-│  └──────────┘      └──────────┘      └──────────┘      │
-│       │                                      │           │
-│       │ DegenSynapse                        │           │
-│       ▼                                      ▼           │
-│  Hyperliquid API                    Score & Validate    │
-└─────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────┐
-│              FRY Casino Backend                          │
-│                                                           │
-│          Mint FRY from validated losses                  │
-│          10 FRY per $1 lost × degen multiplier          │
-└─────────────────────────────────────────────────────────┘
+Trading Loss → Chainlink Price Verification → FRY Minting (2.26x) → Tradeable Token
 ```
 
-## 🎮 How It Works
+### Core Components
 
-### Miner Workflow
+1. **WreckageProcessorWithOracle** - Processes losses with Chainlink-verified prices
+2. **FRYPredictionMarket** - Auto-resolving prediction markets
+3. **USD_FRY Token** - ERC20 token minted from processed wreckage
 
-1. **Scan Hyperliquid** for open positions
-2. **Calculate degen score** (0-100):
-   - Leverage: 100x = 30 points
-   - Position size: $50k+ = 25 points
-   - Volatility: 20%+ = 20 points
-   - Unrealized loss: $1k+ = 15 points
-   - Distance to liquidation: 10 points
-3. **Predict outcome**:
-   - Loss probability (0-1)
-   - Timeline to liquidation (seconds)
-   - Confidence score
-4. **Serve predictions** via Bittensor Axon
+### Prediction Markets
+- Create markets about crypto prices, events, etc.
+- Bet with USDC
+- Auto-resolve using Chainlink oracles
+- Losers receive FRY tokens (2.26x their loss)
+- Winners receive 70% of losing pool
 
-### Validator Workflow
+## 🎮 Use Cases
 
-1. **Query miners** via Bittensor Dendrite
-2. **Monitor positions** on Hyperliquid
-3. **Detect liquidations** via API
-4. **Score miners** based on accuracy
-5. **Set weights** on Subtensor (chain)
-6. **Mint FRY** via casino backend
+**For Traders Who Lost Money:**
+- Process your Oct 10 losses into FRY tokens
+- Get 2.26x rate on verified losses
+- Join community of 1.6M affected traders
 
-### Example: Your XRP Position
+**For Prediction Market Users:**
+- Bet on crypto price movements
+- Auto-resolution via Chainlink (no disputes)
+- Even if you lose, get FRY tokens
 
-**Position:**
-- Size: $3,340
-- PnL: -196.4% (-$6,560)
-- Leverage: 50x
+**For DeFi Builders:**
+- Integrate FRY as liquidation insurance
+- Use Chainlink-verified wreckage processing
+- Build on decentralized liquidity infrastructure
 
-**Miner Prediction:**
+## 📊 Project Structure
+
 ```
-Degen Score: 95/100
-Loss Probability: 85%
-Timeline: 7,200 seconds (2 hours)
-Reasoning: "50x leverage | $6560 underwater | extreme degen detected"
-```
+fry-liquidity-rails-clean/          # Active mainnet deployment
+├── liquidity-rails/
+│   └── core/
+│       ├── contracts/              # Solidity contracts
+│       │   ├── USDFRYToken.sol
+│       │   ├── WreckageProcessorWithOracle.sol
+│       │   └── FRYPredictionMarket.sol
+│       └── engines/                # Python engines (legacy)
+├── docs/
+│   ├── interactive-demo.html       # Live demo
+│   ├── deployment-mainnet.json     # Mainnet addresses
+│   ├── user-acquisition-strategy.md
+│   └── lighter-integration-concept.md
+└── marketing/
 
-**If Liquidated:**
-```
-Validator confirms: $6,560 loss
-FRY Minted: 65,600 × 10x multiplier = 656,000 FRY
-Miner TAO Reward: Based on prediction accuracy
-```
-
-## 💎 Dual Token Economy
-
-### FRY Token (Loss Proof)
-- **Minted**: From validated losses
-- **Rate**: 10 FRY per $1 lost
-- **Multiplier**: Up to 100x based on degen score
-- **Purpose**: Quantifiable proof of trading losses
-
-### TAO Token (Prediction Rewards)
-- **Earned**: By accurate miners/validators
-- **Distribution**: Via Bittensor consensus
-- **Staking**: Required for participation
-- **Purpose**: Incentivize accurate predictions
-
-## 🔧 Components
-
-### Core Subnet Files
-- `bittensor_degen_miner.py` - Miner neuron (Axon)
-- `bittensor_degen_validator.py` - Validator neuron (Dendrite)
-- `bittensor_subnet_protocol.py` - Custom DegenSynapse protocol
-- `degen_subnet_core.py` - Subnet runtime logic
-
-### Integration Files
-- `degen_subnet_integration.py` - FastAPI integration layer
-- `fry_fastapi_backend.py` - Casino backend (from losers-casino branch)
-
-### Smart Contracts
-- `ProofOfLossToken.sol` - FRY token contract
-- `FRYMemeToken.sol` - ERC20 implementation
-
-## 📊 Monitoring
-
-```bash
-# Check miner status
-btcli wallet overview --wallet.name miner --subtensor.network test
-
-# View subnet metagraph
-btcli subnet metagraph --netuid 1 --subtensor.network test
-
-# Check FRY balance
-curl http://localhost:8000/balance
-
-# View recent events
-curl http://localhost:8000/balance/events
+core/                               # Legacy Python implementation
+archive/                            # Old visualizations and files
 ```
 
-## 🌟 Features
+## ✅ Status
 
-✅ Real Bittensor SDK integration (not a fork)  
-✅ Custom DegenSynapse protocol  
-✅ Hyperliquid API integration  
-✅ Automated FRY minting from losses  
-✅ TAO rewards for accurate predictions  
-✅ On-chain weight setting via Subtensor  
-✅ Degen score calculation (0-100)  
-✅ Loss probability prediction  
-✅ Liquidation timeline estimation  
+**Network**: Arbitrum Mainnet  
+**Launched**: October 11, 2025  
+**Contracts**: Live and deployed  
+**Demo**: [https://aidanduffy68-prog.github.io/USD_FRY/](https://aidanduffy68-prog.github.io/USD_FRY/)
 
-## 🤝 Contributing
-
-This is a fun application demonstrating:
-- Bittensor subnet architecture
-- Proof-of-loss tokenomics
-- Decentralized prediction markets
-- AI-powered risk assessment
-
-Feel free to fork, experiment, and build on top of it!
-
-## 📜 License
-
-MIT License - This is a satirical/educational project
+### Next Steps
+- [ ] Verify contracts on Arbiscan
+- [ ] User acquisition campaign (1.6M affected traders)
+- [ ] Integration with zkLighter
+- [ ] Build community (Discord/Telegram)
 
 ## 🔗 Links
 
-- [Bittensor Docs](https://docs.bittensor.com)
-- [Hyperliquid API](https://hyperliquid.gitbook.io)
-- [Original Losers Casino Branch](https://github.com/aidanduffy68-prog/USD_FRY/tree/git-checkout--b-add-losers-casino)
+- **[Live Demo](https://aidanduffy68-prog.github.io/USD_FRY/)** - Try it now
+- **[Arbiscan](https://arbiscan.io/address/0x492397d5912C016F49768fBc942d894687c5fe33)** - View contracts
+- **[GitHub](https://github.com/aidanduffy68-prog/USD_FRY)** - Source code
 
 ---
 
-**The Innovation:** We've combined Bittensor's decentralized AI infrastructure with proof-of-loss tokenomics to create the world's first subnet for quantifying and predicting financial degeneracy at scale. 🍟📉
+Built for traders who lose money. Because centralized systems fail. 🍟
