@@ -55,6 +55,10 @@ from .threat_dossier_generator import (
     ThreatDossier
 )
 
+from .integration_layer import (
+    ABCIntegrationLayer
+)
+
 __all__ = [
     "SemanticUnderstandingLayer",
     "MultiModalIntelligenceProcessor",
@@ -83,6 +87,7 @@ __all__ = [
     "NLResponse",
     "QueryType",
     "ThreatDossierGenerator",
-    "ThreatDossier"
+    "ThreatDossier",
+    "ABCIntegrationLayer"
 ]
 
