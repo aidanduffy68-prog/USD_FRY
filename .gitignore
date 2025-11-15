@@ -1,0 +1,110 @@
+# Environment variables
+.env
+*.env
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
+
+# Crime intelligence & sensitive data (DO NOT COMMIT)
+fry_protocol/core/intelligence/data/
+fry_protocol/data/crime_intelligence/
+fry_protocol/data/ofac_sanctions/
+**/criminal_wallets*
+**/ofac_data*
+**/sanctions_list*
+**/intelligence_*
+**/law_enforcement_*
+**/investigation_data*
+**/classified*
+**/sensitive*
+*_leaked*
+*_classified*
+
+# Deployment
+deployment.json
+
+# Twitter/social media related files (private)
+delete_old_tweets.py
+DELETE_TWEETS_MANUAL.md
+TWITTER_API_SETUP.md
+docs/twitter-thread.md
+
+# API keys and sensitive data
+twitter_credentials.json
+api_keys.txt
+
+# Personal notes and drafts
+notes/
+drafts/
+
+# Working docs (keep local)
+docs/dune-dashboard-spec.md
+docs/linkedin-executive-summary.md
+docs/thread-visuals-spec.md
+docs/data-visualizations.md
+
+# Chart generation scripts (internal use)
+create_charts.py
+create_*.py
+*_scraper.py
+hyperliquid_data_scraper*.py
+
+# Marketing materials (keep local)
+marketing/
+
+# Social media posts and visuals (keep local)
+docs/linkedin-*.md
+docs/x-post-*.md
+docs/x-thread-*.md
+docs/*-visual*.md
+docs/*-humorous.md
+docs/*-personal.md
+
+# Visual creation scripts (keep local)
+scripts/visual_creation/
+scripts/demos/
+scripts/create_oracle_*.py
+scripts/create_fry_*.py
+scripts/create_mm_*.py
+scripts/create_adl_*.py
+scripts/create_oct10_*.py
+scripts/create_charts.py
+core/oracle/reverse_oracle_*.py
+marketing/charts/*.py
+
+# Push/helper scripts (contain tokens, keep local)
+push_*.sh
+push_*.py
+*PUSH*.md
+*FIX*.md
+diagnose_*.sh
+resolve_*.sh
+clean_*.sh
+reset_*.sh
+*_INSTRUCTIONS.md
+
+# Temporary exclusions
+GH Systems Deck .pdf
+
