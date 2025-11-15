@@ -48,11 +48,113 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
   - `COORDINATES_WITH` — Detect coordination rings from timing/pattern similarity
   - `CONTROLS` — Identify wallet control structures
   - `BEHAVES_LIKE` — Cluster similar behavioral signatures
-  - `SUSPECTED_OF` — Link actors to events with confidence scoring
-- **Temporal pattern analysis** — ML models detect sequential relationships
-- **Cross-chain relationship mapping** — Identify same-actor wallets across chains
+  - `CLUSTERS_WITH` — Identify behavioral clusters
+  - `SANCTIONED_BY` — Link to sanctions entities
+  - `SUSPECTED_OF` — Infer suspicion relationships
 
-**Output:** Enriched graph with inferred relationships and confidence scores
+**Implementation:** `nemesis/ai_ontology/relationship_inference.py`
+
+---
+
+### 4. AI-Powered Behavioral Signature Generation (Hades)
+**Purpose:** Generate behavioral signatures using ML-driven pattern recognition
+
+**AI Models:**
+- **Behavioral trait extraction** — ML models analyze transaction patterns to extract:
+  - Risk tolerance scores
+  - Pattern repetition metrics
+  - Flight risk indicators
+  - Coordination likelihood
+  - Timing preferences
+  - Route entropy
+  - Liquidity patterns
+  - Off-ramp preferences
+- **Pattern recognition** — Identify behavioral patterns:
+  - Rapid chain switching
+  - Systematic mixer usage
+  - Timing-based patterns
+  - Amount-based patterns
+- **Predictive action generation** — Forecast next actions based on behavioral signature
+
+**Implementation:** `nemesis/ai_ontology/behavioral_signature.py`
+
+---
+
+### 5. Predictive Threat Modeling
+**Purpose:** Forecast adversary actions before they occur
+
+**AI Models:**
+- **Action prediction** — Predict threat actions:
+  - Off-ramp attempts (with timing windows and locations)
+  - Coordination activity
+  - Attack execution
+  - Asset movements
+  - Network expansion
+  - Evasion maneuvers
+- **Risk scoring** — Calculate overall threat risk scores
+- **Countermeasure generation** — Automatically generate recommended countermeasures
+
+**Implementation:** `nemesis/ai_ontology/predictive_modeling.py`
+
+---
+
+### 6. Continuous Learning System
+**Purpose:** Enable ABC to learn and evolve from feedback
+
+**AI Models:**
+- **Feedback processing** — Record and process:
+  - True positives / false positives
+  - True negatives / false negatives
+  - Outcome validations
+  - Pattern corrections
+- **Model performance evaluation** — Track accuracy, precision, recall, F1
+- **Ontology evolution** — Automatically update ontology schema:
+  - New entity types
+  - Updated relationships
+  - New patterns
+  - Confidence adjustments
+- **Learning reports** — Generate improvement recommendations
+
+**Implementation:** `nemesis/ai_ontology/continuous_learning.py`
+
+---
+
+### 7. Natural Language Threat Intelligence Interface
+**Purpose:** Allow analysts to query threat intelligence in plain English
+
+**AI Models:**
+- **Query understanding** — LLM-based intent parsing:
+  - Actor lookup queries
+  - Relationship queries
+  - Pattern searches
+  - Prediction requests
+  - Threat assessments
+  - Network analysis
+  - Timeline queries
+- **Entity extraction** — Named entity recognition from queries
+- **Response generation** — Natural language responses with structured data
+
+**Implementation:** `nemesis/ai_ontology/natural_language_interface.py`
+
+---
+
+### 8. Auto-Generated Threat Dossier System
+**Purpose:** Automatically generate comprehensive threat actor dossiers
+
+**AI Models:**
+- **Dossier compilation** — Automatically compile intelligence from:
+  - Behavioral signatures (Hades AI)
+  - Network coordination (Echo)
+  - Threat forecasts (Nemesis AI)
+  - Historical patterns
+  - Transaction analysis
+- **Markdown export** — Generate formatted dossiers in operational format
+- **Classification handling** — Automatically determine classification levels
+- **Distribution management** — Determine appropriate distribution lists
+
+**Implementation:** `nemesis/ai_ontology/threat_dossier_generator.py`
+
+**Output:** Complete threat dossiers ready for operational use
 
 ---
 
