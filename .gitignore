@@ -104,6 +104,8 @@ resolve_*.sh
 clean_*.sh
 reset_*.sh
 *_INSTRUCTIONS.md
+*_PUSH.sh
+test_*.sh
 
 # Temporary exclusions
 GH Systems Deck .pdf
