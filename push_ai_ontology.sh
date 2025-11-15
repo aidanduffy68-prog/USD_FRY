@@ -41,6 +41,13 @@ git commit -m "plotting and scheming" || {
     echo "⚠️  Nothing to commit (files may already be committed)"
 }
 
+# Pull first to integrate remote changes
+echo "Pulling remote changes..."
+git pull origin main --rebase || {
+    echo "⚠️  Rebase failed, trying regular pull..."
+    git pull origin main
+}
+
 # Push to main
 echo "Pushing to GitHub..."
 git push origin main || {

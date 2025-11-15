@@ -64,6 +64,12 @@ def main():
     if not run_command('git commit -m "plotting and scheming"', "Commit changes"):
         print("⚠️  Nothing to commit (files may already be committed)")
     
+    # Pull first to integrate remote changes
+    print("\n⚠️  Remote has changes. Pulling first...")
+    if not run_command("git pull origin main --rebase", "Pull and rebase remote changes"):
+        print("⚠️  Rebase failed, trying regular pull...")
+        run_command("git pull origin main", "Pull remote changes")
+    
     # Push
     if not run_command("git push origin main", "Push to GitHub"):
         print("⚠️  Trying with -u flag...")
