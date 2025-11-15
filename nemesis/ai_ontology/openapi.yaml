@@ -1,0 +1,301 @@
+openapi: 3.0.0
+info:
+  title: GH Systems ABC AI Ontology API
+  description: RESTful API for AI-powered threat intelligence
+  version: 2.0.0
+  contact:
+    name: GH Systems
+    email: support@ghsystems.io
+
+servers:
+  - url: https://api.ghsystems.io/api/v1
+    description: Production server
+  - url: https://staging-api.ghsystems.io/api/v1
+    description: Staging server
+
+security:
+  - BearerAuth: []
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      tags: [System]
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+
+  /intelligence/process:
+    post:
+      summary: Process intelligence feed
+      tags: [Intelligence]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProcessIntelligenceRequest'
+      responses:
+        '200':
+          description: Intelligence processed successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ProcessIntelligenceResponse'
+
+  /actors/{actor_id}/targeting-package:
+    get:
+      summary: Get targeting package
+      tags: [Actors]
+      parameters:
+        - name: actor_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: include_dossier
+          in: query
+          schema:
+            type: boolean
+            default: false
+      responses:
+        '200':
+          description: Targeting package generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TargetingPackageResponse'
+
+  /query:
+    post:
+      summary: Natural language query
+      tags: [Query]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NLQueryRequest'
+      responses:
+        '200':
+          description: Query processed
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NLQueryResponse'
+
+  /actors/{actor_id}/dossier:
+    get:
+      summary: Get threat dossier
+      tags: [Actors]
+      parameters:
+        - name: actor_id
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: format
+          in: query
+          schema:
+            type: string
+            enum: [json, markdown]
+            default: json
+      responses:
+        '200':
+          description: Dossier generated
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DossierResponse'
+            text/markdown:
+              schema:
+                type: string
+
+  /feedback:
+    post:
+      summary: Record feedback
+      tags: [Learning]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FeedbackRequest'
+      responses:
+        '200':
+          description: Feedback recorded
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FeedbackResponse'
+
+  /learning/report:
+    get:
+      summary: Get learning report
+      tags: [Learning]
+      responses:
+        '200':
+          description: Learning report
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LearningReportResponse'
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    HealthResponse:
+      type: object
+      properties:
+        status:
+          type: string
+          example: healthy
+        service:
+          type: string
+          example: GH Systems ABC AI Ontology
+        version:
+          type: string
+          example: 2.0.0
+        timestamp:
+          type: string
+          format: date-time
+
+    ProcessIntelligenceRequest:
+      type: object
+      required: [intelligence]
+      properties:
+        intelligence:
+          type: array
+          items:
+            type: object
+            properties:
+              text:
+                type: string
+              source:
+                type: string
+              timestamp:
+                type: string
+                format: date-time
+        transaction_data:
+          type: array
+          items:
+            type: object
+
+    ProcessIntelligenceResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        result:
+          type: object
+          properties:
+            entities:
+              type: array
+            relationships:
+              type: array
+            behavioral_signatures:
+              type: object
+            threat_forecasts:
+              type: object
+
+    TargetingPackageResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        package:
+          type: object
+          properties:
+            package_id:
+              type: string
+            actor_id:
+              type: string
+            confidence:
+              type: number
+            predicted_actions:
+              type: array
+            recommended_countermeasures:
+              type: array
+
+    NLQueryRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+        user:
+          type: string
+
+    NLQueryResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        result:
+          type: object
+          properties:
+            query:
+              type: string
+            response:
+              type: string
+            structured_data:
+              type: object
+            confidence:
+              type: number
+
+    DossierResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        dossier:
+          type: object
+
+    FeedbackRequest:
+      type: object
+      required: [feedback_type, entity_id, actual_outcome]
+      properties:
+        feedback_type:
+          type: string
+          enum: [true_positive, false_positive, true_negative, false_negative]
+        entity_id:
+          type: string
+        actual_outcome:
+          type: object
+        predicted_outcome:
+          type: object
+
+    FeedbackResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        feedback:
+          type: object
+
+    LearningReportResponse:
+      type: object
+      properties:
+        status:
+          type: string
+        report:
+          type: object
+          properties:
+            total_feedback:
+              type: integer
+            recent_feedback:
+              type: integer
+            feedback_by_type:
+              type: object
+            model_performance:
+              type: object
+
