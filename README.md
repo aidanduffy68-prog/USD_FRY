@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-📄 **[Whitepaper PDF](whitepaper/GH%20Behavioral%20Intel%20%5Bv1%5D.pdf)** | 📊 **[Threat Dossiers](nemesis/threat_profiles/)** | 🧠 **[Ontology Spec](whitepaper/GH_ONTOLOGY_SPEC.md)**
+📄 **[Whitepaper PDF](Deal%20Room/GH%20Behavioral%20Intel%20%5Bv1%5D.pdf)** | 📊 **[Threat Dossiers](nemesis/threat_profiles/)** | 🧠 **[Ontology Spec](Deal%20Room/GH_ONTOLOGY_SPEC.md)**
 
 ---
 
@@ -45,8 +45,8 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 
 ## Repository Map
 
-- `whitepaper/GH Behavioral Intel [v1].pdf` — Complete whitepaper (PDF).
-- `whitepaper/GH_ONTOLOGY_SPEC.md` — Behavioral Intelligence Graph & Adversarial Behavior Compiler specification.
+- `Deal Room/GH Behavioral Intel [v1].pdf` — Complete whitepaper (PDF).
+- `Deal Room/GH_ONTOLOGY_SPEC.md` — Behavioral Intelligence Graph & Adversarial Behavior Compiler specification.
 - `nemesis/ABC_BEHAVIORAL_INTELLIGENCE_WHITEPAPER.md` — Full whitepaper markdown with technical details.
 - `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` — AI-powered threat ontology architecture.
 - `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference).
@@ -112,10 +112,10 @@ The FRY Protocol laid the groundwork: behavioral oracles predicting trader reten
 ---
 
 ## Contact / Next Steps
-
-- **Read the whitepaper** – `whitepaper/GH Behavioral Intel [v1].pdf` for complete technical specification.
+ 
+- **Read the whitepaper** – `Deal Room/GH Behavioral Intel [v1].pdf` for complete technical specification.
 - **Explore threat dossiers** – `nemesis/threat_profiles/` for operational playbooks (e.g., Lazarus Group).
-- **Review ontology spec** – `whitepaper/GH_ONTOLOGY_SPEC.md` for Behavioral Intelligence Graph schema.
+- **Review ontology spec** – `Deal Room/GH_ONTOLOGY_SPEC.md` for Behavioral Intelligence Graph schema.
 - **Review AI ontology spec** – `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` for AI-powered architecture.
 - **Schedule integration workshop** – connect existing forensics feeds, receive compiled actor playbooks within weeks.
 

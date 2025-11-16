@@ -67,7 +67,7 @@ pip install -r nemesis/ai_ontology/requirements.txt
 
 - **`nemesis/AI_THREAT_ONTOLOGY_SPEC.md`** — Complete AI ontology specification
 - **`nemesis/AI_ONTOLOGY_INTEGRATION.md`** — Integration roadmap and checklist
-- **`whitepaper/GH_ONTOLOGY_SPEC.md`** — Core Behavioral Intelligence Graph spec
+- **`Deal Room/GH_ONTOLOGY_SPEC.md`** — Core Behavioral Intelligence Graph spec
 
 ---
 *GH Systems — Compiling behavioral bytecode so lawful actors win the economic battlefield.*
