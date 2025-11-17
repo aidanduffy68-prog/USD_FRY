@@ -6,7 +6,7 @@
 **AI-Powered Behavioral Intelligence Infrastructure for Economic Warfare**
 
 <div align="left">
-  <img src="Deal%20Room/gh-systems-logo.png" alt="GH Systems Logo" width="150"/>
+  <img src="Deal%20Room/Assets/gh-systems-logo.png" alt="GH Systems Logo" width="150"/>
 </div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
