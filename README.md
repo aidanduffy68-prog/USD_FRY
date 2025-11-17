@@ -1,4 +1,7 @@
-# GH Systems — Adversarial Behavior Compiler
+# GH Systems — Hypnos Core
+**The Intelligence Platform**
+
+*ABC (Adversarial Behavior Compiler) runs on Hypnos Core*
 
 **AI-Powered Behavioral Intelligence Infrastructure for Economic Warfare**
 
@@ -53,7 +56,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group).
 - `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation).
 - `echo/` — Coordination detection engine (network mapping, facilitator networks).
-- `hypnos/` — Long-term memory & pattern consolidation engine (dormant threat tracking, historical intelligence).
+- `hypnos/` — Hypnos Core: The demiurgic architecture that structures intelligence reality (long-term memory, pattern consolidation, dormant threat tracking).
 
 ---
 
@@ -66,7 +69,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 5. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
 6. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
 
-**Hypnos** operates as a background memory layer that enhances Hades, Echo, and Nemesis with historical intelligence, pattern consolidation, and dormant threat tracking (see `hypnos/` for details).
+**Hypnos Core** is the demiurgic architecture—the core that structures intelligence reality. Built on Hypnos Core, Hades profiles behavior, Echo detects coordination, and Nemesis generates targeting packages. Hypnos Core maintains long-term memory, consolidates patterns, and tracks dormant threats as the foundational architecture (see `hypnos/` for details).
 
 ---
 
@@ -122,5 +125,5 @@ The FRY Protocol laid the groundwork: behavioral oracles predicting trader reten
 - **Review AI ontology spec** – `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` for AI-powered architecture.
 - **Schedule integration workshop** – connect existing forensics feeds, receive compiled actor playbooks within weeks.
 
-**GH Systems** — compiling behavioral bytecode so lawful actors win the economic battlefield.
+**GH Systems Hypnos Core** — The reverse oracle platform that structures behavioral intelligence reality. ABC (Adversarial Behavior Compiler) runs on Hypnos Core, compiling behavioral bytecode so lawful actors win the economic battlefield.
 

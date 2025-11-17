@@ -1,12 +1,12 @@
-# Hypnos — Long-Term Memory & Pattern Consolidation Engine
+# Hypnos Core — The Demiurgic Architecture
 
-**AI-Powered Historical Intelligence & Dormant Threat Detection**
+**The Core That Structures Intelligence Reality**
 
 ## Overview
 
-Hypnos is the long-term memory and pattern consolidation engine (Layer 3) that maintains historical intelligence, tracks dormant threats, and consolidates behavioral patterns over extended time periods. Like sleep consolidates memories, Hypnos consolidates threat intelligence patterns into long-term knowledge that informs current assessments.
+Hypnos Core is the foundational memory architecture that structures intelligence reality. Like the demiurge in Gnostic philosophy, Hypnos Core is the architect that creates and shapes how intelligence is organized, maintained, and understood. It powers Hades, Echo, and Nemesis through pattern consolidation, long-term memory, and dormant threat tracking.
 
-**Architecture Position:** Hypnos operates as a background memory layer that enhances the primary pipeline (Hades → Echo → Nemesis) with historical intelligence. It does not disrupt the main visual flow but operates across all three engines to provide long-term pattern consolidation and dormant threat tracking.
+**Architecture Position:** Hypnos Core is the demiurgic layer—the core architecture that structures intelligence reality. Hades, Echo, and Nemesis operate within the reality structured by Hypnos Core. It maintains long-term memory, consolidates patterns across time, and tracks dormant threats as the foundational architecture.
 
 ## Core Capabilities
 
