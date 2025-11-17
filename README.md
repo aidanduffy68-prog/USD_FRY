@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/images/gh-systems-logo.png" alt="GH Systems Logo" width="300"/>
+</div>
+
 # GH Systems — Hypnos Core
 **The Intelligence Platform**
 
