@@ -1,9 +1,9 @@
-<div align="center">
-  <img src="assets/images/gh-systems-logo.png" alt="GH Systems Logo" width="300"/>
-</div>
-
 # GH Systems — Hypnos Core
 **The Intelligence Platform**
+
+<div align="center">
+  <img src="Deal%20Room/gh-systems-logo.png" alt="GH Systems Logo" width="200"/>
+</div>
 
 *ABC (Adversarial Behavior Compiler) runs on Hypnos Core*
 
