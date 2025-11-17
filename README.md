@@ -52,7 +52,8 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference).
 - `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group).
 - `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation).
-- `echo/visuals/` — ABC pipeline graphics, behavioral graph, BTC settlement flow, operational metrics.
+- `echo/` — Coordination detection engine (network mapping, facilitator networks).
+- `hypnos/` — Long-term memory & pattern consolidation engine (dormant threat tracking, historical intelligence).
 
 ---
 
@@ -62,8 +63,9 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 2. **Hades** — compile raw telemetry into actor signatures & risk posture.
 3. **Echo** — surface coordination networks with confidence/provenance.
 4. **Nemesis** — generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84").
-5. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-6. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
+5. **Hypnos** — consolidate long-term patterns, track dormant threats, maintain historical intelligence memory.
+6. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
+7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
 
 ---
 

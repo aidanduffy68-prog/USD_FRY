@@ -44,6 +44,18 @@ class ThreatDossier:
     confidence_scores: Dict[str, float] = field(default_factory=dict)
     evidence_sources: List[str] = field(default_factory=list)
     
+    # Counterintelligence Intelligence
+    hidden_relationships: List[Dict[str, Any]] = field(default_factory=list)
+    multi_source_fusion: Dict[str, Any] = field(default_factory=dict)
+    counterintelligence_assessment: Dict[str, Any] = field(default_factory=dict)
+    operational_security_indicators: List[str] = field(default_factory=list)
+    
+    # Regional Intelligence
+    regional_intelligence: Dict[str, Any] = field(default_factory=dict)
+    regional_exchange_relationships: List[Dict[str, Any]] = field(default_factory=list)
+    regional_facilitator_networks: List[Dict[str, Any]] = field(default_factory=list)
+    sanctions_evasion_patterns: List[str] = field(default_factory=list)
+    
     # Metadata
     model_version: str = "1.0.0"
     classification_level: str = "CONFIDENTIAL"
@@ -117,6 +129,16 @@ class ThreatDossierGenerator:
             behavioral_signature, network_data, threat_forecast, transaction_history
         )
         
+        # Compile counterintelligence intelligence
+        hidden_relationships = self._compile_hidden_relationships(network_data, behavioral_signature)
+        multi_source_fusion = self._compile_multi_source_fusion(
+            behavioral_signature, network_data, threat_forecast, transaction_history, intelligence_reports
+        )
+        counterintelligence_assessment = self._generate_counterintelligence_assessment(
+            behavioral_signature, network_data, threat_forecast
+        )
+        operational_security_indicators = self._identify_operational_security_indicators(behavioral_signature)
+        
         # Determine distribution list
         distribution = self._determine_distribution(threat_level, classification)
         
@@ -142,6 +164,10 @@ class ThreatDossierGenerator:
             recommended_countermeasures=recommended_countermeasures,
             confidence_scores=confidence_scores,
             evidence_sources=evidence_sources,
+            hidden_relationships=hidden_relationships,
+            multi_source_fusion=multi_source_fusion,
+            counterintelligence_assessment=counterintelligence_assessment,
+            operational_security_indicators=operational_security_indicators,
             model_version=self.model_version,
             classification_level=self._determine_classification_level(threat_level),
             distribution=distribution
@@ -238,11 +264,48 @@ Generated: {dossier.generated_at.isoformat()}
             md += f"- {source}\n"
         
         md += f"""
+## COUNTERINTELLIGENCE ANALYSIS
+
+**Multi-Source Intelligence Fusion:**
+- Sources fused: {len(dossier.multi_source_fusion.get('sources', []))}
+- Fusion confidence: {dossier.multi_source_fusion.get('confidence', 0.0):.2f}
+- Intelligence gaps: {dossier.multi_source_fusion.get('gaps', [])}
+
+**Hidden Relationship Discovery:**
+"""
+        for rel in dossier.hidden_relationships[:5]:  # Limit to 5
+            md += f"- {rel.get('type', 'unknown')}: {rel.get('target', 'unknown')} (confidence: {rel.get('confidence', 0.0):.2f})\n"
+            if rel.get('evidence'):
+                md += f"  - Evidence: {', '.join(rel['evidence'][:2])}\n"
+        
+        md += f"""
+**Counterintelligence Assessment:**
+- Adversarial sophistication: {dossier.counterintelligence_assessment.get('sophistication', 'N/A')}
+- Operational security level: {dossier.counterintelligence_assessment.get('opsec_level', 'N/A')}
+- Deception indicators: {len(dossier.counterintelligence_assessment.get('deception_indicators', []))}
+- Coordination sophistication: {dossier.counterintelligence_assessment.get('coordination_sophistication', 'N/A')}
+
+**Operational Security Indicators:**
+"""
+        for indicator in dossier.operational_security_indicators[:5]:  # Limit to 5
+            md += f"- {indicator}\n"
+        
+        md += f"""
+**Counterintelligence Recommendations:**
+"""
+        ci_recommendations = dossier.counterintelligence_assessment.get('recommendations', [])
+        for rec in ci_recommendations:
+            md += f"- {rec}\n"
+        
+        md += f"""
 ## OPERATIONAL CLASSIFICATION
 
 This dossier contains:
 - Active targeting methodologies
 - Behavioral prediction models
+- Counterintelligence analysis
+- Hidden relationship discovery
+- Multi-source intelligence fusion
 - Allied coordination details
 - Interdiction protocols
 
@@ -371,4 +434,180 @@ Distribution limited to: {', '.join(dossier.distribution)}
             return "SECRET"
         else:
             return "CONFIDENTIAL"
+    
+    def _compile_hidden_relationships(
+        self,
+        network_data: Dict[str, Any],
+        behavioral_signature: Dict[str, Any]
+    ) -> List[Dict[str, Any]]:
+        """Compile hidden relationships discovered through GNN inference"""
+        relationships = []
+        
+        # Extract coordination relationships
+        if network_data.get('coordination_rings'):
+            for ring in network_data['coordination_rings']:
+                relationships.append({
+                    "type": "COORDINATES_WITH",
+                    "target": ring.get('partner_id', 'unknown'),
+                    "confidence": ring.get('confidence', 0.0),
+                    "evidence": ring.get('evidence', [])
+                })
+        
+        # Extract control relationships
+        if network_data.get('control_structures'):
+            for control in network_data['control_structures']:
+                relationships.append({
+                    "type": "CONTROLS",
+                    "target": control.get('controlled_entity', 'unknown'),
+                    "confidence": control.get('confidence', 0.0),
+                    "evidence": control.get('evidence', [])
+                })
+        
+        # Extract behavioral similarity relationships
+        if behavioral_signature.get('similar_actors'):
+            for similar in behavioral_signature['similar_actors']:
+                relationships.append({
+                    "type": "BEHAVES_LIKE",
+                    "target": similar.get('actor_id', 'unknown'),
+                    "confidence": similar.get('similarity_score', 0.0),
+                    "evidence": ["behavioral_signature_similarity"]
+                })
+        
+        return relationships
+    
+    def _compile_multi_source_fusion(
+        self,
+        behavioral_signature: Dict[str, Any],
+        network_data: Dict[str, Any],
+        threat_forecast: Dict[str, Any],
+        transaction_history: List[Dict[str, Any]],
+        intelligence_reports: Optional[List[str]]
+    ) -> Dict[str, Any]:
+        """Compile multi-source intelligence fusion summary"""
+        sources = []
+        
+        if behavioral_signature:
+            sources.append("behavioral_signature")
+        if network_data:
+            sources.append("network_analysis")
+        if threat_forecast:
+            sources.append("threat_forecast")
+        if transaction_history:
+            sources.append("transaction_history")
+        if intelligence_reports:
+            sources.append("intelligence_reports")
+        
+        # Calculate fusion confidence (weighted average)
+        confidences = []
+        if behavioral_signature.get('confidence'):
+            confidences.append(behavioral_signature['confidence'])
+        if network_data.get('confidence'):
+            confidences.append(network_data['confidence'])
+        if threat_forecast.get('confidence'):
+            confidences.append(threat_forecast['confidence'])
+        
+        fusion_confidence = sum(confidences) / len(confidences) if confidences else 0.0
+        
+        # Identify intelligence gaps
+        gaps = []
+        if not transaction_history:
+            gaps.append("transaction_history")
+        if not intelligence_reports:
+            gaps.append("intelligence_reports")
+        if not network_data.get('coordination_rings'):
+            gaps.append("coordination_network")
+        
+        return {
+            "sources": sources,
+            "confidence": fusion_confidence,
+            "gaps": gaps,
+            "fusion_method": "multi_source_weighted_average"
+        }
+    
+    def _generate_counterintelligence_assessment(
+        self,
+        behavioral_signature: Dict[str, Any],
+        network_data: Dict[str, Any],
+        threat_forecast: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """Generate counterintelligence assessment"""
+        # Assess adversarial sophistication
+        sophistication = "LOW"
+        if behavioral_signature.get('pattern_repetition', 0.0) > 0.7:
+            sophistication = "MEDIUM"
+        if network_data.get('coordination_score', 0.0) > 0.7:
+            sophistication = "HIGH"
+        if threat_forecast.get('overall_risk_score', 0.0) > 0.8:
+            sophistication = "CRITICAL"
+        
+        # Assess operational security level
+        opsec_level = "BASIC"
+        if behavioral_signature.get('route_entropy', 0.0) > 0.7:
+            opsec_level = "INTERMEDIATE"
+        if behavioral_signature.get('pattern_repetition', 0.0) < 0.3:  # Low repetition = high opsec
+            opsec_level = "ADVANCED"
+        
+        # Identify deception indicators
+        deception_indicators = []
+        if behavioral_signature.get('route_entropy', 0.0) > 0.8:
+            deception_indicators.append("high_route_diversity")
+        if network_data.get('coordination_score', 0.0) > 0.7 and network_data.get('facilitator_count', 0) > 5:
+            deception_indicators.append("complex_coordination_network")
+        
+        # Assess coordination sophistication
+        coordination_sophistication = "NONE"
+        if network_data.get('coordination_score', 0.0) > 0.5:
+            coordination_sophistication = "BASIC"
+        if network_data.get('coordination_score', 0.0) > 0.7:
+            coordination_sophistication = "ADVANCED"
+        if network_data.get('facilitator_count', 0) > 10:
+            coordination_sophistication = "SOPHISTICATED"
+        
+        # Generate counterintelligence recommendations
+        recommendations = []
+        if sophistication in ["HIGH", "CRITICAL"]:
+            recommendations.append("Prioritize multi-source intelligence collection")
+        if opsec_level == "ADVANCED":
+            recommendations.append("Focus on behavioral pattern analysis over transaction tracking")
+        if coordination_sophistication in ["ADVANCED", "SOPHISTICATED"]:
+            recommendations.append("Target facilitator network disruption")
+        if deception_indicators:
+            recommendations.append("Investigate deception patterns for operational security vulnerabilities")
+        
+        return {
+            "sophistication": sophistication,
+            "opsec_level": opsec_level,
+            "deception_indicators": deception_indicators,
+            "coordination_sophistication": coordination_sophistication,
+            "recommendations": recommendations
+        }
+    
+    def _identify_operational_security_indicators(self, behavioral_signature: Dict[str, Any]) -> List[str]:
+        """Identify operational security indicators from behavioral signature"""
+        indicators = []
+        
+        traits = behavioral_signature.get('traits', {})
+        
+        # High route entropy = trying to obfuscate
+        if traits.get('route_entropy', 0.0) > 0.7:
+            indicators.append("High route diversity (potential obfuscation attempt)")
+        
+        # Low pattern repetition = operational security
+        if traits.get('pattern_repetition', 1.0) < 0.3:
+            indicators.append("Low pattern repetition (operational security discipline)")
+        
+        # Systematic mixer usage = privacy focus
+        if behavioral_signature.get('pattern_matches'):
+            if any('mixer' in p.lower() for p in behavioral_signature['pattern_matches']):
+                indicators.append("Systematic privacy tool usage")
+        
+        # Timing patterns = operational windows
+        if traits.get('timing_preference'):
+            indicators.append(f"Consistent timing patterns (operational window: {traits['timing_preference']})")
+        
+        # Rapid chain switching = evasion attempt
+        if traits.get('route_entropy', 0.0) > 0.8:
+            indicators.append("Rapid chain switching (potential evasion maneuver)")
+        
+        return indicators
 

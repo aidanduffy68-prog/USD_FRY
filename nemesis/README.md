@@ -33,6 +33,7 @@ Nemesis is the pre-emptive targeting engine that transforms the Adversarial Beha
 Nemesis integrates with:
 - **Hades** — Behavioral profiling engine
 - **Echo** — Coordination detection engine
+- **Hypnos** — Long-term memory & pattern consolidation engine
 - **Bitcoin Settlement Layer** — Automated bounty payouts
 
 ---
