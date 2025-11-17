@@ -66,24 +66,28 @@ Hypnos operates as a meta-layer that enhances all three core layers:
 
 ## Data Flow
 
+**Primary Pipeline (Visual Flow):**
 ```
 Raw Telemetry
     ↓
-[Layer 1: Detection]
-    ├─ Hades → Individual behavioral profiles
-    └─ Echo → Coordination networks
+Hades → Individual behavioral profiles
     ↓
-[Layer 2: Analysis]
-    └─ Nemesis → Targeting packages
+Echo → Coordination networks
     ↓
-[Layer 3: Memory]
-    └─ Hypnos → Consolidated patterns, historical context
-    ↓
-[Cross-Layer Enhancement]
-    └─ Hypnos enhances Hades/Echo/Nemesis with historical intelligence
+Nemesis → Targeting packages
     ↓
 Executable Intelligence Packages
 ```
+
+**Background Memory Layer (Hypnos):**
+```
+Hypnos operates across the pipeline:
+    ├─ Enhances Hades with historical behavioral patterns
+    ├─ Enhances Echo with historical coordination networks
+    └─ Enhances Nemesis with historical pattern matching
+```
+
+**Note:** For visual presentations, the primary pipeline (Hades → Echo → Nemesis) remains the main flow. Hypnos operates as a background memory layer that enhances all three without disrupting the visual flow.
 
 ---
 

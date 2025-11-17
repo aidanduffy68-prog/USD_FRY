@@ -57,22 +57,16 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 
 ---
 
-## How ABC Works (Three-Layer Architecture)
+## How ABC Works (Quick View)
 
-### Layer 1: Detection (Individual & Network)
 1. **Signal intake** — ingest Chainalysis/TRM/Chaos/external research outputs.
-2. **Hades** — compile raw telemetry into actor signatures & risk posture (individual behavioral profiling).
-3. **Echo** — surface coordination networks with confidence/provenance (collective pattern detection).
-
-### Layer 2: Analysis (Targeting & Prediction)
+2. **Hades** — compile raw telemetry into actor signatures & risk posture.
+3. **Echo** — surface coordination networks with confidence/provenance.
 4. **Nemesis** — generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84").
+5. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
+6. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
 
-### Layer 3: Memory (Long-Term Intelligence)
-5. **Hypnos** — consolidate long-term patterns, track dormant threats, maintain historical intelligence memory (operates across all layers).
-
-### Settlement & Output
-6. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
+**Hypnos** operates as a background memory layer that enhances Hades, Echo, and Nemesis with historical intelligence, pattern consolidation, and dormant threat tracking (see `hypnos/` for details).
 
 ---
 

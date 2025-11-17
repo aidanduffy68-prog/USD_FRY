@@ -6,7 +6,7 @@
 
 Hypnos is the long-term memory and pattern consolidation engine (Layer 3) that maintains historical intelligence, tracks dormant threats, and consolidates behavioral patterns over extended time periods. Like sleep consolidates memories, Hypnos consolidates threat intelligence patterns into long-term knowledge that informs current assessments.
 
-**Architecture Position:** Hypnos operates as both Layer 3 (Memory) and a meta-layer that enhances Layer 1 (Hades/Echo) and Layer 2 (Nemesis) with historical intelligence.
+**Architecture Position:** Hypnos operates as a background memory layer that enhances the primary pipeline (Hades → Echo → Nemesis) with historical intelligence. It does not disrupt the main visual flow but operates across all three engines to provide long-term pattern consolidation and dormant threat tracking.
 
 ## Core Capabilities
 
