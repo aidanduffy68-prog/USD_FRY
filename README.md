@@ -1,13 +1,13 @@
 # GH Systems — Hypnos Core
 **The Intelligence Platform**
 
-<div align="center">
-  <img src="Deal%20Room/gh-systems-logo.png" alt="GH Systems Logo" width="200"/>
-</div>
-
 *ABC (Adversarial Behavior Compiler) runs on Hypnos Core*
 
 **AI-Powered Behavioral Intelligence Infrastructure for Economic Warfare**
+
+<div align="left">
+  <img src="Deal%20Room/gh-systems-logo.png" alt="GH Systems Logo" width="150"/>
+</div>
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
