@@ -36,6 +36,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 ## Recent Highlights
 
 - **AI-Powered Threat Ontology** – ABC is now an AI-powered threat ontology that learns, evolves, and provides deeper intelligence than rule-based systems.
+- **On-Chain Cryptographic Receipts** – Everything proprietary stays off-chain. Only minimal cryptographic proofs go on-chain, turning intelligence into verifiable objects usable everywhere.
 - **Whitepaper v1.0** – Complete technical specification with Bitcoin settlement layer, integration models, and FY2026 competitive timeline.
 - **Bitcoin settlement layer** – Agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
 - **Threat actor dossiers** – `nemesis/threat_profiles/` (ex: Lazarus) provide operational playbooks with Hades/Echo/Nemesis outputs.
@@ -57,6 +58,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - `nemesis/ABC_BEHAVIORAL_INTELLIGENCE_WHITEPAPER.md` — Full whitepaper markdown with technical details.
 - `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` — AI-powered threat ontology architecture.
 - `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference).
+- `nemesis/on_chain_receipt/` — Cryptographic receipt system (proprietary off-chain, minimal proofs on-chain).
 - `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group).
 - `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation).
 - `echo/` — Coordination detection engine (network mapping, facilitator networks).
@@ -70,10 +72,20 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 2. **Hades** — compile raw telemetry into actor signatures & risk posture.
 3. **Echo** — surface coordination networks with confidence/provenance.
 4. **Nemesis** — generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84").
-5. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-6. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
+5. **Cryptographic receipts** — generate minimal on-chain proofs (hash, timestamp, signature) without revealing proprietary systems.
+6. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
+7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
 
 **Hypnos Core** is the demiurgic architecture—the core that structures intelligence reality. Built on Hypnos Core, Hades profiles behavior, Echo detects coordination, and Nemesis generates targeting packages. Hypnos Core maintains long-term memory, consolidates patterns, and tracks dormant threats as the foundational architecture (see `hypnos/` for details).
+
+### On-Chain Strategy
+
+**Everything proprietary stays off-chain. Only tiny cryptographic proofs go on-chain.**
+
+- **Off-Chain:** All AI models, full intelligence packages, proprietary systems
+- **On-Chain:** Minimal cryptographic receipts (hash, timestamp, signature, minimal metadata)
+
+This turns intelligence into **verifiable objects** that can be used everywhere—beyond settlements, into workflows. Intelligence becomes portable, trustworthy, and usable in any system. See `nemesis/on_chain_receipt/` for implementation.
 
 ---
 
@@ -127,6 +139,7 @@ The FRY Protocol laid the groundwork: behavioral oracles predicting trader reten
 - **Explore threat dossiers** – `nemesis/threat_profiles/` for operational playbooks (e.g., Lazarus Group).
 - **Review ontology spec** – `Deal Room/GH_ONTOLOGY_SPEC.md` for Behavioral Intelligence Graph schema.
 - **Review AI ontology spec** – `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` for AI-powered architecture.
+- **Review on-chain receipts** – `nemesis/on_chain_receipt/` for cryptographic receipt system (proprietary off-chain, proofs on-chain).
 - **Schedule integration workshop** – connect existing forensics feeds, receive compiled actor playbooks within weeks.
 
 **GH Systems Hypnos Core** — The reverse oracle platform that structures behavioral intelligence reality. ABC (Adversarial Behavior Compiler) runs on Hypnos Core, compiling behavioral bytecode so lawful actors win the economic battlefield.
