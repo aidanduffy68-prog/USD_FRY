@@ -4,7 +4,7 @@ Automatically generates comprehensive threat actor dossiers
 """
 
 from typing import List, Dict, Any, Optional
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
 from datetime import datetime
 from enum import Enum
 
@@ -70,6 +70,8 @@ class ThreatDossierGenerator:
     
     def __init__(self):
         self.model_version = "1.0.0"
+        # Lazy import to avoid circular dependencies
+        self._receipt_generator = None
         
     def generate_dossier(
         self,
@@ -172,8 +174,45 @@ class ThreatDossierGenerator:
             classification_level=self._determine_classification_level(threat_level),
             distribution=distribution
         )
+    
+    def generate_receipt(self, dossier: ThreatDossier) -> Dict[str, Any]:
+        """
+        Generate cryptographic receipt for dossier
         
-        return dossier
+        Args:
+            dossier: ThreatDossier to generate receipt for
+            
+        Returns:
+            Receipt data (minimal on-chain proof)
+        """
+        # Lazy import
+        if self._receipt_generator is None:
+            try:
+                from nemesis.on_chain_receipt import CryptographicReceiptGenerator
+                self._receipt_generator = CryptographicReceiptGenerator()
+            except ImportError:
+                # If receipt system not available, return None
+                return None
+        
+        # Convert dossier to dict for hashing
+        dossier_dict = asdict(dossier)
+        # Convert datetime to string for JSON serialization
+        dossier_dict['generated_at'] = dossier.generated_at.isoformat()
+        
+        # Generate receipt
+        receipt = self._receipt_generator.generate_receipt(
+            intelligence_package=dossier_dict,
+            actor_id=dossier.actor_id,
+            threat_level=dossier.threat_level,
+            package_type="threat_dossier",
+            additional_metadata={
+                "dossier_id": dossier.dossier_id,
+                "classification": dossier.classification
+            }
+        )
+        
+        # Return minimal on-chain data
+        return self._receipt_generator.prepare_for_on_chain(receipt)
     
     def export_dossier_markdown(self, dossier: ThreatDossier) -> str:
         """Export dossier as markdown (like THREAT_PROFILE_LAZARUS.md format)"""
