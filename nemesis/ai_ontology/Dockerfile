@@ -20,6 +20,9 @@ COPY nemesis/ai_ontology/api_endpoints.py .
 RUN useradd -m -u 1000 abc && chown -R abc:abc /app
 USER abc
 
+# Set PYTHONPATH so imports work
+ENV PYTHONPATH=/app
+
 # Expose port
 EXPOSE 5000
 

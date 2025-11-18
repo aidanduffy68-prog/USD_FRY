@@ -9,17 +9,40 @@ from datetime import datetime
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 
-from .integration_layer import ABCIntegrationLayer
-from .natural_language_interface import NaturalLanguageInterface
-from .threat_dossier_generator import ThreatDossierGenerator
+# Fix imports to work both as module and standalone script
+# When run as module: use relative imports
+# When run as script (Docker): use ai_ontology.* imports (PYTHONPATH=/app)
+# When run locally: try relative, fall back to direct imports
+try:
+    from .integration_layer import ABCIntegrationLayer
+    from .natural_language_interface import NaturalLanguageInterface
+    from .threat_dossier_generator import ThreatDossierGenerator
+except ImportError:
+    # Running as standalone script - try absolute imports
+    try:
+        from ai_ontology.integration_layer import ABCIntegrationLayer
+        from ai_ontology.natural_language_interface import NaturalLanguageInterface
+        from ai_ontology.threat_dossier_generator import ThreatDossierGenerator
+    except ImportError:
+        # Last resort: direct imports (when running from same directory)
+        from integration_layer import ABCIntegrationLayer
+        from natural_language_interface import NaturalLanguageInterface
+        from threat_dossier_generator import ThreatDossierGenerator
 
 app = Flask(__name__)
 CORS(app)
 
-# Initialize integration layer
-abc = ABCIntegrationLayer()
-nl_interface = NaturalLanguageInterface()
-dossier_gen = ThreatDossierGenerator()
+# Initialize integration layer (with error handling)
+try:
+    abc = ABCIntegrationLayer()
+    nl_interface = NaturalLanguageInterface()
+    dossier_gen = ThreatDossierGenerator()
+except Exception as e:
+    # Log initialization error but allow server to start
+    print(f"Warning: Failed to initialize some components: {e}")
+    abc = None
+    nl_interface = None
+    dossier_gen = None
 
 
 @app.route('/api/v1/health', methods=['GET'])
@@ -47,9 +70,27 @@ def process_intelligence():
         "transaction_data": [...] (optional)
     }
     """
-    data = request.json
+    if not request.is_json:
+        return jsonify({
+            "status": "error",
+            "message": "Request must be JSON"
+        }), 400
+    
+    data = request.json or {}
     intelligence = data.get('intelligence', [])
     transaction_data = data.get('transaction_data')
+    
+    if not intelligence:
+        return jsonify({
+            "status": "error",
+            "message": "intelligence field is required"
+        }), 400
+    
+    if abc is None:
+        return jsonify({
+            "status": "error",
+            "message": "Integration layer not initialized"
+        }), 500
     
     try:
         result = abc.process_intelligence_feed(intelligence, transaction_data)
@@ -74,6 +115,12 @@ def get_targeting_package(actor_id: str):
     """
     include_dossier = request.args.get('include_dossier', 'false').lower() == 'true'
     
+    if abc is None:
+        return jsonify({
+            "status": "error",
+            "message": "Integration layer not initialized"
+        }), 500
+    
     # This would normally fetch from database
     # For now, return structure
     try:
@@ -85,7 +132,7 @@ def get_targeting_package(actor_id: str):
         
         package = abc.generate_targeting_package(actor_id, intelligence_package)
         
-        if not include_dossier:
+        if not include_dossier and 'dossier' in package:
             package.pop('dossier', None)
         
         return jsonify({
@@ -110,7 +157,13 @@ def natural_language_query():
         "user": "analyst_123" (optional)
     }
     """
-    data = request.json
+    if not request.is_json:
+        return jsonify({
+            "status": "error",
+            "message": "Request must be JSON"
+        }), 400
+    
+    data = request.json or {}
     query = data.get('query')
     user = data.get('user')
     
@@ -119,6 +172,12 @@ def natural_language_query():
             "status": "error",
             "message": "Query is required"
         }), 400
+    
+    if abc is None:
+        return jsonify({
+            "status": "error",
+            "message": "Integration layer not initialized"
+        }), 500
     
     try:
         result = abc.query_natural_language(query, user)
@@ -142,6 +201,12 @@ def get_threat_dossier(actor_id: str):
     - format: "json" or "markdown" (default: json)
     """
     format_type = request.args.get('format', 'json').lower()
+    
+    if dossier_gen is None:
+        return jsonify({
+            "status": "error",
+            "message": "Dossier generator not initialized"
+        }), 500
     
     try:
         # Mock data (would come from database)
@@ -183,7 +248,13 @@ def record_feedback():
         "predicted_outcome": {...} (optional)
     }
     """
-    data = request.json
+    if not request.is_json:
+        return jsonify({
+            "status": "error",
+            "message": "Request must be JSON"
+        }), 400
+    
+    data = request.json or {}
     feedback_type = data.get('feedback_type')
     entity_id = data.get('entity_id')
     actual_outcome = data.get('actual_outcome')
@@ -194,6 +265,12 @@ def record_feedback():
             "status": "error",
             "message": "feedback_type, entity_id, and actual_outcome are required"
         }), 400
+    
+    if abc is None:
+        return jsonify({
+            "status": "error",
+            "message": "Integration layer not initialized"
+        }), 500
     
     try:
         feedback = abc.record_feedback(
@@ -216,6 +293,12 @@ def record_feedback():
 @app.route('/api/v1/learning/report', methods=['GET'])
 def get_learning_report():
     """Get continuous learning performance report"""
+    if abc is None or not hasattr(abc, 'learning_system'):
+        return jsonify({
+            "status": "error",
+            "message": "Learning system not available"
+        }), 500
+    
     try:
         report = abc.learning_system.generate_learning_report()
         return jsonify({

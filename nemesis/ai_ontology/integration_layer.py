@@ -52,7 +52,10 @@ class ABCIntegrationLayer:
         # Step 1: Semantic understanding - extract entities
         entities = []
         for item in raw_intelligence:
-            extracted = self.semantic_layer.extract_entities(item)
+            # Handle both dict and string formats
+            text = item.get("text", item) if isinstance(item, dict) else str(item)
+            source_type = item.get("source", "report") if isinstance(item, dict) else "report"
+            extracted = self.semantic_layer.extract_entities(text, source_type)
             entities.extend(extracted)
         
         # Step 2: Auto-classification

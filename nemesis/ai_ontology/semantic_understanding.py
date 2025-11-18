@@ -75,13 +75,14 @@ class SemanticUnderstandingLayer:
         """
         # TODO: Implement LLM-based extraction
         # This would call GPT-4/Claude with structured output schema
-        # For now, return placeholder structure
+        # For now, return mock entities based on text analysis
         
         prompt = self._build_extraction_prompt(text, source_type)
         # llm_response = self._call_llm(prompt)
         # entities = self._parse_llm_response(llm_response)
         
-        return []
+        # Mock entity extraction - extract basic entities from text
+        return self._extract_mock_entities(text, source_type)
     
     def _build_extraction_prompt(self, text: str, source_type: str) -> str:
         """Build prompt for LLM entity extraction"""
@@ -122,6 +123,127 @@ Return JSON array of entities with:
         
         # Deduplicate and merge entities
         return self._deduplicate_entities(all_entities)
+    
+    def _extract_mock_entities(self, text: str, source_type: str) -> List[ExtractedEntity]:
+        """Extract mock entities from text using keyword matching (for demo purposes)"""
+        import re
+        from datetime import datetime
+        
+        entities = []
+        text_lower = text.lower()
+        
+        # Known threat actor patterns
+        threat_actors = {
+            "lazarus": ("LAZARUS_GROUP", "Lazarus Group", "nation_state"),
+            "north korea": ("DPRK_ACTOR", "North Korean Actor", "nation_state"),
+            "dprk": ("DPRK_ACTOR", "North Korean Actor", "nation_state"),
+            "tornado cash": ("TORNADO_CASH", "Tornado Cash", "organization"),
+            "ronin": ("RONIN_BRIDGE", "Ronin Bridge", "organization"),
+        }
+        
+        # Extract wallet addresses (0x...)
+        wallet_pattern = r'0x[a-fA-F0-9]{40}'
+        wallets = re.findall(wallet_pattern, text)
+        
+        # Extract amounts ($X.XM, $X.XK, etc.)
+        amount_pattern = r'\$?([\d.]+[MK]?)'
+        amounts = re.findall(amount_pattern, text)
+        
+        # Extract dates
+        date_pattern = r'(\d{4}-\d{2}-\d{2})'
+        dates = re.findall(date_pattern, text)
+        
+        entity_id_counter = 1
+        
+        # Add threat actor entities
+        for keyword, (actor_id, name, actor_type) in threat_actors.items():
+            if keyword in text_lower:
+                entities.append(ExtractedEntity(
+                    entity_type=EntityType.ACTOR,
+                    entity_id=actor_id,
+                    name=name,
+                    attributes={
+                        "type": actor_type,
+                        "risk_score": 0.95,
+                        "jurisdiction": "DPRK" if "north korea" in keyword or "dprk" in keyword else "Unknown",
+                        "mentioned_in": source_type
+                    },
+                    confidence=0.85,
+                    source_text=text[:200],  # First 200 chars
+                    relationships=[]
+                ))
+        
+        # Add wallet entities
+        for wallet in wallets[:3]:  # Limit to first 3 wallets
+            entities.append(ExtractedEntity(
+                entity_type=EntityType.ACTOR,
+                entity_id=f"WALLET_{wallet[:8].upper()}",
+                name=f"Wallet {wallet[:10]}...",
+                attributes={
+                    "type": "wallet",
+                    "address": wallet,
+                    "risk_score": 0.75,
+                    "mentioned_in": source_type
+                },
+                confidence=0.80,
+                source_text=text[:200],
+                relationships=[]
+            ))
+        
+        # Add event entities if dates found
+        if dates:
+            for date in dates[:2]:  # Limit to first 2 dates
+                entities.append(ExtractedEntity(
+                    entity_type=EntityType.EVENT,
+                    entity_id=f"EVENT_{entity_id_counter}",
+                    name=f"Activity on {date}",
+                    attributes={
+                        "event_type": "transaction",
+                        "timestamp": date,
+                        "value_usd": amounts[0] if amounts else "unknown",
+                        "mentioned_in": source_type
+                    },
+                    confidence=0.70,
+                    source_text=text[:200],
+                    relationships=[]
+                ))
+                entity_id_counter += 1
+        
+        # Add pattern entities for common patterns
+        if "tornado cash" in text_lower or "mixer" in text_lower:
+            entities.append(ExtractedEntity(
+                entity_type=EntityType.PATTERN,
+                entity_id=f"PATTERN_MIXER_{entity_id_counter}",
+                name="Privacy Tool Usage Pattern",
+                attributes={
+                    "category": "behavioral_signature",
+                    "description": "Use of privacy-preserving tools",
+                    "confidence": 0.85,
+                    "mentioned_in": source_type
+                },
+                confidence=0.80,
+                source_text=text[:200],
+                relationships=[]
+            ))
+            entity_id_counter += 1
+        
+        # If no entities found, return at least one generic entity
+        if not entities:
+            entities.append(ExtractedEntity(
+                entity_type=EntityType.ACTOR,
+                entity_id="UNKNOWN_ACTOR_1",
+                name="Unidentified Actor",
+                attributes={
+                    "type": "unknown",
+                    "risk_score": 0.50,
+                    "mentioned_in": source_type
+                },
+                confidence=0.50,
+                source_text=text[:200],
+                relationships=[]
+            ))
+        
+        return entities
     
     def _deduplicate_entities(self, entities: List[ExtractedEntity]) -> List[ExtractedEntity]:
         """Merge duplicate entities from multiple sources"""
