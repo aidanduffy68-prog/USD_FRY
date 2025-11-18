@@ -1,0 +1,80 @@
+{
+  "example": "Verifiable Scoring Primitives - Before & After",
+  "description": "Demonstrates how intelligence becomes verifiable objects",
+  
+  "off_chain": {
+    "label": "OFF-CHAIN (Proprietary)",
+    "size": "~2.3MB",
+    "contains": [
+      "Full AI models",
+      "Complete intelligence packages",
+      "All proprietary systems",
+      "Transaction history (1000+ transactions)",
+      "Network analysis (full graph data)",
+      "AI model outputs (proprietary ML results)",
+      "Intelligence sources (classified)"
+    ],
+    "example_intelligence": {
+      "actor_id": "LAZARUS_GROUP",
+      "actor_name": "Lazarus Group (DPRK)",
+      "threat_level": "critical",
+      "risk_scores": {
+        "overall_risk": 0.94,
+        "sanctions_evasion_risk": 0.97,
+        "coordination_risk": 0.89,
+        "off_ramp_risk": 0.92
+      },
+      "behavioral_signature": {
+        "risk_tolerance": 0.95,
+        "pattern_repetition": 1.00,
+        "flight_risk": 0.96,
+        "coordination_likelihood": 0.88
+      },
+      "threat_assessment": {
+        "threat_level": "critical",
+        "confidence": 0.89,
+        "next_action_window": "48-72h"
+      }
+    }
+  },
+  
+  "on_chain": {
+    "label": "ON-CHAIN (Verifiable Proof)",
+    "size": "~400 bytes",
+    "contains": [
+      "Cryptographic hash",
+      "Timestamp",
+      "GH Systems signature",
+      "Minimal metadata (actor_id, threat_level, package_type)"
+    ],
+    "example_receipt": {
+      "receipt_id": "bdb37b05cbc491e46abe521b42aa8dd4",
+      "intelligence_hash": "9c9832a491bf0edf47f0f50f5a47ee94e8e73e8cba7f64a1eb874b536a126362",
+      "timestamp": "2025-11-18T17:43:55.377172",
+      "actor_id": "LAZARUS_GROUP",
+      "threat_level": "critical",
+      "package_type": "threat_assessment",
+      "signature": "601da71bd61c1d29f94c67d004a5222993b6632b6e45989e6b45a7ff3ce3f0e8",
+      "version": "1.0.0"
+    }
+  },
+  
+  "verification": {
+    "what_can_be_verified": [
+      "Intelligence came from GH Systems",
+      "Scoring primitives are authentic",
+      "No proprietary methods revealed",
+      "Hash matches original intelligence package",
+      "Signature is valid"
+    ],
+    "result": "Scoring primitives are verifiable without revealing proprietary methods"
+  },
+  
+  "comparison": {
+    "size_reduction": "2.3MB → 400 bytes (99.98% reduction)",
+    "privacy": "All proprietary systems stay private",
+    "verifiability": "All scoring primitives are cryptographically provable",
+    "usability": "Intelligence becomes verifiable objects usable everywhere"
+  }
+}
+
