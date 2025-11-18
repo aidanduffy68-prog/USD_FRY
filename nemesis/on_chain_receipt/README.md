@@ -76,6 +76,30 @@ The receipt system integrates with:
 - **Predictive Models** — Receipts for forecasts
 - **Bitcoin Settlement** — Link receipts to payments
 
+## Licensee Contributions
+
+**Licensees can contribute intelligence via BTC without revealing proprietary information.**
+
+The receipt system enables bidirectional intelligence flow:
+- **GH Systems → Licensees:** Receive intelligence with cryptographic receipts
+- **Licensees → GH Systems:** Contribute intelligence with cryptographic receipts
+
+Licensees submit intelligence packages and receive cryptographic receipts, just like they receive intelligence from GH Systems. This creates a network where intelligence flows both ways while keeping all proprietary systems private.
+
+```python
+# Licensee contributes intelligence
+generator = CryptographicReceiptGenerator(licensee_id="licensee_001")
+receipt = generator.generate_licensee_contribution_receipt(
+    intelligence_package=licensee_intelligence,
+    licensee_id="licensee_001",
+    actor_id="SUSPECT_ACTOR",
+    threat_level="high"
+)
+
+# Commit to blockchain for BTC settlement
+tx_hash = generator.commit_to_blockchain(receipt)
+```
+
 ## Benefits
 
 1. **Privacy** — Proprietary systems stay private
@@ -83,6 +107,7 @@ The receipt system integrates with:
 3. **Portability** — Intelligence can be used anywhere
 4. **Trust** — Proof of authenticity without revealing methods
 5. **Workflow Integration** — Not just payments, but actual intelligence workflows
+6. **Bidirectional Flow** — Licensees can contribute intelligence via BTC without revealing proprietary info
 
 ---
 

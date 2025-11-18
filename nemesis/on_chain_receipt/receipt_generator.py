@@ -45,16 +45,22 @@ class CryptographicReceiptGenerator:
     """
     Generates cryptographic receipts for intelligence outputs
     Keeps all proprietary systems off-chain, only puts proof on-chain
+    
+    Enables licensees to contribute intelligence via BTC without revealing proprietary information.
+    Licensees can submit intelligence packages and receive cryptographic receipts, just like they
+    receive intelligence from GH Systems—creating a bidirectional intelligence flow.
     """
     
-    def __init__(self, private_key: Optional[str] = None):
+    def __init__(self, private_key: Optional[str] = None, licensee_id: Optional[str] = None):
         """
         Initialize receipt generator
         
         Args:
             private_key: Private key for signing receipts (if None, uses mock signing)
+            licensee_id: Licensee identifier (if generating receipts for licensee contributions)
         """
         self.private_key = private_key
+        self.licensee_id = licensee_id
         self.receipt_version = "1.0.0"
     
     def generate_receipt(
@@ -90,6 +96,11 @@ class CryptographicReceiptGenerator:
             "package_size": len(json.dumps(intelligence_package)),
             "generated_at": datetime.now().isoformat()
         }
+        
+        # Add licensee ID if this is a licensee contribution
+        if self.licensee_id:
+            metadata["contributor"] = self.licensee_id
+            metadata["contribution_type"] = "licensee_intelligence"
         
         if additional_metadata:
             metadata.update(additional_metadata)
@@ -238,6 +249,51 @@ class CryptographicReceiptGenerator:
         """Import receipt from JSON string"""
         data = json.loads(receipt_json)
         return IntelligenceReceipt(**data)
+    
+    def generate_licensee_contribution_receipt(
+        self,
+        intelligence_package: Dict[str, Any],
+        licensee_id: str,
+        actor_id: Optional[str] = None,
+        threat_level: Optional[str] = None,
+        package_type: Optional[str] = None
+    ) -> IntelligenceReceipt:
+        """
+        Generate receipt for licensee intelligence contribution
+        
+        Enables licensees to contribute intelligence via BTC without revealing proprietary information.
+        Licensees submit intelligence packages and receive cryptographic receipts, just like they
+        receive intelligence from GH Systems—creating a bidirectional intelligence flow.
+        
+        Args:
+            intelligence_package: Full intelligence package from licensee (stays off-chain)
+            licensee_id: Licensee identifier
+            actor_id: Target actor ID
+            threat_level: Threat level classification
+            package_type: Type of package
+            
+        Returns:
+            IntelligenceReceipt with cryptographic proof (can be committed to blockchain for BTC settlement)
+        """
+        # Temporarily set licensee_id for this receipt
+        original_licensee_id = self.licensee_id
+        self.licensee_id = licensee_id
+        
+        try:
+            receipt = self.generate_receipt(
+                intelligence_package=intelligence_package,
+                actor_id=actor_id,
+                threat_level=threat_level,
+                package_type=package_type,
+                additional_metadata={
+                    "licensee_contribution": True,
+                    "contribution_timestamp": datetime.now().isoformat()
+                }
+            )
+            return receipt
+        finally:
+            # Restore original licensee_id
+            self.licensee_id = original_licensee_id
 
 
 class ReceiptVerifier:
