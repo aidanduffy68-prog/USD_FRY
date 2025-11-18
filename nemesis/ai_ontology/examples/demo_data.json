@@ -1,0 +1,112 @@
+{
+  "intelligence_feeds": [
+    {
+      "text": "Lazarus Group detected moving $2.3M through Tornado Cash on 2024-11-03. Wallet 0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9 detected sending funds to Exchange A (Hong Kong). Entity clustering suggests link to sanctioned North Korean actor.",
+      "source": "twitter",
+      "timestamp": "2024-11-03T10:00:00Z"
+    },
+    {
+      "text": "North Korean hackers coordinating with Russian facilitators. Multiple wallets showing synchronized transaction patterns. Suspected OFAC evasion through mixer services.",
+      "source": "intelligence_report",
+      "timestamp": "2024-11-03T11:00:00Z"
+    },
+    {
+      "text": "Wallet 0x7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6 detected in Ronin Bridge exploit. $600M moved through multiple chains. Coordination network identified with 12 associated addresses.",
+      "source": "on_chain_analysis",
+      "timestamp": "2024-11-05T14:30:00Z"
+    },
+    {
+      "text": "DPRK-linked actor using privacy tools to obfuscate transaction flow. Pattern matches previous Lazarus Group operations. High confidence sanctions evasion activity.",
+      "source": "research_report",
+      "timestamp": "2024-11-06T09:15:00Z"
+    },
+    {
+      "text": "Exchange A (Hong Kong) flagged for facilitating off-ramp operations. Wallet 0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9 received $2.3M in USDT. Transaction occurred 2024-11-03 at 10:00 UTC.",
+      "source": "exchange_feed",
+      "timestamp": "2024-11-07T08:00:00Z"
+    }
+  ],
+  "transaction_data": [
+    {
+      "tx_hash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "from_address": "0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9",
+      "to_address": "0xTORNADOCASH_CONTRACT",
+      "value": 2300000,
+      "token": "USDT",
+      "chain": "ethereum",
+      "timestamp": "2024-11-03T10:00:00Z",
+      "block_number": 18500000
+    },
+    {
+      "tx_hash": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+      "from_address": "0xTORNADOCASH_CONTRACT",
+      "to_address": "0x7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6",
+      "value": 2300000,
+      "token": "USDT",
+      "chain": "ethereum",
+      "timestamp": "2024-11-03T10:15:00Z",
+      "block_number": 18500010
+    },
+    {
+      "tx_hash": "0x567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234",
+      "from_address": "0x7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6",
+      "to_address": "0xEXCHANGE_A_HONGKONG",
+      "value": 2300000,
+      "token": "USDT",
+      "chain": "ethereum",
+      "timestamp": "2024-11-03T10:30:00Z",
+      "block_number": 18500020
+    }
+  ],
+  "sample_actor_ids": [
+    "LAZARUS_GROUP",
+    "ALPHA_47",
+    "DPRK_ACTOR",
+    "WALLET_4A9F8C3D",
+    "WALLET_7B8C9D0E"
+  ],
+  "sample_queries": [
+    "Who is coordinating with Lazarus Group?",
+    "What is the threat level of actor ALPHA_47?",
+    "Predict next actions for wallet 0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9",
+    "Show me the coordination network for North Korean hackers",
+    "What relationships exist between wallet 0x4a9f8c3d and wallet 0x7b8c9d0e?",
+    "Generate a threat dossier for LAZARUS_GROUP"
+  ],
+  "demo_scenarios": {
+    "scenario_1": {
+      "name": "Lazarus Group Intelligence Processing",
+      "description": "Process intelligence feed about Lazarus Group activity",
+      "intelligence": [
+        {
+          "text": "Lazarus Group detected moving $2.3M through Tornado Cash on 2024-11-03. Wallet 0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9 detected sending funds to Exchange A (Hong Kong).",
+          "source": "twitter"
+        }
+      ],
+      "transaction_data": [
+        {
+          "tx_hash": "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+          "from_address": "0x4a9f8c3d2e1b5a6f7c8d9e0f1a2b3c4d5e6f7a8b9",
+          "to_address": "0xTORNADOCASH_CONTRACT",
+          "value": 2300000,
+          "token": "USDT",
+          "chain": "ethereum",
+          "timestamp": "2024-11-03T10:00:00Z"
+        }
+      ]
+    },
+    "scenario_2": {
+      "name": "Threat Dossier Generation",
+      "description": "Generate comprehensive threat dossier for an actor",
+      "actor_id": "LAZARUS_GROUP",
+      "format": "markdown"
+    },
+    "scenario_3": {
+      "name": "Natural Language Query",
+      "description": "Query threat intelligence using natural language",
+      "query": "Who is coordinating with Lazarus Group?",
+      "user": "analyst_001"
+    }
+  }
+}
+

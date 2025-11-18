@@ -100,13 +100,13 @@
 - [x] 2. Add mock data to semantic_understanding.py ✅
 - [x] 3. Add mock data to relationship_inference.py ✅
 - [x] 4. Add error handling ✅
+- [x] 11. Create demo data file ✅
 - [ ] 5. Test docker-compose startup
 - [ ] 6. Add mock behavioral signatures
 - [ ] 7. Improve threat dossier mock data
 - [ ] 8. Add sample responses to NL queries
 - [ ] 9. Add request validation
 - [ ] 10. Add logging
-- [ ] 11. Create demo data file
 
 ---
 
