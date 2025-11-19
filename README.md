@@ -39,7 +39,12 @@
 - Automated correlation and pattern matching
 - Pre-compiled actor playbooks ready for action
 
-**Impact:** Analysts reduced triage from 7 days to ~5 hours with compiled actor packages. Investigation compression enables faster response times.
+**Crypto-Native Intelligence:**
+- Domain-native pattern recognition
+- Decentralized signal analysis
+- Attacker mindset modeling
+
+**Impact:** Analysts reduced triage from 7 days to ~5 hours with compiled actor packages. Investigation compression enables faster response times. Fills gaps legacy teams can't cover, especially in conflicts where crypto is used for financing, intelligence, or infrastructure attacks.
 
 ---
 

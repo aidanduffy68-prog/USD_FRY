@@ -25,7 +25,12 @@
 - Automated correlation and pattern matching
 - Pre-compiled actor playbooks
 
-**Impact:** Investigation compression from 7 days to ~5 hours. Analysts get executable targeting packages instead of raw data.
+**Crypto-Native Intelligence Capabilities:**
+- **Domain-native pattern recognition** – Understands crypto-specific behavioral patterns legacy teams miss
+- **Decentralized signal analysis** – Analyzes on-chain data, exchange feeds, and multi-source intelligence
+- **Attacker mindset modeling** – Predicts adversary actions through behavioral profiling
+
+**Impact:** Investigation compression from 7 days to ~5 hours. Analysts get executable targeting packages instead of raw data. Fills gaps legacy teams can't cover, especially in conflicts where crypto is used for financing, intelligence, or infrastructure attacks.
 
 ---
 

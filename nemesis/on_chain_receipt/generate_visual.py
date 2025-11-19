@@ -52,11 +52,13 @@ def generate_visual_png(output_path="nemesis/on_chain_receipt/verifiable_scoring
                             zorder=10)
     ax.add_patch(arrow)
     
-    # Reduction badge on arrow
-    reduction_circle = plt.Circle((5, 5.5), 0.6, color='#ff0066', zorder=11)
+    # Reduction badge on arrow - make it more visible and clear
+    reduction_circle = plt.Circle((5, 5.5), 0.7, facecolor='#ff0066', edgecolor='#ffffff', linewidth=2, zorder=11)
     ax.add_patch(reduction_circle)
-    ax.text(5, 5.5, '99.98%', ha='center', va='center',
-            fontsize=14, fontweight='bold', color='#ffffff')
+    ax.text(5, 5.4, '99.98%', ha='center', va='center',
+            fontsize=16, fontweight='bold', color='#ffffff')
+    ax.text(5, 5.7, 'REDUCTION', ha='center', va='center',
+            fontsize=10, fontweight='bold', color='#ffffff')
     
     # On-Chain Box (Right) - Large, bold
     on_chain_box = FancyBboxPatch((6.2, 3), 3.5, 4.5,
