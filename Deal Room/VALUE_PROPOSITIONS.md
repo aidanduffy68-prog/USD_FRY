@@ -44,7 +44,12 @@
 - Proof of authenticity without revealing proprietary methods
 - Transparent, auditable intelligence
 
-**Impact:** Intelligence becomes verifiable objects. Scoring primitives are cryptographically provable, enabling trust without revealing proprietary systems.
+**On-Chain Proof Layer & Licensed, Federated Intelligence Model:**
+- **Outputs are auditable** – All intelligence outputs have cryptographic receipts
+- **Multi-party collaboration is feasible** – Licensed, federated model enables secure sharing
+- **Evidence remains tamper-resistant** – On-chain proofs ensure integrity
+
+**Impact:** Intelligence becomes verifiable objects. Scoring primitives are cryptographically provable, enabling trust without revealing proprietary systems. Invaluable in regional conflicts where credibility, attribution, and speed are crucial.
 
 ---
 

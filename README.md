@@ -57,7 +57,12 @@
 - Proof of authenticity without revealing proprietary methodology
 - Intelligence becomes verifiable objects usable everywhere
 
-**Impact:** Intelligence becomes portable, trustworthy, and usable in any system. Scoring primitives are cryptographically provable, enabling trust without revealing proprietary systems.
+**On-Chain Proof Layer:**
+- Outputs are auditable
+- Multi-party collaboration is feasible
+- Evidence remains tamper-resistant
+
+**Impact:** Intelligence becomes portable, trustworthy, and usable in any system. Scoring primitives are cryptographically provable, enabling trust without revealing proprietary systems. Invaluable in regional conflicts where credibility, attribution, and speed are crucial.
 
 ---
 
