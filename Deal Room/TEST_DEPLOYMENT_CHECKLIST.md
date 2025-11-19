@@ -102,12 +102,12 @@
 - [x] 3. Add mock data to relationship_inference.py ✅
 - [x] 4. Add error handling ✅
 - [x] 5. Test docker-compose startup ✅
+- [x] 6. Add mock behavioral signatures ✅
+- [x] 7. Improve threat dossier mock data ✅
+- [x] 8. Add sample responses to NL queries ✅
+- [x] 9. Add request validation ✅
+- [x] 10. Add logging ✅
 - [x] 11. Create demo data file ✅
-- [ ] 6. Add mock behavioral signatures
-- [ ] 7. Improve threat dossier mock data
-- [ ] 8. Add sample responses to NL queries
-- [ ] 9. Add request validation
-- [ ] 10. Add logging
 
 ---
 

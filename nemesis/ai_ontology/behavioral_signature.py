@@ -243,66 +243,176 @@ class AIHadesProfiler:
         
         return min(confidence, 1.0)
     
-    # Helper methods (stubs for implementation)
+    # Helper methods (mock implementations for demo)
     def _calculate_pattern_repetition(self, transactions: List[Dict[str, Any]]) -> float:
         """Calculate how repetitive transaction patterns are"""
-        # Implementation: Analyze transaction sequence similarity
-        return 0.75  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Analyze transaction amounts for consistency
+        amounts = [t.get('amount', 0) for t in transactions if 'amount' in t]
+        if len(amounts) < 2:
+            return 0.5
+        
+        # Calculate coefficient of variation (lower = more repetitive)
+        mean_amount = sum(amounts) / len(amounts)
+        if mean_amount == 0:
+            return 0.5
+        
+        variance = sum((a - mean_amount) ** 2 for a in amounts) / len(amounts)
+        std_dev = variance ** 0.5
+        cv = std_dev / mean_amount if mean_amount > 0 else 1.0
+        
+        # Lower CV = more repetitive = higher score
+        return max(0.3, min(0.95, 1.0 - cv))
     
     def _calculate_flight_risk(self, transactions: List[Dict[str, Any]]) -> float:
         """Calculate likelihood of attempting to off-ramp funds"""
-        # Implementation: Analyze recent activity, off-ramp patterns
-        return 0.65  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Higher risk if recent activity or large amounts
+        recent_count = sum(1 for t in transactions if t.get('timestamp'))
+        large_amounts = sum(1 for t in transactions if t.get('amount', 0) > 1000000)
+        
+        risk = 0.4  # Base risk
+        if recent_count > 5:
+            risk += 0.2
+        if large_amounts > 0:
+            risk += 0.3
+        
+        return min(0.95, risk)
     
     def _analyze_timing_patterns(self, transactions: List[Dict[str, Any]]) -> float:
         """Analyze timing preferences in transactions"""
-        # Implementation: Cluster transaction times, identify patterns
-        return 0.70  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Check if transactions cluster in time windows
+        timestamps = [t.get('timestamp') for t in transactions if t.get('timestamp')]
+        if len(timestamps) < 2:
+            return 0.5
+        
+        # Simple heuristic: if we have multiple transactions, assume some timing pattern
+        return 0.65 + (min(len(timestamps), 10) * 0.02)
     
     def _calculate_route_entropy(self, transactions: List[Dict[str, Any]]) -> float:
         """Calculate entropy/diversity in transaction routes"""
-        # Implementation: Measure route diversity
-        return 0.60  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Count unique addresses/chains
+        unique_routes = set()
+        for t in transactions:
+            if 'from_address' in t and 'to_address' in t:
+                unique_routes.add((t.get('from_address'), t.get('to_address')))
+            if 'chain' in t:
+                unique_routes.add(t.get('chain'))
+        
+        # More unique routes = higher entropy
+        entropy = min(0.95, 0.4 + (len(unique_routes) * 0.1))
+        return entropy
     
     def _analyze_liquidity_patterns(self, transactions: List[Dict[str, Any]]) -> float:
         """Analyze liquidity provision/removal patterns"""
-        # Implementation: Detect liquidity manipulation
-        return 0.55  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Check for DeFi-related transactions
+        defi_keywords = ['swap', 'liquidity', 'pool', 'uniswap', 'curve']
+        defi_count = sum(1 for t in transactions 
+                        if any(kw in str(t).lower() for kw in defi_keywords))
+        
+        # Higher DeFi activity = higher liquidity pattern score
+        return min(0.9, 0.4 + (defi_count * 0.15))
     
     def _analyze_off_ramp_preferences(self, transactions: List[Dict[str, Any]]) -> float:
         """Analyze preferred off-ramp methods"""
-        # Implementation: Identify exchange/OTC preferences
-        return 0.65  # Placeholder
+        if not transactions:
+            return 0.5
+        
+        # Mock: Check for exchange-related patterns
+        exchange_keywords = ['exchange', 'binance', 'coinbase', 'kraken', 'otc']
+        exchange_count = sum(1 for t in transactions 
+                            if any(kw in str(t).lower() for kw in exchange_keywords))
+        
+        # Higher exchange activity = higher off-ramp preference
+        return min(0.9, 0.5 + (exchange_count * 0.2))
     
     def _detect_chain_switching(self, transactions: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
         """Detect rapid chain switching patterns"""
-        # Implementation: Analyze cross-chain transfer frequency
-        return None  # Placeholder
+        if not transactions:
+            return None
+        
+        # Mock: Check for multiple chains
+        chains = [t.get('chain') for t in transactions if t.get('chain')]
+        unique_chains = set(chains)
+        
+        if len(unique_chains) >= 2:
+            return {
+                'frequency': len(unique_chains),
+                'confidence': 0.75,
+                'examples': list(unique_chains)[:3]
+            }
+        return None
     
     def _detect_mixer_patterns(self, transactions: List[Dict[str, Any]]) -> Optional[Dict[str, Any]]:
         """Detect mixer usage patterns"""
-        # Implementation: Identify privacy tool usage
-        return None  # Placeholder
+        if not transactions:
+            return None
+        
+        # Mock: Check for privacy tool keywords
+        mixer_keywords = ['tornado', 'mixer', 'privacy', 'anonymizer']
+        mixer_txs = [t for t in transactions 
+                    if any(kw in str(t).lower() for kw in mixer_keywords)]
+        
+        if mixer_txs:
+            return {
+                'frequency': len(mixer_txs),
+                'confidence': 0.85,
+                'examples': [t.get('tx_hash', 'unknown')[:10] for t in mixer_txs[:3]]
+            }
+        return None
     
     def _predict_off_ramp_location(self, traits: Dict[BehavioralTrait, float], transactions: List[Dict[str, Any]]) -> str:
         """Predict likely off-ramp location"""
-        # Implementation: Use historical off-ramp data
-        return "Dubai_OTC_desk_3"  # Placeholder
+        # Mock: Use off-ramp preference trait
+        off_ramp_score = traits.get(BehavioralTrait.OFF_RAMP_PREFERENCE, 0.5)
+        
+        locations = ["Dubai_OTC_desk_3", "Singapore_Exchange_1", "Hong_Kong_OTC_2", "Bahamas_Exchange"]
+        # Higher score = more likely to use OTC/exchange
+        idx = min(int(off_ramp_score * len(locations)), len(locations) - 1)
+        return locations[idx]
     
     def _predict_amount_range(self, transactions: List[Dict[str, Any]]) -> str:
         """Predict amount range for next transaction"""
-        # Implementation: Analyze historical amounts
-        return "$1.8M-$2.5M"  # Placeholder
+        if not transactions:
+            return "$1.0M-$2.0M"
+        
+        # Mock: Analyze historical amounts
+        amounts = [t.get('amount', 0) for t in transactions if 'amount' in t]
+        if not amounts:
+            return "$1.0M-$2.0M"
+        
+        avg_amount = sum(amounts) / len(amounts)
+        min_pred = max(0.5, avg_amount * 0.8) / 1000000
+        max_pred = avg_amount * 1.2 / 1000000
+        
+        return f"${min_pred:.1f}M-${max_pred:.1f}M"
     
     def _predict_coordination_partners(self, transactions: List[Dict[str, Any]]) -> List[str]:
         """Predict likely coordination partners"""
-        # Implementation: Use Echo network data
-        return []  # Placeholder
+        # Mock: Return sample partners based on transaction patterns
+        if len(transactions) > 5:
+            return ["SUSPECTED_PARTNER_1", "SUSPECTED_PARTNER_2"]
+        return []
     
     def _predict_timing_window(self, transactions: List[Dict[str, Any]]) -> str:
         """Predict next activity timing window"""
-        # Implementation: Analyze timing patterns
-        return "UTC 02:00-04:00"  # Placeholder
+        # Mock: Return common timing windows
+        windows = ["UTC 02:00-04:00", "UTC 14:00-16:00", "UTC 20:00-22:00"]
+        # Simple heuristic: use first window if we have transactions
+        return windows[0] if transactions else windows[1]
     
     def _calculate_trait_variance(self, traits: Dict[BehavioralTrait, float]) -> float:
         """Calculate variance in trait scores (lower = more consistent)"""

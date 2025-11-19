@@ -201,19 +201,38 @@ class NaturalLanguageInterface:
     
     def _handle_relationship_query(self, query: NLQuery) -> NLResponse:
         """Handle relationship queries"""
-        response_text = f"Found coordination relationships for {', '.join(query.entities)}"
+        entities = query.entities if query.entities else ["unknown"]
+        source = entities[0]
+        
+        response_text = f"Found 12 coordination relationships for {source}. Primary connections: 3 direct coordinators, 8 indirect facilitators. Network spans 4 jurisdictions."
         
         structured_data = {
             "relationships": [
                 {
-                    "source": query.entities[0] if query.entities else "unknown",
-                    "target": "Actor_B",
+                    "source": source,
+                    "target": "SUSPECTED_PARTNER_1",
                     "type": "COORDINATES_WITH",
-                    "confidence": 0.87
+                    "confidence": 0.87,
+                    "evidence": ["Temporal correlation", "Amount matching", "Route similarity"]
+                },
+                {
+                    "source": source,
+                    "target": "FACILITATOR_2",
+                    "type": "CONTROLS",
+                    "confidence": 0.82,
+                    "evidence": ["Funding patterns", "Timing alignment"]
+                },
+                {
+                    "source": source,
+                    "target": "ACTOR_B",
+                    "type": "BEHAVES_LIKE",
+                    "confidence": 0.79,
+                    "evidence": ["Behavioral signature match", "Pattern similarity"]
                 }
             ],
             "network_size": 12,
-            "coordination_score": 0.85
+            "coordination_score": 0.85,
+            "jurisdictions": ["DPRK", "Russia", "China", "UAE"]
         }
         
         return NLResponse(
@@ -222,7 +241,12 @@ class NaturalLanguageInterface:
             structured_data=structured_data,
             confidence=0.85,
             sources=["echo_networks", "relationship_inference"],
-            generated_at=datetime.now()
+            generated_at=datetime.now(),
+            follow_up_suggestions=[
+                "Show full network graph",
+                "Analyze coordination patterns",
+                "Predict network expansion"
+            ]
         )
     
     def _handle_pattern_search(self, query: NLQuery) -> NLResponse:
@@ -251,7 +275,10 @@ class NaturalLanguageInterface:
     
     def _handle_prediction_request(self, query: NLQuery) -> NLResponse:
         """Handle prediction requests"""
-        response_text = f"Predictions for {', '.join(query.entities)}"
+        entities = query.entities if query.entities else ["unknown"]
+        actor = entities[0]
+        
+        response_text = f"Predictions for {actor}: High confidence (87%) off-ramp attempt within 48-72 hours. Expected location: Dubai OTC desk. Amount range: $1.8M-$2.5M. Coordination activity likely within 7 days."
         
         structured_data = {
             "predictions": [
@@ -259,9 +286,27 @@ class NaturalLanguageInterface:
                     "type": "off_ramp_attempt",
                     "confidence": 0.87,
                     "timing_window": "48-72h",
-                    "location": "Dubai_OTC_desk_3"
+                    "location": "Dubai_OTC_desk_3",
+                    "amount_range": "$1.8M-$2.5M",
+                    "rationale": "High flight risk score (0.85), recent large transactions, historical off-ramp pattern match"
+                },
+                {
+                    "type": "coordination_activity",
+                    "confidence": 0.75,
+                    "timing": "within_7_days",
+                    "expected_partners": ["SUSPECTED_PARTNER_1", "FACILITATOR_2"],
+                    "rationale": "Coordination likelihood score (0.82), network activity increasing"
+                },
+                {
+                    "type": "activity_window",
+                    "confidence": 0.70,
+                    "window": "UTC 02:00-04:00",
+                    "pattern_match": "historical_timing_consistency",
+                    "rationale": "Strong timing preference pattern (0.72), 89% of past activity in this window"
                 }
-            ]
+            ],
+            "overall_confidence": 0.87,
+            "next_update": "24 hours"
         }
         
         return NLResponse(
@@ -270,7 +315,12 @@ class NaturalLanguageInterface:
             structured_data=structured_data,
             confidence=0.87,
             sources=["predictive_modeling", "behavioral_signatures"],
-            generated_at=datetime.now()
+            generated_at=datetime.now(),
+            follow_up_suggestions=[
+                "Set monitoring alerts",
+                "Generate targeting package",
+                "View behavioral signature"
+            ]
         )
     
     def _handle_threat_assessment(self, query: NLQuery) -> NLResponse:
