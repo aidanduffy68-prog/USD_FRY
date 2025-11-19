@@ -1,6 +1,8 @@
 """
 AI Ontology Integration Layer
 Integrates AI components with existing Hades/Echo/Nemesis systems
+
+Copyright (c) 2024 GH Systems. All rights reserved.
 """
 
 from typing import List, Dict, Any, Optional
