@@ -5,6 +5,8 @@
 
 **AI-Powered Behavioral Intelligence Infrastructure for Economic Warfare**
 
+Copyright (c) 2024 GH Systems. All rights reserved.
+
 <div align="left">
   <img src="Deal%20Room/Assets/gh-systems-logo.png" alt="GH Systems Logo" width="150"/>
 </div>

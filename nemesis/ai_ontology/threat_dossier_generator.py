@@ -1,6 +1,8 @@
 """
 Auto-Generated Threat Dossier System
 Automatically generates comprehensive threat actor dossiers
+
+Copyright (c) 2024 GH Systems. All rights reserved.
 """
 
 from typing import List, Dict, Any, Optional
