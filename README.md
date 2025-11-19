@@ -9,7 +9,7 @@
   <img src="Deal%20Room/Assets/gh-systems-logo.png" alt="GH Systems Logo" width="150"/>
 </div>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
 📄 **[Whitepaper PDF](Deal%20Room/GH%20Behavioral%20Intel%20%5Bv1%5D.pdf)** | 📊 **[Threat Dossiers](nemesis/threat_profiles/)** | 🧠 **[Ontology Spec](Deal%20Room/GH_ONTOLOGY_SPEC.md)**
 
