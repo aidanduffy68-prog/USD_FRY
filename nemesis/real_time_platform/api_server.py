@@ -13,6 +13,8 @@ import json
 
 from nemesis.compilation_engine import ABCCompilationEngine, CompiledIntelligence
 from nemesis.signal_intake.federal_ai_monitor import FederalAIMonitor, monitor_federal_ai_systems
+from nemesis.real_time_platform.alert_system import alert_system
+from nemesis.on_chain_receipt.bitcoin_integration import BitcoinOnChainIntegration
 
 
 app = Flask(__name__)
@@ -22,6 +24,7 @@ socketio = SocketIO(app, cors_allowed_origins="*")
 # Initialize engines
 compilation_engine = ABCCompilationEngine()
 federal_monitor = FederalAIMonitor()
+bitcoin_integration = BitcoinOnChainIntegration()
 
 
 # REST API Endpoints
@@ -72,14 +75,46 @@ def compile_intelligence():
             generate_receipt=True
         )
         
+        # Evaluate for alerts
+        compilation_dict = {
+            "compilation_id": compiled.compilation_id,
+            "actor_id": compiled.actor_id,
+            "confidence_score": compiled.confidence_score,
+            "compilation_time_ms": compiled.compilation_time_ms,
+            "targeting_package": compiled.targeting_package,
+            "target_agency": None
+        }
+        alerts = alert_system.evaluate_compilation(compilation_dict)
+        
+        # Submit receipt to Bitcoin if present
+        receipt = compiled.targeting_package.get("receipt")
+        tx_result = None
+        if receipt:
+            try:
+                tx_result = bitcoin_integration.submit_receipt_to_blockchain(receipt)
+            except Exception as e:
+                print(f"Bitcoin submission error: {e}")
+        
         # Emit real-time update via WebSocket
         socketio.emit('intelligence_compiled', {
             "compilation_id": compiled.compilation_id,
             "actor_id": compiled.actor_id,
             "compilation_time_ms": compiled.compilation_time_ms,
             "confidence_score": compiled.confidence_score,
-            "timestamp": compiled.compiled_at.isoformat()
+            "timestamp": compiled.compiled_at.isoformat(),
+            "tx_hash": tx_result.get("tx_hash") if tx_result else None
         })
+        
+        # Emit alerts if any
+        for alert in alerts:
+            socketio.emit('alert', {
+                "alert_id": alert.alert_id,
+                "alert_type": alert.alert_type.value,
+                "severity": alert.severity.value,
+                "title": alert.title,
+                "description": alert.description,
+                "timestamp": alert.created_at.isoformat()
+            })
         
         # Return compiled intelligence
         return jsonify({
@@ -88,7 +123,9 @@ def compile_intelligence():
             "compilation_time_ms": compiled.compilation_time_ms,
             "confidence_score": compiled.confidence_score,
             "targeting_package": compiled.targeting_package,
-            "receipt": compiled.targeting_package.get("receipt")
+            "receipt": receipt,
+            "tx_hash": tx_result.get("tx_hash") if tx_result else None,
+            "alerts_generated": len(alerts)
         }), 200
         
     except Exception as e:
@@ -123,12 +160,39 @@ def scan_federal_ai():
         # Generate intelligence feed
         intelligence_feed = federal_monitor.generate_intelligence_feed(systems)
         
+        # Evaluate for alerts
+        scan_data = {
+            "systems_scanned": len(systems),
+            "vulnerabilities": [
+                {
+                    "vulnerability_id": v.vulnerability_id,
+                    "system_id": v.system_id,
+                    "type": v.vulnerability_type,
+                    "severity": v.severity,
+                    "confidence": v.confidence
+                }
+                for v in vulnerabilities
+            ]
+        }
+        alerts = alert_system.evaluate_federal_ai_scan(scan_data)
+        
         # Emit real-time update
         socketio.emit('federal_ai_scan_complete', {
             "systems_scanned": len(systems),
             "vulnerabilities_found": len(vulnerabilities),
             "timestamp": datetime.now().isoformat()
         })
+        
+        # Emit alerts if any
+        for alert in alerts:
+            socketio.emit('alert', {
+                "alert_id": alert.alert_id,
+                "alert_type": alert.alert_type.value,
+                "severity": alert.severity.value,
+                "title": alert.title,
+                "description": alert.description,
+                "timestamp": alert.created_at.isoformat()
+            })
         
         return jsonify({
             "status": "success",
@@ -158,6 +222,71 @@ def scan_federal_ai():
         
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+@app.route('/api/v1/alerts', methods=['GET'])
+def get_alerts():
+    """Get active alerts"""
+    severity = request.args.get('severity')
+    active_alerts = alert_system.get_active_alerts(
+        severity=alert_system.AlertSeverity[severity.upper()] if severity else None
+    )
+    
+    return jsonify({
+        "alerts": [
+            {
+                "alert_id": a.alert_id,
+                "alert_type": a.alert_type.value,
+                "severity": a.severity.value,
+                "title": a.title,
+                "description": a.description,
+                "created_at": a.created_at.isoformat(),
+                "actor_id": a.actor_id,
+                "target_agency": a.target_agency,
+                "confidence_score": a.confidence_score
+            }
+            for a in active_alerts
+        ],
+        "count": len(active_alerts),
+        "timestamp": datetime.now().isoformat()
+    }), 200
+
+
+@app.route('/api/v1/alerts/<alert_id>/acknowledge', methods=['POST'])
+def acknowledge_alert(alert_id):
+    """Acknowledge alert"""
+    success = alert_system.acknowledge_alert(alert_id)
+    return jsonify({
+        "acknowledged": success,
+        "alert_id": alert_id,
+        "timestamp": datetime.now().isoformat()
+    }), 200 if success else 404
+
+
+@app.route('/api/v1/alerts/stats', methods=['GET'])
+def get_alert_stats():
+    """Get alert statistics"""
+    stats = alert_system.get_alert_stats()
+    return jsonify(stats), 200
+
+
+@app.route('/api/v1/receipts/verify', methods=['POST'])
+def verify_receipt():
+    """Verify cryptographic receipt"""
+    from nemesis.on_chain_receipt.receipt_verifier import ReceiptVerifier
+    
+    data = request.json or {}
+    receipt = data.get('receipt')
+    intelligence_package = data.get('intelligence_package')
+    verify_on_chain = data.get('verify_on_chain', True)
+    
+    if not receipt:
+        return jsonify({"error": "receipt is required"}), 400
+    
+    verifier = ReceiptVerifier()
+    result = verifier.verify_receipt(receipt, intelligence_package, verify_on_chain)
+    
+    return jsonify(result), 200
 
 
 @app.route('/api/v1/federal-ai/compile', methods=['POST'])

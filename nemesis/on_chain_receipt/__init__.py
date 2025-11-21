@@ -1,21 +1,30 @@
 """
 On-Chain Cryptographic Receipt System
-
-Generates minimal cryptographic proofs of intelligence outputs without revealing proprietary systems.
-Everything proprietary stays off-chain. Only tiny cryptographic receipts go on-chain.
+Generates minimal cryptographic proofs of intelligence outputs without revealing proprietary systems
 """
 
-from nemesis.on_chain_receipt.receipt_generator import (
+from .receipt_generator import (
     CryptographicReceiptGenerator,
     IntelligenceReceipt,
-    ReceiptStatus,
-    ReceiptVerifier
+    ReceiptStatus
+)
+
+from .bitcoin_integration import (
+    BitcoinOnChainIntegration,
+    submit_receipt_to_bitcoin
+)
+
+from .receipt_verifier import (
+    ReceiptVerifier,
+    verify_receipt
 )
 
 __all__ = [
     "CryptographicReceiptGenerator",
     "IntelligenceReceipt",
     "ReceiptStatus",
-    "ReceiptVerifier"
+    "BitcoinOnChainIntegration",
+    "submit_receipt_to_bitcoin",
+    "ReceiptVerifier",
+    "verify_receipt"
 ]
-
