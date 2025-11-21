@@ -95,7 +95,8 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - **On-Chain Cryptographic Receipts** – Everything proprietary stays off-chain. Only minimal cryptographic proofs go on-chain, turning intelligence into verifiable objects usable everywhere.
 - **Whitepaper v1.0** – Complete technical specification with Bitcoin settlement layer, integration models, and FY2026 competitive timeline.
 - **Bitcoin settlement layer** – Agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-- **Threat actor dossiers** – `nemesis/threat_profiles/` (ex: Lazarus) provide operational playbooks with Hades/Echo/Nemesis outputs.
+- **Threat actor dossiers** – `nemesis/threat_profiles/` (ex: Lazarus, NASA AI infrastructure) provide operational playbooks with Hades/Echo/Nemesis outputs.
+- **Federal AI security intelligence** – Proof-of-concept capability for analyzing government AI infrastructure vulnerabilities (NASA-001 dossier demonstrates 7-day → 5-hour compilation).
 - **Visual assets** – `echo/visuals/` includes ABC pipeline, behavioral graph, BTC settlement flow, and operational metrics.
 
 ### Outcomes (Validated)
@@ -115,7 +116,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` — AI-powered threat ontology architecture.
 - `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference).
 - `nemesis/on_chain_receipt/` — Cryptographic receipt system (proprietary off-chain, minimal proofs on-chain).
-- `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group).
+- `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group, NASA AI infrastructure).
 - `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation).
 - `echo/` — Coordination detection engine (network mapping, facilitator networks).
 - `hypnos/` — Hypnos Core: The demiurgic architecture that structures intelligence reality (long-term memory, pattern consolidation, dormant threat tracking).
@@ -124,13 +125,13 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 
 ## How ABC Works (Quick View)
 
-1. **Signal intake** — ingest Chainalysis/TRM/Chaos/external research outputs.
-2. **Hades** — compile raw telemetry into actor signatures & risk posture.
-3. **Echo** — surface coordination networks with confidence/provenance.
-4. **Nemesis** — generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84").
+1. **Signal intake** — ingest Chainalysis/TRM/Chaos/external research outputs (crypto intelligence) or federal AI infrastructure signals (AI security intelligence).
+2. **Hades** — compile raw telemetry into actor signatures & risk posture (crypto actors or AI system vulnerabilities).
+3. **Echo** — surface coordination networks with confidence/provenance (wallet networks or AI platform relationships).
+4. **Nemesis** — generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84" or "harden API endpoints within 48h; confidence 0.76").
 5. **Cryptographic receipts** — generate minimal on-chain proofs (hash, timestamp, signature) without revealing proprietary systems.
 6. **Bitcoin settlement** — agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies.
+7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies (crypto intelligence) or federal AI security teams (AI infrastructure intelligence).
 
 **Hypnos Core** is the demiurgic architecture—the core that structures intelligence reality. Built on Hypnos Core, Hades profiles behavior, Echo detects coordination, and Nemesis generates targeting packages. Hypnos Core maintains long-term memory, consolidates patterns, and tracks dormant threats as the foundational architecture (see `hypnos/` for details).
 
