@@ -227,10 +227,17 @@ def scan_federal_ai():
 @app.route('/api/v1/alerts', methods=['GET'])
 def get_alerts():
     """Get active alerts"""
+    from nemesis.real_time_platform.alert_system import AlertSeverity
+    
     severity = request.args.get('severity')
-    active_alerts = alert_system.get_active_alerts(
-        severity=alert_system.AlertSeverity[severity.upper()] if severity else None
-    )
+    severity_enum = None
+    if severity:
+        try:
+            severity_enum = AlertSeverity[severity.upper()]
+        except KeyError:
+            pass
+    
+    active_alerts = alert_system.get_active_alerts(severity=severity_enum)
     
     return jsonify({
         "alerts": [
