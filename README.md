@@ -95,8 +95,8 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - **On-Chain Cryptographic Receipts** – Everything proprietary stays off-chain. Only minimal cryptographic proofs go on-chain, turning intelligence into verifiable objects usable everywhere.
 - **Whitepaper v1.0** – Complete technical specification with Bitcoin settlement layer, integration models, and FY2026 competitive timeline.
 - **Bitcoin settlement layer** – Agencies post BTC bounties; vendors receive payouts automatically when intelligence validates.
-- **Threat actor dossiers** – `nemesis/threat_profiles/` (ex: Lazarus, NASA AI infrastructure) provide operational playbooks with Hades/Echo/Nemesis outputs.
-- **Federal AI security intelligence** – Proof-of-concept capability for analyzing government AI infrastructure vulnerabilities (NASA-001 dossier demonstrates 7-day → 5-hour compilation).
+- **Threat actor dossiers** – `nemesis/threat_profiles/` (ex: Lazarus, NASA AI infrastructure, DoD-DHS AI systems) provide operational playbooks with Hades/Echo/Nemesis outputs.
+- **Federal AI security intelligence** – Proof-of-concept capability for analyzing government AI infrastructure vulnerabilities (NASA-001: 7-day → 5-hour compilation; DoD-DHS-002: 14-day → 3-hour multi-agency analysis).
 - **Visual assets** – `echo/visuals/` includes ABC pipeline, behavioral graph, BTC settlement flow, and operational metrics.
 
 ### Outcomes (Validated)
@@ -116,7 +116,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 - `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` — AI-powered threat ontology architecture.
 - `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference).
 - `nemesis/on_chain_receipt/` — Cryptographic receipt system (proprietary off-chain, minimal proofs on-chain).
-- `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group, NASA AI infrastructure).
+- `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group, NASA AI infrastructure, DoD-DHS AI systems).
 - `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation).
 - `echo/` — Coordination detection engine (network mapping, facilitator networks).
 - `hypnos/` — Hypnos Core: The demiurgic architecture that structures intelligence reality (long-term memory, pattern consolidation, dormant threat tracking).
