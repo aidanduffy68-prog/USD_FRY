@@ -11,7 +11,7 @@ Copyright (c) 2025 GH Systems. All rights reserved.
 
 [![License: Proprietary](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
 
-📄 **[Whitepaper PDF](Deal%20Room/GH%20Behavioral%20Intel%20%5Bv1%5D.pdf)** | 📊 **[Threat Dossiers](nemesis/threat_profiles/)** | 🧠 **[Ontology Spec](Deal%20Room/GH_ONTOLOGY_SPEC.md)**
+📄 **[Whitepaper PDF](Deal%20Room/GH%20Behavioral%20Intel%20%5Bv1%5D.pdf)** | 📊 **[Threat Dossiers](examples/demo_dossiers/)** | 🧠 **[Ontology Spec](Deal%20Room/GH_ONTOLOGY_SPEC.md)** | 📖 **[Glossary](GLOSSARY.md)**
 
 ---
 
@@ -109,6 +109,54 @@ This turns intelligence into **verifiable objects** that can be used everywhere�
 
 ---
 
+## Architecture Diagram
+
+```mermaid
+graph TD
+    A[Raw Telemetry] -->|Ingest| B(Normalizer)
+    B -->|Validation| C{Valid Data?}
+    C -->|Yes| D[Hypnos DB]
+    C -->|No| E[Dead Letter Queue]
+    D -->|Async Job| F[Hades Profiler]
+    F -->|Risk Score| G[API Output]
+    D -->|Async Job| H[Echo Network]
+    H -->|Coordination| G
+    D -->|Async Job| I[Nemesis Targeting]
+    I -->|Targeting Package| G
+    G -->|Cryptographic Receipt| J[Bitcoin Blockchain]
+    G -->|Settlement| K[Oracle Service]
+    K -->|BTC| L[Vendor]
+```
+
+---
+
+## Current Status
+
+**This repository represents the v2.0 architecture currently under development.**
+
+### Implemented ✅
+- **Core ingestion pipeline**: Pydantic schemas and validation (`src/schemas/`, `core/ingestion/validator.py`)
+- **API endpoints**: FastAPI routes with error handling (`src/api/routes/ingest.py`)
+- **Graph data structures**: NetworkX-based graph manipulation (`src/graph/builder.py`)
+- **Fiat bridge**: FAR-compliant settlement system (`settlements/fiat_bridge.py`)
+- **Cryptographic receipts**: Canonical JSON hashing and Merkle trees (`nemesis/on_chain_receipt/`)
+- **AI ontology guardrails**: Data lake, validation layer, review queue, heuristic rules (`nemesis/ai_ontology/`)
+
+### In Development 🚧
+- **GNN inference engine**: Graph neural network relationship inference (currently using heuristic rules)
+- **Production deployment**: Full containerization and orchestration
+- **Vector database integration**: Long-term memory and context-aware classification
+- **Real-time dashboard**: WebSocket-based threat monitoring interface
+
+### Planned 📋
+- **Full GNN implementation**: Replace heuristic rules with trained models
+- **Multi-modal intelligence**: Text, transaction, graph, and temporal data processing
+- **Federated mesh**: Multi-party intelligence sharing with cryptographic proofs
+
+**We're honest about what works and what's being built. The core compilation pipeline is production-ready; advanced AI features are in active development.**
+
+---
+
 ## AI-Powered Threat Ontology
 
 ABC is not just a compiler—it's an **AI-powered threat ontology** that:
@@ -183,7 +231,8 @@ GH Systems does not compete with existing vendors—it amplifies them.
 ## Next Steps
 
 - **Read the whitepaper** – `Deal Room/GH Behavioral Intel [v1].pdf`
-- **Explore threat dossiers** – `nemesis/threat_profiles/`
+- **Explore threat dossiers** – `examples/demo_dossiers/`
+- **Review glossary** – `GLOSSARY.md` (maps Greek gods to engineering domains)
 - **Schedule integration workshop** – connect existing forensics feeds, receive compiled actor playbooks within weeks
 
 **GH Systems** — Compiling behavioral bytecode so lawful actors win the economic battlefield.
