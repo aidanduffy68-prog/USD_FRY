@@ -29,21 +29,9 @@ ABC is an AI-driven ingestion engine that compiles raw threat telemetry (Chainal
 
 ## 🏗 System Architecture
 
-```mermaid
-graph LR
-    A[Raw Vendor Feeds] -->|Async Ingest| B(Normalizer)
-    B -->|Pydantic Validation| C{Data Lake}
-    C -->|Graph Builder| D[NetworkX/Neo4j]
-    D -->|Inference Engine| E[Targeting Package]
-    E -->|API Response| F[Client Dashboard]
-    
-    classDef blackNode fill:#000000,stroke:#00ff00,stroke-width:2px,color:#ffffff
-    classDef greenNode fill:#00ff00,stroke:#000000,stroke-width:2px,color:#000000
-    classDef decisionNode fill:#1a1a1a,stroke:#00ff00,stroke-width:2px,color:#00ff00
-    
-    class A,B,D,E,F blackNode
-    class C decisionNode
-```
+<div align="center">
+  <img src="docs/ontology_to_target_intel.png" alt="ABC System Architecture: Ontology to Target Intelligence" width="800"/>
+</div>
 
 ---
 
