@@ -126,6 +126,14 @@ graph TD
     G -->|Cryptographic Receipt| J[Bitcoin Blockchain]
     G -->|Settlement| K[Oracle Service]
     K -->|BTC| L[Vendor]
+    
+    classDef blackNode fill:#000000,stroke:#00ff00,stroke-width:2px,color:#ffffff
+    classDef greenNode fill:#00ff00,stroke:#000000,stroke-width:2px,color:#000000
+    classDef decisionNode fill:#1a1a1a,stroke:#00ff00,stroke-width:2px,color:#00ff00
+    
+    class A,B,D,F,H,I,G,J,K,L blackNode
+    class E greenNode
+    class C decisionNode
 ```
 
 ---
