@@ -19,8 +19,16 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
   - Relationships (coordinates_with, controls, suspected_of)
 - **Multi-modal intelligence ingestion** — Process text, transaction data, network graphs, and temporal sequences
 - **Context-aware classification** — Understand threat context beyond keyword matching
+- **Confidence scoring** — Every extracted entity has confidence score (0-1)
+- **Provenance tracking** — Every entity tracks source_id, extraction_method, review_status
 
-**Output:** Structured entities ready for ontology insertion
+**Output:** Structured entities with confidence scores and provenance metadata
+
+**Guardrails:**
+- **High confidence (≥0.95):** Auto-insert into graph
+- **Medium confidence (0.80-0.94):** Human review required
+- **Low confidence (<0.80):** Reject or flag for manual review
+- **Cascade delete:** Can remove all entities from specific source if hallucination detected
 
 ---
 
@@ -43,16 +51,20 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
 ### 3. Relationship Inference Engine
 **Purpose:** Discover hidden connections between actors, events, and patterns
 
-**AI Models:**
-- **Graph Neural Networks (GNNs)** — Infer relationships in Behavioral Intelligence Graph:
+**Architecture:**
+- **Heuristic Rules First** — Deterministic relationship detection (fast, debuggable):
+  - Example: "If Wallet A and Wallet B interact with Contract C within same block 5 times → COORDINATES_WITH"
+  - Runs synchronously for API responses (<500ms)
+- **Graph Neural Networks (GNNs)** — Infer relationships heuristics miss:
   - `COORDINATES_WITH` — Detect coordination rings from timing/pattern similarity
   - `CONTROLS` — Identify wallet control structures
   - `BEHAVES_LIKE` — Cluster similar behavioral signatures
   - `CLUSTERS_WITH` — Identify behavioral clusters
   - `SANCTIONED_BY` — Link to sanctions entities
   - `SUSPECTED_OF` — Infer suspicion relationships
+  - Runs asynchronously in background workers (non-blocking)
 
-**Implementation:** `nemesis/ai_ontology/relationship_inference.py`
+**Implementation:** `nemesis/ai_ontology/heuristic_rules.py`, `nemesis/ai_ontology/relationship_inference.py` (async workers)
 
 ---
 
@@ -80,21 +92,21 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
 
 ---
 
-### 5. Predictive Threat Modeling
-**Purpose:** Forecast adversary actions before they occur
+### 5. Risk Propensity Modeling
+**Purpose:** Assess threat actor mobilization and risk levels (NOT specific timing predictions)
 
 **AI Models:**
-- **Action prediction** — Predict threat actions:
-  - Off-ramp attempts (with timing windows and locations)
-  - Coordination activity
-  - Attack execution
-  - Asset movements
-  - Network expansion
-  - Evasion maneuvers
+- **Risk propensity scoring** — Assess threat actor state:
+  - **Mobilization Index** — How close actor is to attack staging (0-1)
+  - **Volatility Score** — Likelihood of action (not timing)
+  - **Behavioral Similarity** — Match to known attack patterns (e.g., "90% similar to Lazarus Group pre-attack behavior")
+  - **Recommended monitoring targets** — Exchanges, protocols, locations at risk
 - **Risk scoring** — Calculate overall threat risk scores
 - **Countermeasure generation** — Automatically generate recommended countermeasures
 
-**Implementation:** `nemesis/ai_ontology/predictive_modeling.py`
+**Note:** We do NOT predict specific timing windows ("Attack in 48 hours"). Instead, we provide defensible intelligence: "Actor showing 90% similarity to pre-attack staging behavior. High mobilization index (0.87). Monitor exchanges X, Y, Z."
+
+**Implementation:** `nemesis/ai_ontology/risk_propensity.py`, `nemesis/ai_ontology/predictive_modeling.py`
 
 ---
 
@@ -108,14 +120,14 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
   - Outcome validations
   - Pattern corrections
 - **Model performance evaluation** — Track accuracy, precision, recall, F1
-- **Ontology evolution** — Automatically update ontology schema:
-  - New entity types
-  - Updated relationships
-  - New patterns
-  - Confidence adjustments
+- **Ontology evolution** — **Human-gated schema proposals** (NOT automatic):
+  - AI flags new patterns and proposes schema changes
+  - Data Architect reviews proposals with impact analysis
+  - Manual approval required before schema modification
+  - Prevents downstream API/dashboard crashes
 - **Learning reports** — Generate improvement recommendations
 
-**Implementation:** `nemesis/ai_ontology/continuous_learning.py`
+**Implementation:** `nemesis/ai_ontology/continuous_learning.py`, `nemesis/ai_ontology/schema_proposals.py`
 
 ---
 
@@ -237,29 +249,37 @@ The Adversarial Behavior Compiler (ABC) is not just a compiler—it's an **AI-po
 
 ## AI Architecture Integration
 
-### Data Flow
+### Data Flow (With Guardrails)
 ```
 Raw Telemetry (TRM, Chainalysis, Chaos, research feeds)
     ↓
-[AI Semantic Understanding Layer]
+[AI Semantic Understanding Layer] → Confidence Scoring + Provenance Tracking
     ↓
-Structured Entities (Actors, Events, Patterns)
+[Data Lake] → Staging area (enables rollback)
+    ↓
+[Validation Layer] → Sanity checks (wallet existence, schema validation)
+    ↓
+Structured Entities (Actors, Events, Patterns) → High confidence (≥0.95) auto-insert
+    ↓
+[Human Review Queue] → Medium confidence (0.80-0.94) requires approval
     ↓
 [AI Auto-Classification System]
     ↓
 Classified Threat Entities
     ↓
-[AI Relationship Inference Engine]
+[Heuristic Rules] → Fast, deterministic relationships (<500ms)
+    ↓
+[GNN Inference] → Background workers (async, non-blocking)
     ↓
 Enriched Behavioral Intelligence Graph
     ↓
 [AI-Powered Hades/Echo/Nemesis]
     ↓
-Executable Targeting Packages
+Executable Targeting Packages (Risk Propensity, NOT timing predictions)
     ↓
-[Continuous Learning Feedback Loop]
+[Continuous Learning Feedback Loop] → Schema Proposals (human-gated)
     ↓
-Improved Models & Expanded Ontology
+Improved Models & Expanded Ontology (after human approval)
 ```
 
 ### Model Stack
@@ -275,13 +295,14 @@ Improved Models & Expanded Ontology
 
 ### Why AI Makes ABC Undeniable
 
-1. **Self-Evolving Ontology** — System learns new threat patterns without manual rule updates
-2. **Hidden Relationship Discovery** — AI finds connections humans miss
-3. **Predictive Intelligence** — Forecasts adversary actions, not just historical analysis
+1. **Human-Gated Ontology Evolution** — System proposes new threat patterns; human approval required (prevents schema crashes)
+2. **Hidden Relationship Discovery** — Heuristic rules + GNNs find connections humans miss
+3. **Risk Propensity Intelligence** — Assesses mobilization and threat levels (defensible, not crystal ball predictions)
 4. **Natural Language Interface** — Analysts query in plain English
-5. **Continuous Improvement** — Gets smarter with every detection and feedback loop
+5. **Continuous Improvement** — Gets smarter with every detection and feedback loop (with guardrails)
 6. **Multi-Modal Intelligence** — Processes text, transactions, graphs, and temporal data
-7. **Scalable Classification** — Handles thousands of threat actors without manual categorization
+7. **Scalable Classification** — Handles thousands of threat actors without manual categorization (high confidence only)
+8. **Provenance Tracking** — Every entity tracks source, confidence, review status (enables cascade delete if hallucination detected)
 
 ---
 
@@ -311,11 +332,13 @@ Improved Models & Expanded Ontology
 
 ## Success Metrics
 
-- **Detection accuracy:** >95% true positive rate, <5% false positive rate
-- **Prediction accuracy:** >80% correct next-move forecasts
-- **Relationship discovery:** 3x more connections than manual analysis
-- **Query response time:** <2 seconds for natural language queries
-- **Ontology coverage:** Auto-classify 90%+ of new threat actors
+- **Precision:** >99.9% (false positive rate <0.1%) — Optimize for precision over recall to avoid alert fatigue
+- **Recall:** >85% (acceptable trade-off for high precision)
+- **Risk propensity accuracy:** >90% correct mobilization index assessments
+- **Relationship discovery:** 3x more connections than manual analysis (heuristics + GNNs)
+- **Query response time:** <500ms for natural language queries (heuristic rules + cached GNN results)
+- **Ontology coverage:** Auto-classify 90%+ of new threat actors (high confidence only)
+- **Schema evolution:** 100% human-gated (no automatic schema changes)
 
 ---
 

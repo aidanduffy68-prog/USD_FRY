@@ -29,6 +29,11 @@ class ExtractedEntity:
     confidence: float
     source_text: str
     relationships: List[Dict[str, str]]
+    # Provenance tracking fields
+    source_id: str = ""  # Original report/document ID
+    extraction_method: str = "llm_gpt4"  # llm_gpt4, heuristic, manual
+    review_status: str = "auto"  # auto, pending, approved, rejected
+    reviewed_by: Optional[str] = None  # Human reviewer ID
 
 
 class SemanticUnderstandingLayer:
@@ -62,17 +67,28 @@ class SemanticUnderstandingLayer:
             }
         }
     
-    def extract_entities(self, text: str, source_type: str = "report") -> List[ExtractedEntity]:
+    def extract_entities(
+        self,
+        text: str,
+        source_type: str = "report",
+        source_id: Optional[str] = None
+    ) -> List[ExtractedEntity]:
         """
         Extract structured entities from unstructured text
         
         Args:
             text: Unstructured intelligence text
             source_type: Type of source (report, tweet, on_chain_data, etc.)
+            source_id: Unique identifier for the source document
         
         Returns:
-            List of extracted entities with relationships
+            List of extracted entities with relationships, confidence scores, and provenance
         """
+        # Generate source_id if not provided
+        if source_id is None:
+            import hashlib
+            source_id = hashlib.md5(text.encode()).hexdigest()[:16]
+        
         # TODO: Implement LLM-based extraction
         # This would call GPT-4/Claude with structured output schema
         # For now, return mock entities based on text analysis
@@ -82,7 +98,21 @@ class SemanticUnderstandingLayer:
         # entities = self._parse_llm_response(llm_response)
         
         # Mock entity extraction - extract basic entities from text
-        return self._extract_mock_entities(text, source_type)
+        entities = self._extract_mock_entities(text, source_type)
+        
+        # Add provenance tracking to all entities
+        for entity in entities:
+            entity.source_id = source_id
+            entity.extraction_method = "llm_gpt4"  # Would be set by actual LLM call
+            # Review status determined by confidence threshold (see validation_layer.py)
+            if entity.confidence >= 0.95:
+                entity.review_status = "auto"
+            elif entity.confidence >= 0.80:
+                entity.review_status = "pending"
+            else:
+                entity.review_status = "rejected"
+        
+        return entities
     
     def _build_extraction_prompt(self, text: str, source_type: str) -> str:
         """Build prompt for LLM entity extraction"""

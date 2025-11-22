@@ -1,12 +1,14 @@
 """
 Predictive Threat Modeling System
-Forecasts adversary actions before they occur
+Uses Risk Propensity Model (NOT timing predictions)
+Assesses mobilization index, volatility score, behavioral similarity
 """
 
 from typing import List, Dict, Any, Optional, Tuple
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from enum import Enum
+from .risk_propensity import RiskPropensityModel, RiskPropensity
 
 
 class ThreatActionType(Enum):
@@ -49,13 +51,15 @@ class ThreatForecast:
 
 class PredictiveThreatModel:
     """
-    AI-powered predictive modeling for threat actors
-    Forecasts next moves based on behavioral patterns and historical data
+    Risk Propensity Model (NOT timing predictions)
+    Assesses mobilization, volatility, and behavioral similarity
+    Provides defensible intelligence without false timing promises
     """
     
     def __init__(self, model_path: Optional[str] = None):
         self.model_path = model_path
-        self.model_version = "1.0.0"
+        self.model_version = "2.0.0"  # Updated to use risk propensity
+        self.risk_propensity_model = RiskPropensityModel()
         
     def generate_forecast(
         self,
@@ -66,7 +70,7 @@ class PredictiveThreatModel:
         historical_patterns: Optional[List[Dict[str, Any]]] = None
     ) -> ThreatForecast:
         """
-        Generate threat forecast for an actor
+        Generate risk propensity assessment (NOT timing predictions)
         
         Args:
             actor_id: Unique identifier for the actor
@@ -76,59 +80,94 @@ class PredictiveThreatModel:
             historical_patterns: Similar actor patterns from past
             
         Returns:
-            ThreatForecast with predicted actions and timing
+            ThreatForecast with risk propensity assessment (mobilization index, volatility score, behavioral similarity)
+            NO specific timing windows
         """
-        predictions = []
-        
-        # Predict off-ramp attempts
-        off_ramp_pred = self._predict_off_ramp(
-            actor_id, behavioral_signature, transaction_history
+        # Use risk propensity model instead of timing predictions
+        risk_propensity = self.risk_propensity_model.assess_risk_propensity(
+            actor_id=actor_id,
+            behavioral_signature=behavioral_signature,
+            transaction_history=transaction_history,
+            network_data=network_data,
+            historical_patterns=historical_patterns
         )
-        if off_ramp_pred:
-            predictions.append(off_ramp_pred)
         
-        # Predict coordination activity
-        coord_pred = self._predict_coordination(
-            actor_id, behavioral_signature, network_data
-        )
-        if coord_pred:
-            predictions.append(coord_pred)
+        # Convert risk propensity to forecast format (without timing predictions)
+        predictions = self._convert_risk_propensity_to_predictions(risk_propensity)
         
-        # Predict attack execution
-        attack_pred = self._predict_attack(
-            actor_id, behavioral_signature, historical_patterns
-        )
-        if attack_pred:
-            predictions.append(attack_pred)
+        # Generate countermeasures based on risk propensity
+        countermeasures = self._generate_countermeasures_from_risk(risk_propensity)
         
-        # Predict asset movements
-        movement_pred = self._predict_asset_movement(
-            actor_id, behavioral_signature, transaction_history
-        )
-        if movement_pred:
-            predictions.append(movement_pred)
-        
-        # Calculate overall risk score
-        risk_score = self._calculate_risk_score(predictions, behavioral_signature)
-        
-        # Determine next action window
-        next_window = self._determine_next_window(predictions)
-        
-        # Generate countermeasures
-        countermeasures = self._generate_countermeasures(predictions, risk_score)
-        
+        # NO next_action_window (we don't predict timing)
         forecast = ThreatForecast(
             actor_id=actor_id,
             forecast_id=f"forecast_{actor_id}_{datetime.now().isoformat()}",
             generated_at=datetime.now(),
             predictions=predictions,
-            overall_risk_score=risk_score,
-            next_action_window=next_window,
+            overall_risk_score=risk_propensity.overall_risk_score,
+            next_action_window=None,  # No timing predictions
             recommended_countermeasures=countermeasures,
             model_version=self.model_version
         )
         
         return forecast
+    
+    def _convert_risk_propensity_to_predictions(
+        self,
+        risk_propensity: RiskPropensity
+    ) -> List[PredictedAction]:
+        """Convert risk propensity to prediction format (without timing)"""
+        predictions = []
+        
+        # High mobilization index indicates potential off-ramp
+        if risk_propensity.mobilization_index > 0.7:
+            predictions.append(PredictedAction(
+                action_type=ThreatActionType.OFF_RAMP_ATTEMPT,
+                actor_id=risk_propensity.actor_id,
+                predicted_timestamp=datetime.now(),  # Placeholder, not used
+                confidence=risk_propensity.mobilization_index,
+                timing_window=(datetime.now(), datetime.now()),  # Placeholder, not used
+                location=risk_propensity.recommended_monitoring_targets[0] if risk_propensity.recommended_monitoring_targets else None,
+                reasoning=f"High mobilization index ({risk_propensity.mobilization_index:.2f}). {risk_propensity.reasoning}",
+                evidence=risk_propensity.evidence
+            ))
+        
+        # High volatility indicates potential coordination
+        if risk_propensity.volatility_score > 0.7:
+            predictions.append(PredictedAction(
+                action_type=ThreatActionType.COORDINATION_ACTIVITY,
+                actor_id=risk_propensity.actor_id,
+                predicted_timestamp=datetime.now(),  # Placeholder
+                confidence=risk_propensity.volatility_score,
+                timing_window=(datetime.now(), datetime.now()),  # Placeholder
+                reasoning=f"High volatility score ({risk_propensity.volatility_score:.2f}). {risk_propensity.reasoning}",
+                evidence=risk_propensity.evidence
+            ))
+        
+        return predictions
+    
+    def _generate_countermeasures_from_risk(
+        self,
+        risk_propensity: RiskPropensity
+    ) -> List[str]:
+        """Generate countermeasures from risk propensity assessment"""
+        countermeasures = []
+        
+        if risk_propensity.overall_risk_score > 0.8:
+            countermeasures.append("Immediate freeze on all associated addresses")
+            countermeasures.append("Alert all exchanges and OTC desks")
+        
+        if risk_propensity.mobilization_index > 0.7:
+            countermeasures.append(f"Monitor exchanges: {', '.join(risk_propensity.recommended_monitoring_targets[:3])}")
+        
+        if risk_propensity.behavioral_similarity:
+            top_match = max(risk_propensity.behavioral_similarity.items(), key=lambda x: x[1])
+            countermeasures.append(f"High similarity to {top_match[0]} pattern - apply known countermeasures")
+        
+        if not countermeasures:
+            countermeasures.append("Continue monitoring")
+        
+        return countermeasures
     
     def _predict_off_ramp(
         self,

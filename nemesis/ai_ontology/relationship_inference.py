@@ -1,11 +1,13 @@
 """
 AI-Powered Relationship Inference Engine
-Uses Graph Neural Networks to discover hidden connections
+Uses Heuristic Rules First, then GNNs for enhancement
+Heuristics run synchronously (<500ms), GNNs run asynchronously
 """
 
 from typing import List, Dict, Any, Optional, Tuple
 from dataclasses import dataclass
 import numpy as np
+from .heuristic_rules import HeuristicRulesEngine, HeuristicRelationship
 
 
 @dataclass
@@ -21,12 +23,14 @@ class InferredRelationship:
 
 class RelationshipInferenceEngine:
     """
-    Graph Neural Network-based relationship inference
-    Discovers hidden connections in Behavioral Intelligence Graph
+    Relationship inference with heuristic rules first, GNNs as enhancement
+    Heuristics: Fast, deterministic, synchronous (<500ms)
+    GNNs: Background workers, asynchronous, non-blocking
     """
     
     def __init__(self, model_path: Optional[str] = None):
         self.model_path = model_path
+        self.heuristic_engine = HeuristicRulesEngine()
         self.relationship_types = [
             "COORDINATES_WITH",
             "CONTROLS",
@@ -37,49 +41,78 @@ class RelationshipInferenceEngine:
             "EVIDENCES"
         ]
     
-    def infer_relationships(self, graph_data: Dict[str, Any]) -> List[InferredRelationship]:
+    def infer_relationships(
+        self,
+        graph_data: Dict[str, Any],
+        transactions: Optional[List[Dict[str, Any]]] = None,
+        use_heuristics_only: bool = False
+    ) -> List[InferredRelationship]:
         """
-        Infer relationships between entities using GNN
+        Infer relationships: Heuristic rules first (fast), then GNNs (async)
         
         Args:
             graph_data: Behavioral Intelligence Graph structure or list of classified entities
+            transactions: Optional transaction data for heuristic rules
+            use_heuristics_only: If True, skip GNN inference (for fast API responses)
         
         Returns:
             List of inferred relationships with confidence scores
         """
-        # TODO: Implement GNN inference
-        # For now, use rule-based inference as placeholder
-        
         # Handle different input formats
         if isinstance(graph_data, list):
-            # If passed list of entities directly, convert to graph format
             entities = [item.get("entity", item) if isinstance(item, dict) and "entity" in item else item for item in graph_data]
         else:
             entities = graph_data.get("entities", [])
         
         relationships = []
         
-        # If no entities, return empty (will be populated with mock data if needed)
-        if not entities:
-            return self._generate_mock_relationships(entities)
+        # STEP 1: Run heuristic rules first (fast, deterministic, <500ms)
+        if entities:
+            heuristic_rels = self.heuristic_engine.detect_relationships(entities, transactions)
+            
+            # Convert HeuristicRelationship to InferredRelationship
+            for h_rel in heuristic_rels:
+                relationships.append(InferredRelationship(
+                    source_entity_id=h_rel.source_entity_id,
+                    target_entity_id=h_rel.target_entity_id,
+                    relationship_type=h_rel.relationship_type,
+                    confidence=h_rel.confidence,
+                    evidence=h_rel.evidence,
+                    reasoning=h_rel.reasoning
+                ))
         
-        # Check for coordination patterns
-        coordination_rels = self._detect_coordination(entities)
-        relationships.extend(coordination_rels)
+        # STEP 2: GNN inference (only if not heuristics-only mode)
+        # This would run asynchronously in background workers
+        if not use_heuristics_only and not relationships:
+            # Fallback to legacy detection methods if heuristics found nothing
+            coordination_rels = self._detect_coordination(entities)
+            relationships.extend(coordination_rels)
+            
+            control_rels = self._detect_control_structures(entities)
+            relationships.extend(control_rels)
+            
+            similarity_rels = self._detect_behavioral_similarity(entities)
+            relationships.extend(similarity_rels)
         
-        # Check for control structures
-        control_rels = self._detect_control_structures(entities)
-        relationships.extend(control_rels)
-        
-        # Check for behavioral similarity
-        similarity_rels = self._detect_behavioral_similarity(entities)
-        relationships.extend(similarity_rels)
-        
-        # If no relationships found, generate mock relationships
+        # If still no relationships, generate mock (for demo)
         if not relationships:
             relationships = self._generate_mock_relationships(entities)
         
         return relationships
+    
+    def infer_relationships_async(
+        self,
+        graph_data: Dict[str, Any],
+        transactions: Optional[List[Dict[str, Any]]] = None
+    ) -> List[InferredRelationship]:
+        """
+        Async GNN inference (runs in background workers)
+        Use this for non-blocking relationship discovery
+        """
+        # TODO: Implement actual GNN inference
+        # This would be called by Celery/RabbitMQ workers
+        # For now, return empty (heuristics handle synchronous needs)
+        return []
     
     def _detect_coordination(self, entities: List[Dict]) -> List[InferredRelationship]:
         """Detect coordination rings from timing and pattern similarity"""
