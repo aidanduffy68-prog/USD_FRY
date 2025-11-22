@@ -124,9 +124,23 @@ class CryptographicReceiptGenerator:
         return receipt
     
     def _hash_intelligence_package(self, package: Dict[str, Any]) -> str:
-        """Generate SHA-256 hash of intelligence package"""
-        package_json = json.dumps(package, sort_keys=True)
-        return hashlib.sha256(package_json.encode()).hexdigest()
+        """
+        Generate SHA-256 hash of intelligence package using canonical JSON
+        
+        CRITICAL: Uses canonical JSON representation to ensure hash consistency
+        - sort_keys=True: Deterministic key ordering
+        - ensure_ascii=False: Preserve Unicode
+        - separators=(',', ':'): No extra whitespace
+        - No formatting changes (whitespace) should affect hash
+        """
+        # Canonical JSON: sort keys, no extra whitespace, consistent encoding
+        package_json = json.dumps(
+            package,
+            sort_keys=True,
+            ensure_ascii=False,
+            separators=(',', ':')  # No extra whitespace
+        )
+        return hashlib.sha256(package_json.encode('utf-8')).hexdigest()
     
     def _generate_receipt_id(self, intelligence_hash: str) -> str:
         """Generate unique receipt ID from intelligence hash"""

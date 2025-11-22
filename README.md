@@ -38,13 +38,16 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 
 ### 1. Faster, Crypto-Native Payment Settlement
 
-**4-hour Bitcoin settlement vs. 18-month procurement cycles**
+**4-hour settlement vs. 18-month procurement cycles**
 
-- Bitcoin-native from the ground up
-- Automated payouts when intelligence validates
-- No waiting for procurement cycles
+- **Fiat-compatible interface**: Government clients pay in USD (FAR-compliant)
+- **Bitcoin settlement to vendors**: Oracle/custodial service converts fiat to BTC
+- **Automated payouts**: Vendors receive BTC when intelligence validates
+- **No government hot wallets required**: Compliant intermediary handles conversion
 
-**Impact:** Treasury posted 10 BTC bounty; ABC submitted package; funds released automatically within 4 hours (vs. 18-month traditional procurement).
+**Note:** Bitcoin settlement is a capability, not a rigid requirement. The system supports fiat-to-BTC conversion via compliant oracle/custodial services (e.g., Prime, Coinbase Prime) for government clients who cannot hold Bitcoin directly.
+
+**Impact:** Treasury posts USD payment; Oracle converts to BTC; vendor receives settlement within 4 hours (vs. 18-month traditional procurement).
 
 ---
 
@@ -90,7 +93,7 @@ ABC does not replace forensics vendors—it makes them 10× more valuable to gov
 3. **Echo** — Surface coordination networks with confidence/provenance
 4. **Nemesis** — Generate executable targeting packages ("freeze Exchange_A/B within 24h; confidence 0.84")
 5. **Cryptographic receipts** — Generate minimal on-chain proofs (hash, timestamp, signature) without revealing proprietary systems
-6. **Bitcoin settlement** — Agencies post BTC bounties; vendors receive payouts automatically when intelligence validates
+6. **Settlement** — Government clients pay in USD (FAR-compliant); Oracle converts to BTC; vendors receive payouts automatically when intelligence validates
 7. **Output** — APIs, mesh connectors, or air-gapped delivery for Treasury, OFAC, FinCEN, DoD Cyber Command, allies
 
 **Hypnos Core** is the long-term memory system that structures intelligence. Built on Hypnos Core, Hades profiles behavior, Echo detects coordination, and Nemesis generates targeting packages. Hypnos Core maintains long-term memory, consolidates patterns, and tracks dormant threats (see `hypnos/` for details).
