@@ -169,26 +169,18 @@ GH Systems does not compete with existing vendors—it amplifies them.
 
 ## Repository Map
 
-- `Deal Room/GH Behavioral Intel [v1].pdf` — Complete whitepaper (PDF)
-- `Deal Room/GH_ONTOLOGY_SPEC.md` — Behavioral Intelligence Graph & Adversarial Behavior Compiler specification
-- `nemesis/ABC_BEHAVIORAL_INTELLIGENCE_WHITEPAPER.md` — Full whitepaper markdown with technical details
-- `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` — AI-powered threat ontology architecture
-- `nemesis/ai_ontology/` — Phase 1 MVP implementation (semantic understanding, auto-classification, relationship inference)
-- `nemesis/on_chain_receipt/` — Cryptographic receipt system (proprietary off-chain, minimal proofs on-chain)
-- `nemesis/threat_profiles/` — Operation Nemesis threat dossiers (e.g., Lazarus Group)
-- `hades/` — Behavioral profiling engine (legacy FRY research + OFAC validation)
-- `echo/` — Coordination detection engine (network mapping, facilitator networks)
-- `hypnos/` — Hypnos Core: Long-term memory system (pattern consolidation, dormant threat tracking)
+- `Deal Room/GH Behavioral Intel [v1].pdf` — Whitepaper
+- `nemesis/threat_profiles/` — Threat dossiers (e.g., Lazarus Group)
+- `nemesis/ai_ontology/` — AI-powered threat ontology implementation
+- `nemesis/on_chain_receipt/` — Cryptographic receipt system
+- `hades/`, `echo/`, `hypnos/` — Core components (profiling, coordination, memory)
 
 ---
 
-## Contact / Next Steps
+## Next Steps
 
-- **Read the whitepaper** – `Deal Room/GH Behavioral Intel [v1].pdf` for complete technical specification
-- **Explore threat dossiers** – `nemesis/threat_profiles/` for operational playbooks (e.g., Lazarus Group)
-- **Review ontology spec** – `Deal Room/GH_ONTOLOGY_SPEC.md` for Behavioral Intelligence Graph schema
-- **Review AI ontology spec** – `nemesis/AI_THREAT_ONTOLOGY_SPEC.md` for AI-powered architecture
-- **Review on-chain receipts** – `nemesis/on_chain_receipt/` for cryptographic receipt system (proprietary off-chain, proofs on-chain)
+- **Read the whitepaper** – `Deal Room/GH Behavioral Intel [v1].pdf`
+- **Explore threat dossiers** – `nemesis/threat_profiles/`
 - **Schedule integration workshop** – connect existing forensics feeds, receive compiled actor playbooks within weeks
 
 **GH Systems** — Compiling behavioral bytecode so lawful actors win the economic battlefield.
