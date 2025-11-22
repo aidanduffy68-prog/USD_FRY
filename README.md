@@ -186,12 +186,6 @@ GH Systems does not compete with existing vendors—it amplifies them.
 
 ---
 
-## Legacy Work: FRY Behavioral Oracle
-
-The FRY Protocol laid the groundwork: behavioral oracles predicting trader retention (42% vs. 0% baseline) across 13,659 liquidations. Core assets now live in `hades/` and continue to inform Hades/Echo methodology.
-
----
-
 ## Contact / Next Steps
  
 - **Read the whitepaper** – `Deal Room/GH Behavioral Intel [v1].pdf` for complete technical specification.
