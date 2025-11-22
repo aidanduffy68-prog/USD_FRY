@@ -33,6 +33,33 @@ ABC is an AI-driven ingestion engine that compiles raw threat telemetry (Chainal
   <img src="docs/ontology_to_target_intel.png" alt="ABC System Architecture: Ontology to Target Intelligence" width="800"/>
 </div>
 
+### Detailed Data Flow
+
+```mermaid
+graph TD
+    A[Raw Telemetry] -->|Ingest| B(Normalizer)
+    B -->|Validation| C{Valid Data?}
+    C -->|Yes| D[Hypnos DB]
+    C -->|No| E[Dead Letter Queue]
+    D -->|Async Job| F[Hades Profiler]
+    F -->|Risk Score| G[API Output]
+    D -->|Async Job| H[Echo Network]
+    H -->|Coordination| G
+    D -->|Async Job| I[Nemesis Targeting]
+    I -->|Targeting Package| G
+    G -->|Cryptographic Receipt| J[Bitcoin Blockchain]
+    G -->|Settlement| K[Oracle Service]
+    K -->|BTC| L[Vendor]
+    
+    classDef blackNode fill:#000000,stroke:#00ff00,stroke-width:2px,color:#ffffff
+    classDef greenNode fill:#00ff00,stroke:#000000,stroke-width:2px,color:#000000
+    classDef decisionNode fill:#1a1a1a,stroke:#00ff00,stroke-width:2px,color:#00ff00
+    
+    class A,B,D,F,H,I,G,J,K,L blackNode
+    class E greenNode
+    class C decisionNode
+```
+
 ---
 
 ## 📂 Repository Map (Where the Code Lives)
